@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
+import 'package:manikhwe_herbs/widgets/category_selector.dart';
 import 'package:manikhwe_herbs/widgets/shopping_list_item.dart';
 
 class ShoppingList extends StatefulWidget {
@@ -92,24 +93,33 @@ class _ShoppingListState extends State<ShoppingList> {
             color:Colors.white
           ),
         ],
-        title: const Text('Shopping List'),
+        
+        title: Text(Language.cartAppBarTitle[widget.languageIndex]),
+               
       ),
-      body: ListView(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
-        children: widget.products.map((Product product) {
-          return ShoppingListItem(
-            product: product,
-            productIndex: widget.products.indexOf(product)+1,
-            inCart: _shoppingCart.contains(product),
-            onCartChanged: _addRemoveProduct,
-          );
-        }).toList(),
-      ),
+      body: 
+        CategorySelector(onCategoryChanged: _changeCategory),
+        /*ListView(
+          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          children: widget.products.map((Product product) {
+            return ShoppingListItem(
+              product: product,
+              productIndex: widget.products.indexOf(product)+1,
+              inCart: _shoppingCart.contains(product),
+              onCartChanged: _addRemoveProduct,
+            );
+          }).toList(),
+        ),*/
     );
   }
 }
 
 class Language{
+  static const cartAppBarTitle = 
+  [
+    'Khetha Okudingayo',
+  ];
+
   static List<String> categorize =
   [ 
     'Ezomsebenzi',
@@ -143,133 +153,346 @@ class Language{
   static List<Product> ezobusoka(int languageIndex){
     List<Product> ubusokaList = [];
 
+    Thandekile thandekile = Thandekile(languageIndex);
+    Mehlothando mehlothando = Mehlothando(languageIndex);
+    Thandeka thandeka = Thandeka(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ubusokaList.add(qalala); // Required
+    ubusokaList.add(sukakimi); // Required
+    ubusokaList.add(thandekile);
+    ubusokaList.add(mehlothando);
+    ubusokaList.add(thandeka);
+
+    ubusokaList.shuffle();
     return ubusokaList;
   }
 
   static List<Product> ezemali(int languageIndex){
     List<Product> imaliList = [];
 
+    Thengani thengani = Thengani(languageIndex);
+    Khanyisa khanyisa = Khanyisa(languageIndex);
+    Belungubami belungubami = Belungubami(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    imaliList.add(qalala); // Required
+    imaliList.add(sukakimi); // Required
+    imaliList.add(belungubami);
+    imaliList.add(thengani);
+    imaliList.add(khanyisa);
+
+    imaliList.shuffle();
     return imaliList;
   }
 
   static List<Product> ezothando(int languageIndex){
     List<Product> ezothandoList = [];
 
+    Thandekile thandekile = Thandekile(languageIndex);
+    Mehlothando mehlothando = Mehlothando(languageIndex);
+    Thandeka thandeka = Thandeka(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezothandoList.add(qalala); // Required
+    ezothandoList.add(sukakimi); // Required
+    ezothandoList.add(thandekile);
+    ezothandoList.add(mehlothando);
+    ezothandoList.add(thandeka);
+    ezothandoList.add(safisithosami);
+
+
+    ezothandoList.shuffle();
     return ezothandoList;
   }
 
   static List<Product> ezempumelelo(int languageIndex){
     List<Product> ezempumeleloList = [];
 
+    Khanyisa khanyisa = Khanyisa(languageIndex);
+    Thengani thengani = Thengani(languageIndex);
+    Belungubami belungubami = Belungubami(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezempumeleloList.add(qalala); // Required
+    ezempumeleloList.add(sukakimi); // Required
+
+    ezempumeleloList.add(belungubami);
+    ezempumeleloList.add(khanyisa);
+    ezempumeleloList.add(thengani);
+
+    ezempumeleloList.shuffle();
     return ezempumeleloList;
   }
 
   static List<Product> ezokuthakathwa(int languageIndex){
     List<Product> ezokuthakathwaList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezokuthakathwaList.add(qalala); // Required
+    ezokuthakathwaList.add(sukakimi); // Required
+    ezokuthakathwaList.add(safisithosami);
+
+    ezokuthakathwaList.shuffle();
     return ezokuthakathwaList;
   }
 
   static List<Product> ezenhlanhla(int languageIndex){
     List<Product> inhlanhlaList = [];
 
+    Khanyisa khanyisa = Khanyisa(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    inhlanhlaList.add(qalala); // Required
+    inhlanhlaList.add(sukakimi); // Required
+    inhlanhlaList.add(khanyisa);
+
+    inhlanhlaList.shuffle();
     return inhlanhlaList;
   }
 
   static List<Product> ezobulili(int languageIndex){
     List<Product> ezobuliliList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezobuliliList.add(qalala); // Required
+    ezobuliliList.add(sukakimi); // Required
+    ezobuliliList.add(safisithosami);
+
+    ezobuliliList.shuffle();
     return ezobuliliList;
   }
 
   static List<Product> ezemizwa(int languageIndex){
     List<Product> ezemizwaList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezemizwaList.add(qalala); // Required
+    ezemizwaList.add(sukakimi); // Required
+
+    ezemizwaList.shuffle();
     return ezemizwaList;
   }
 
   static List<Product> ezamabhisinisi(int languageIndex){
     List<Product> ezebusinessList = [];
 
+    Khanyisa khanyisa = Khanyisa(languageIndex);
+    Thengani thengani = Thengani(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezebusinessList.add(qalala); // Required
+    ezebusinessList.add(sukakimi); // Required
+    ezebusinessList.add(khanyisa);
+    ezebusinessList.add(thengani);
+
+    ezebusinessList.shuffle();
     return ezebusinessList;
   }
 
   static List<Product> ezesikhumba(int languageIndex){
     List<Product> ezesikhumbaList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezesikhumbaList.add(qalala); // Required
+    ezesikhumbaList.add(sukakimi); // Required
+    ezesikhumbaList.add(safisithosami);
+
+    ezesikhumbaList.shuffle();
     return ezesikhumbaList;
   }
 
   static List<Product> ezesichitho(int languageIndex){
     List<Product> ezesichithoList = [];
 
-    ezesichithoList.add(Asisinde(languageIndex));
-    ezesichithoList.add(Asiphephe(languageIndex));
-    ezesichithoList.add(Mabeze(languageIndex));
+    Qalala qalala = Qalala(languageIndex);
+    Usemndenini usemndenini = Usemndenini(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Asisinde asisinde = Asisinde(languageIndex);
+    Asiphephe asiphephe = Asiphephe(languageIndex);
+    Mabeze mabeze = Mabeze(languageIndex);
+    Sukadeda sukadeda = Sukadeda(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
 
-    ezesichithoList.add(Umanzamnyama(languageIndex,forGoodUse:true)); // Usemndenini
-    ezesichithoList.add(Inhlambamanzi(languageIndex,forGoodUse:true)); // Qala La
-    //ezesichithoList.add(SukaDeda(languageIndex,forGoodUse:true)); // Suka Deda
 
+    ezesichithoList.add(usemndenini);
+    ezesichithoList.add(asisinde);
+    ezesichithoList.add(asiphephe);
+    ezesichithoList.add(mabeze);
+    ezesichithoList.add(qalala);
+    ezesichithoList.add(sukakimi); 
+    ezesichithoList.add(usemndenini); 
+    ezesichithoList.add(sukadeda);
+    ezesichithoList.add(safisithosami);
+
+    ezesichithoList.shuffle();
     return ezesichithoList;
   }
 
   static List<Product> ezedliso(int languageIndex){
     List<Product> ezedlisoList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezedlisoList.add(qalala); // Required
+    ezedlisoList.add(sukakimi); // Required
+
+    ezedlisoList.shuffle();
     return ezedlisoList;
   }
 
   static List<Product> ezokuyeka(int languageIndex){
     List<Product> ezokuyekaList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezokuyekaList.add(qalala); // Required
+    ezokuyekaList.add(sukakimi); // Required
+
+    ezokuyekaList.shuffle();
     return ezokuyekaList;
   }
 
   static List<Product> ezokufa(int languageIndex){
     List<Product> ezokufaList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezokufaList.add(qalala); // Required
+    ezokufaList.add(sukakimi); // Required
+    ezokufaList.add(safisithosami);
+
+    ezokufaList.shuffle();
     return ezokufaList;
   }
 
   static List<Product> ezokucupha(int languageIndex){
     List<Product> ezokucuphaList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezokucuphaList.add(qalala); // Required
+    ezokucuphaList.add(sukakimi); // Required
+    ezokucuphaList.add(safisithosami);
+
+    ezokucuphaList.shuffle();
     return ezokucuphaList;
   }
 
   static List<Product> ezomsebenzi(languageIndex){
     List<Product> ezomsebenziList = [];
 
+    Belungubami belungubami = Belungubami(languageIndex);
+    Thandekile thandekile = Thandekile(languageIndex);
+    Mehlothando mehlothando = Mehlothando(languageIndex);
+    Thandeka thandeka = Thandeka(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezomsebenziList.add(qalala); // Required
+    ezomsebenziList.add(sukakimi); // Required
+
+    ezomsebenziList.add(belungubami);
+    ezomsebenziList.add(thandekile);
+    ezomsebenziList.add(mehlothando);
+    ezomsebenziList.add(thandeka);
+    
+
+    ezomsebenziList.shuffle();
     return ezomsebenziList;
   }
 
   static List<Product> ezabagulayo(int languageIndex){
     List<Product> ezabagulayoList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Safisithosami safisithosami = Safisithosami(languageIndex);
+    
+    ezabagulayoList.add(qalala); // Required
+    ezabagulayoList.add(sukakimi); // Required
+    ezabagulayoList.add(safisithosami);
+
+    ezabagulayoList.shuffle();
     return ezabagulayoList;
   }
 
   static List<Product> ezomndeni(int languageIndex){
     List<Product> ezomndeniList = [];
 
+    Usemndenini usemndenini = Usemndenini(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    
+    ezomndeniList.add(qalala); // Required
+    ezomndeniList.add(usemndenini);
+
+    ezomndeniList.shuffle();
     return ezomndeniList;
   }
 
   static List<Product> ezesilwane(int languageIndex){
     List<Product> ezesilwaneList = [];
 
+    Sukadeda sukadeda = Sukadeda(languageIndex);
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    
+    ezesilwaneList.add(qalala); // Required
+    ezesilwaneList.add(sukakimi); // Required
+
+    ezesilwaneList.add(sukadeda); 
+
+    ezesilwaneList.shuffle();
     return ezesilwaneList;
   }
 
   static List<Product> ezezikweletu(int languageIndex){
     List<Product> ezezikweletuList = [];
 
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+
+    ezezikweletuList.add(qalala); // Required
+    ezezikweletuList.add(sukakimi); // Required
+
+    ezezikweletuList.shuffle();
     return ezezikweletuList;
   }
 
   static List<Product> ezezitha(int languageIndex){
     List<Product> ezezithaList = [];
+
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Sukadeda sukadeda = Sukadeda(languageIndex);
+
+    ezezithaList.add(qalala); // Required
+    ezezithaList.add(sukakimi); // Required
+    ezezithaList.add(sukadeda); // Suka Deda
 
     return ezezithaList;
   }
@@ -277,10 +500,17 @@ class Language{
   static List<Product> ezokuthandeka(int languageIndex){
     List<Product> ezokuthandekaList = [];
 
-    ezokuthandekaList.add(Thandeka(languageIndex));
-    ezokuthandekaList.add(Thandekile(languageIndex));
-    ezokuthandekaList.add(Mehlothando(languageIndex));
+    Qalala qalala = Qalala(languageIndex);
+    Thandeka thandeka = Thandeka(languageIndex);
+    Thandekile thandekile = Thandekile(languageIndex);
+    Mehlothando mehlothando = Mehlothando(languageIndex);
 
+    ezokuthandekaList.add(qalala); // Required
+    ezokuthandekaList.add(thandeka);
+    ezokuthandekaList.add(thandekile);
+    ezokuthandekaList.add(mehlothando);
+
+    ezokuthandekaList.shuffle();
     return ezokuthandekaList;
   }
 }

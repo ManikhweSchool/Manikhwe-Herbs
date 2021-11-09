@@ -4,23 +4,28 @@ class LanguagesTable{
   static const languages = 
   ['Zulu',
   'Xhosa',
+  'Sesotho',
   'Swati',
   'Ndebele',
   'Xitsonga',
 
-  'Sesotho', 
+   
   'Sepedi', 
   'Setswana', 
   'Tshivenda',
 
-  'English',
+  
   'Afrikaans'
+
+  /**************************************************** */
+  'English',
   ];
 
   static const searchProduct = 
   [
     'Sesha Okufunayo',
   ];
+
 
   static const words = [
     ['Umuthi'],
@@ -31,8 +36,8 @@ class LanguagesTable{
     ['Shiya Lesiwasho'],
   ];
   /*
-  static const cartAppBarTitle = [
-    'Zichaze, Ukhethe Nosizo'
+  static const cartAppBarTitle2 = [
+    'Zichaze'
   ];
 
   static const cartUserStoryArea = [

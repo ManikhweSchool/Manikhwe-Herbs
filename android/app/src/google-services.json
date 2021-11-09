@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "974564752383-ukrr3u1vgr9mdojpfa6gdp3148lig8s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manikhweherbs.manikhwe_herbs",
+            "certificate_hash": "2f8b1281ee6b15bbfce5b778cb2adb7a0208810e"
+          }
+        },
+        {
           "client_id": "974564752383-4oopjcfuf5i5saj02ptveltihger0nff.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "974564752383-4oopjcfuf5i5saj02ptveltihger0nff.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "974564752383-mc6bugb8rau3vnjo4pjm8t6f9akgc3i2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.manikhweherbs.manikhwe-herbs"
+              }
             }
           ]
         }
