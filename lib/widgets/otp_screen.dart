@@ -40,7 +40,7 @@ class _OTPScreenState extends State<OTPScreen>{
         .then((value){
           if(value.user != null){
             Navigator.of(context).push(
-              CustomPageRoute(child: const LanguagesPage()),
+              CustomPageRoute(child: LanguagesPage(phoneNumber: '${widget.countryCode}${widget.phoneNumber.substring(1)}')),
             );
           }
         });
@@ -98,7 +98,7 @@ class _OTPScreenState extends State<OTPScreen>{
               child: Text(
                   'Verifying : ${widget.countryCode}${widget.phoneNumber.substring(1)}',
                   style: const TextStyle(
-                    color: Colors.blue,
+                    color: Colors.blue, 
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
                 ),
@@ -107,7 +107,7 @@ class _OTPScreenState extends State<OTPScreen>{
           Padding(
             padding: const EdgeInsets.all(30.0),
             child: PinPut(
-              //autofocus: true,
+              autofocus: true,
               fieldsCount: 6,
               withCursor: true,
               textStyle: const TextStyle(fontSize: 25.0, color: Colors.white),
@@ -121,7 +121,7 @@ class _OTPScreenState extends State<OTPScreen>{
                       .then((value) => {
                         if(value.user != null){
                           Navigator.of(context).push(
-                            CustomPageRoute(child: const LanguagesPage()),
+                            CustomPageRoute(child: LanguagesPage(phoneNumber: '${widget.countryCode}${widget.phoneNumber.substring(1)}',)),
                           )
                         }
                       });

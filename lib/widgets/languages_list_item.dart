@@ -9,8 +9,9 @@ class LanguagesListItem extends StatelessWidget {
   final String language;
   final int productIndex;
   final BuildContext context;
+  final String phoneNumber;
   
-  const LanguagesListItem(this.context,this.language,this.productIndex,{Key? key}) : super(key: key);
+  const LanguagesListItem(this.context,this.language,this.productIndex,{required this.phoneNumber, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +59,7 @@ class LanguagesListItem extends StatelessWidget {
       default :languageIndex = 10;
     }
 
-    Navigator.push(context,MaterialPageRoute(builder:(context)=>ShoppingList(languageIndex),));
+    Navigator.push(context,MaterialPageRoute(builder:(context)=>ShoppingList(languageIndex,phoneNumber:phoneNumber),));
   }
 
 

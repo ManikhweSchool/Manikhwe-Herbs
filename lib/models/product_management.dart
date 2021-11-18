@@ -120,6 +120,35 @@ class Language{
   static const imiphumelaUmsanka = 
   ['Uxosha Izichitho Nokubi Okuza Kuwe',];
 
+  static const imiphumelaMkhwangu = 
+  ['#####'];
+
+  static const imiphumelaUngibonise = 
+  ['Uyacacisa'];
+
+  static const imiphumelaIzazacacani = 
+  ['Uyacacisa'];
+
+  static const imiphumelaUbhinini = 
+  ['#####'];
+
+  static const imiphumelaAbangqongqozi = 
+  ['Bayangqongqoza'];
+
+  static const imiphumelaVelemoyeni = 
+  ['#####'];
+
+  static const imiphumelaBhemuphuphe = 
+  ['Ucacisa Amaphupho'];
+
+  static const imiphumelaUmazulazayithole = 
+  ['Ufuna Uze Uthole'];
+
+  static const howToUseBhemuphuphe = [
+    'Lomuthi Uyabhenywa.'
+  ];
+
+
   static const imiphumelaUmagwazucaca = 
   ['Wenza Isilwane Singangeni Egcekeni, Uxosha Abathakathi',];
 
@@ -129,8 +158,6 @@ class Language{
   static const imiphumelaImpathampatha = 
   ['########',];
 
-  static const imiphumelaUnukani = 
-  ['#########',];
   
   static const imiphumelaUkalumuzi = 
   ['#########',];
@@ -174,12 +201,29 @@ class Language{
   ['Uyahlonishwa',
   ];
 
+  static const imiphumelaImpenduli = 
+  [
+    'Uletha Impendulo',
+  ];
+
   static const imiphumelaUmabusane =
   ['Kubusa Wena',
   ];
 
+  static const imiphumelaAkabuye =
+  ['Kubusa Wena',
+  ];
+  static const howToUseAkabuye =
+  ['Shisa Lomuthi Ngo 00:00 Phakathi Nobusuku Izinsuku Eziwu-7, '
+  'Ubize Isithandwa Sakho Usho Ukuthi Asibuye, Anibuyelane.',
+  ];
+
   static const imiphumelaUmusaOmkhulu =
   ['Wenzelwa Umusa',
+  ];
+
+  static const imiphumelaGezaUmsamo =
+  ['Ugeza Idlozi Lakho, Loku Kubaluleke Kudlula Umuthi.',
   ];
 
   static const imiphumelaUmdatshukelwa =
@@ -202,9 +246,23 @@ class Language{
   ['####',
   ];
 
+  static const imiphumelaIntolwane =
+  ['####',
+  ];
+
   static const imiphumelaIbheka =
   ['Babukela Kuwe',
   ];
+
+  static const imiphumelaUmlahleni = 
+  ['Owokuyolahla',
+  ];
+
+  static const imiphumelaUmanzamhlophe = 
+  ['Uyakhanyisa',
+  ];
+
+  
 
   static const imiphumelaUzeneke =
   ['Bayaziletha Kuwe',
@@ -215,7 +273,7 @@ class Language{
   ];
 
   static const imiphumelaUmnyamathi =
-  ['####',
+  ['Ubanesithunzi Esikhulu Esisabekayo',
   ];
 
   static const imiphumelaUnhlanhlemhlophe =
@@ -254,6 +312,10 @@ class Language{
   ['Uyavusa',
   ];
 
+  static const imiphumelaDonsuthando =
+  ['Udonsa Uthando',
+  ];
+
   static const imiphumelaUmkhondweni =
   ['###',
   ];
@@ -274,6 +336,374 @@ class Language{
   ['Shisa Lomuthi Ubeyinsizi, Vuvuzele Esilondeni Sangasese, '
   'Ugcobe Namafutha Ahambisana Nalomuthi Kabili Ngosuku',
   ];
+
+  static const howToUseSikimi =
+  ['Lomuthi Uhlukene Kathathu, Yomithathu Uyisebenzisa Izinsuku Ezintathu Kulandelana.'
+  ];
+
+  static const howToUseSisegcekeni =
+  ['Phuphisa Izichitho Egcekeni.'
+  ];
+
+  static const imiphumelaVelabahleke =
+  ['Uvelabahleke.',
+  ];
+
+  static const imiphumelaUminimini =
+  [
+    '#######',
+  ];
+
+  static const imiphumelaUngange =
+  [
+    '#######',
+  ];
+
+  static const imiphumelaUmazwahlabayo =
+  [
+    'Uba Namazwi Ahlabayo',
+  ];
+
+  static const imiphumelaUsondela =
+  [
+    'Uyasondeza',
+  ];
+
+  static const imiphumelaIkhathaza = ['Uyakhathaza'];
+  static const imiphumelaIzwangomoya = ['###'];
+  static const imiphumelaUmalala = ['Uyalalisana'];
+  static const imiphumelaUmathithibala = ['Uyathithibalisa'];
+  static const imiphumelaIphamba = ['####'];
+  static const imiphumelaIsbhaha = ['####'];
+  static const imiphumelaIdlula = ['Liyadlulisa'];
+  static const imiphumelaIbutho = ['####'];
+  static const imiphumelaUvukamalibeni = ['####'];
+  static const imiphumelaInkunguyentaba = ['####'];
+  static const imiphumelaUmhlakaza = ['Uyahlakaza'];
+  static const imiphumelaUmwelela = ['####'];
+
+  static const imiphumelaIqhume = 
+  [
+    '#######',
+  ];
+
+  static const imiphumelaUqhatha = 
+  [
+    '######',
+  ];
+
+  static const imiphumelaUmashwilishwili =
+  [
+    '#######',
+  ];
+
+  static const imiphumelaSgenama =
+  ['####',
+  ];
+
+  static const imiphumelaUnongamela =
+  ['####',
+  ];
+
+  static const imiphumelaUmkhanyakude =
+  ['Uyagqama',
+  ];
+
+  static const imiphumelaUmayisaka =
+  ['####',
+  ];
+
+  static const imiphumelaUgobandlovu =
+  ['Ugoba Abakhululu Noma Abaphathi',
+  ];
+
+
+
+
+  static const imiphumelaIshongwe =
+  ['####',
+  ];
+
+  static const imiphumelaUmabopha =
+  ['Uyabopha Izinto',
+  ];
+
+  static const imiphumelaUnukani =
+  ['Bazibuza Beziphendula Ngawe.',
+  ];
+
+  static const imiphumelaNkomemnandi =
+  ['Uyashishabhe Ngaphansi.',
+  ];
+
+  static const imiphumelaMzimboshisayo =
+  ['Uyashishabhe Umzimba Wakho.',
+  ];
+
+  static const imiphumelaMavulakuvaliwe =
+  ['Kuvuleka Izinto Nomangabe Zivaliwe.',
+  ];
+
+  static const howToUseNkomemnandi = 'Phuza Ikota Yenkomishi Kathathu Ngelanga.';
+
+  static const imiphumelaIsiqunga =
+  ['Khipha Okubi',
+  ];
+
+  static const imiphumelaUmaphipha =
+  ['Ususa Ukungcola',
+  ];
+
+  static const imiphumelaMhlakazanhlansi =
+  ['Uhlakaza Ukubi Okwenziwe',
+  ];
+
+  static const imiphumelaSkhundla =
+  ['Uthola Isikhundla Emsebenzini',
+  ];
+
+  static const imiphumelaNgphuphe =
+  ['Susa Isinyama Kucace Amaphupho.',
+  ];
+
+  static const imiphumelaIlabatheka = ['#####',];
+  static const imiphumelaInguduza = ['#####',];
+  static const imiphumelaIxhaphosi = ['#####',];
+  static const imiphumelaUmavumbuka = ['#####',];
+  static const imiphumelaUmalenjane = ['#####',];
+  static const imiphumelaIshaladilezenyoka = ['#####',];
+  static const imiphumelaUgobho = ['#####',];
+  static const imiphumelaInhlaba = ['#####',];
+  static const imiphumelaUkotapeya = ['#####',];
+  static const imiphumelaUguava = ['#####',];
+
+  static const imiphumelaIthombonkala = ['#####',];
+  static const imiphumelaIntuma = ['#####',];
+  static const imiphumelaImpila = ['#####',];
+  static const imiphumelaUmhlanga = ['#####',];
+  static const imiphumelaUmathunga = ['Uyathunga Umzimba Ngaphakathi',];
+
+  static const imiphumelaBolisa = ['Uyabolisa Okubi Okwenziwe Noma Okwenziwa Kuwe.',];
+  static const howToUseBolisa = ['Uqoba Isigaqa Somuthi, Ufake Enkomishini Yetiye, '
+  'Ufake Iteabag Elize Nomuthi Hhayi Ozithengele Lona , Ufake Uju Oluze Nomuthi Hhayi Oythengele Lona.'
+  'Ufake Amanzi Abilayo, Uphuze Njengetiye. Emva Kwesikhathi Uma Usuzwa Engathi Ungahlanza, '
+  'Beka Amanzi Afudumale Abe U-5L, Uzobe Usuphalaza Ngawo Lamanzi Aku 5L.',];
+
+  static const imiphumelaMhlonipheni = ['Uhlonipheka Okwangampela',];
+
+  static const imiphumelaUmlahlankosi = ['Uyalahla Futhi Uyathatha.',];
+
+  static const imiphumelaMitha = ['Khululwa Noma Isinya Sakho Singabambi.',];
+
+  static const imiphumelaUmadlozane = ['##########'];
+  static const imiphumelaMampondomunyi = ['##########'];
+
+  static const imiphumelaMdayisiwecala = ['Uphephisa Umdayisa Wecala Kwabomthetho, Nasezitheni.'];
+  static const howToUseMdayisiwecala = ['Gcaba Esphundu, Nasencegeleni.'];
+
+  static const imiphumelaQashwa = ['Uyaqashwa Uma Ufuna Umsebenzi Noma Ufesa Ezindaweni.',];
+  static const howToUseQashwa = [
+    'Uthenga Inkukhu Emhlophe Ulamthuthu Uyihlinze Lapho Ushisela Khona Impepho, Ucele Ukuthola Umsebenzi. Bese '
+    'Uwuhlukanisa Kabili Lomuthi, Owokuqala Uwufaka Emanzini Afudumele Ufake Nosu(Inyama Yangaphakathi), '
+    'Umlotha Wasekhaya Owezinkuni, Hhhayi Owamaplangwe,'
+    'Udoti Wengingila Yenkukhu Nesikhumba Sengingila. Ugeza Ngaphandle Kwegceke Ngalomuthi Wokuqala.'
+    'Owesibili Uwufaka Inyongo Kuphela, Ugqume, Ugeze, Uphalaze, 3 days Emva Kokuba Usuyile Ukuyogeza.'];
+
+  static const howToUseGezaUmsamo = [
+    'Faka Lomuthi Ku20 Litre Wamanzi Afudumele Kusukela  Ebusuku '
+    'Kuze Kube Ntambama Ngakusasa. Kulelo Ntambama Komunye U-5 Litre '
+    'Faka Umuthi Ekubeni Uwakhanyisile Amakhandlela Axubile Imibala, '
+    'Shisa Impepho Ukhulume Emsamu Ube Uphethe Izinkukhu Ezimhlophe Ezimbili Olamthuthu, '
+    'Usho Ukuthi Uyabageza Namhlanje. Mawqeda Ukukhuluma, Hlinza Izinkukhu '
+    'Ufake Izinyongo Zalezi Nkukhu Kulomuthu Oku-5 Litre, Faka Igazi '
+    'Lalezi Nkukhu Kulomuthi Oku-20 Litre Naloku Okuphakathi Kwizingingila, Nesikhumba Sengingila.'
+    'Qal Uchele Ngomuthi Oku-20L, Uqala Emsamu Uze Egcekeni Lonke Ngomshanelo Omushasha Ube '
+    'Ukhuluma, Wenza Into Eyodwa Nangalona Umuthi Oku-5L, Umuthi Osele Onganagazi '
+    'Ongananyongo, Ongekho Emanzini, Niphalaza Ngawo Niwumndeni Ngaphandle Kwegceke Lasekhaya Ngakusasa Ekuseni, '
+    'Amakhandlela Awacishwa',
+  ];
+
+  static const imiphumelaAmafuthengwenya =
+  [
+    'Abolisa Idliso',
+  ];
+
+  static const howToUseAmafuthengwenya =
+  [
+    'Khotha, Gcoba Esifubeni',
+  ];
+
+  static const imiphumelaIngwavuma =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaAbakhokhe =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaIhluze =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaAmafuthenhlwathi = 
+  [
+    'Apholisa Isilonda',
+  ];
+
+  static const howToUseAmafuthenhlwathi =
+  [
+    'Uyawagcoba Esilondeni'
+  ];
+
+  static const imiphumelaKuthole = 
+  [
+    'Uthola Leyonto Oyifunayo Ebantwini Abaningi.',
+  ];
+
+  static const howToUseKuthole =
+  [
+    'Cwilisa Emanzini Abandayo Uphalaze.'
+  ];
+
+  static const imiphumelaWozanibathengi = 
+  [
+    'Ulanda Abathengi Ngalendlela',
+  ];
+
+  static const imiphumelaUngwebunkulu = 
+  [
+    '##########',
+  ];
+
+  static const imiphumelaUbhubhubhu = 
+  [
+    '##########',
+  ];
+
+  static const imiphumelaUmqaqi = 
+  [
+    'Uyaqaqa',
+  ];
+
+  static const imiphumelaUmbili = 
+  [
+    'Uhambisa Izinto Ngambili',
+  ];
+
+  static const imiphumelaSukasambe = 
+  [
+    'Owokuthatha',
+  ];
+
+  static const imiphumelaUngqangendlela = 
+  [
+    '#####',
+  ];
+
+  static const imiphumelaMazulazayithole = 
+  [
+    'Uyifuna Uze Uyithole Leyonto',
+  ];
+
+
+  static const imiphumelaZaqaqeka = 
+  [
+    'Kuqaqeka Izinto Zakho Kulomuthi.',
+  ];
+
+  static const imiphumelaNdindibala = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaMakhuthuka = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaMlomomnandi = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUmganu = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUmaguqu = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUdakwa = 
+  [
+    'Uyadakwana',
+  ];
+
+  static const imiphumelaUmoyawezwe = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaImpishimpishi = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaNhliziyonkulu = 
+  [
+    'Owothando',
+  ];
+
+  static const imiphumelaMoyawezwe = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUvukabonke = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaIsigqabosothando = 
+  [
+    'Senza Uthandeke Kakhulu',
+  ];
+  static const howToUseIsigqabosothando = 
+  [
+    'Gcoba Emashiyeni, Ugcobe Nezandla, Ungayigcaba Nenduku Yakho Mawuthanda.',
+  ];
+
+  static const imiphumelaUmhungulo = 
+  [
+    'Ubuyisa Osebhungukile',
+  ];
+
+  static const imiphumelaRoslina = 
+  [
+    'Uthandwa Izintombi Kakhulu, Kodwa Awufakwa Kakhulu',
+  ];
+
+  static const imiphumelaUnginakile = 
+  [
+    'Uyamnaka Umuntu',
+  ];
+  static const imiphumelaUngibonisele = 
+  [
+    '########',
+  ];
+
+  static const howToUseWozanibathengi =
+  [
+    'Uqale Ugeze Ngo \'Qalala\' Usuku Olulodwa, Usebenzise \'U-Sukakimi\' Izinsuku Ezintathu Zilandelana. '
+    'Usungaqalake Ushise Lomuthi  Lapho Udayisela Khona, Ngelahle Elithengwayo Ubusuku Bonke Izinsuku Ezintathu Zilandelana.'
+  ];
+
+
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   static const chelaDirections = ['Chela',];
@@ -301,6 +731,7 @@ abstract class Product{
   double price;
   String language;
   int languageIndex;
+   String type = 'Umuthi';
   
   bool iyagquma;
   bool iyageza;
@@ -311,7 +742,7 @@ abstract class Product{
 
   Product(this.languageIndex,{
     this.name = '',
-    this.price = 0,
+    this.price = 100,
     this.language = 'Zulu',
     this.iyagquma = false,
     this.iyageza = false,
@@ -324,6 +755,7 @@ abstract class Product{
       case 'Zulu':languageIndex = 0;break;
 
     }
+    price = 100;
   }
 
   void generateProductName(){
@@ -340,7 +772,9 @@ abstract class Isiwasho extends Product{
   late Owner owner;
   var indredients = [];
 
-  Isiwasho(String name,int languageIndex,this.indredients) : super(languageIndex,name:name);
+  Isiwasho(String name,int languageIndex,this.indredients) : super(languageIndex,name:name){
+    type = 'Isiwasho';
+  }
 
 }
 
@@ -707,6 +1141,8 @@ class Sukadeda extends Isiwasho{
 abstract class Ikhubalo extends Product{
   bool forGoodUse;
   bool forBadUse;
+  String part = 'amaxholo';
+  String description = '';
 
   Ikhubalo(String name,int languageIndex,
   {this.forBadUse = false,this.forGoodUse = false}):super(languageIndex,name:name);
@@ -717,6 +1153,135 @@ abstract class Ikhubalo extends Product{
 
   void setForBadUse(bool forBadUse){
     this.forBadUse = forBadUse;
+  }
+}
+
+class Velabahleke extends Ikhubalo{
+
+  Velabahleke(int languageIndex,{forGoodUse =true}):
+  super('Velabahleke',
+  languageIndex);
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [
+      Language.imiphumelaVelabahleke[languageIndex],
+    ];
+  }
+
+  @override 
+  String howToUse(){
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Mavulakuvaliwe extends Ikhubalo{
+
+  Mavulakuvaliwe(int languageIndex,{forGoodUse =true}):
+  super('Mavulakuvaliwe',
+  languageIndex);
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [
+      Language.imiphumelaMavulakuvaliwe[languageIndex],
+    ];
+  }
+
+  @override 
+  String howToUse(){
+    
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+}
+
+class Sgenama extends Ikhubalo{
+
+  bool esibovu;
+
+  Sgenama(int languageIndex,this.esibovu,{forGoodUse =true}):
+  super('Sgenama',
+  languageIndex);
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [
+      Language.imiphumelaSgenama[languageIndex],
+    ];
+  }
+
+  @override 
+  String howToUse(){
+    
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+}
+
+class Maphipha extends Ikhubalo{
+
+  Maphipha(int languageIndex,{forGoodUse =true}):
+  super('Maphipha',
+  languageIndex);
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [
+      Language.imiphumelaUmaphipha[languageIndex],
+    ];
+  }
+
+  @override 
+  String howToUse(){
+    
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+}
+
+class Mhlakazanhlansi extends Ikhubalo{
+
+  Mhlakazanhlansi(int languageIndex,{forGoodUse =true}):
+  super('Mhlakazanhlansi',
+  languageIndex);
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [
+      Language.imiphumelaMhlakazanhlansi[languageIndex],
+    ];
+  }
+
+  @override 
+  String howToUse(){
+    
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+}
+
+
+class Isiqunga extends Ikhubalo{
+
+  Isiqunga(int languageIndex,{forGoodUse =true}):
+  super('Isiqunga',
+  languageIndex);
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [
+      Language.imiphumelaIsiqunga[languageIndex],
+    ];
+  }
+
+  @override 
+  String howToUse(){
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
   }
 }
 
@@ -961,6 +1526,7 @@ class Umabelejongosi extends Ikhubalo{
   
 }
 
+// Buvimbo
 class Impathampatha extends Ikhubalo{
 
   Impathampatha(int languageIndex,{forGoodUse =true}):
@@ -1327,6 +1893,7 @@ class Uzeneke extends Ikhubalo{
   
 }
 
+// Unkungwini
 class Ibheka extends Ikhubalo{
   Ibheka(int languageIndex,{forGoodUse =true}):
   super('Ibheka',
@@ -1369,6 +1936,7 @@ class Imfingo extends Ikhubalo{
   
 }
 
+// Ingobamakhosi
 class Umnyamathi extends Ikhubalo{
   Umnyamathi(int languageIndex,{forGoodUse =true}):
   super('Umnyamathi',
@@ -1605,6 +2173,1786 @@ class Icishamlilo extends Ikhubalo{
   
 }
 
+class Ilabatheka extends Ikhubalo{
+  Ilabatheka(int languageIndex,{forGoodUse =true}):
+  super('Ilabatheka',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIlabatheka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Inguduza extends Ikhubalo{
+  Inguduza(int languageIndex,{forGoodUse =true}):
+  super('Inguduza',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaInguduza[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ixhaphosi extends Ikhubalo{
+  Ixhaphosi(int languageIndex,{forGoodUse =true}):
+  super('Ixhaphosi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIxhaphosi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umavumbuka extends Ikhubalo{
+  Umavumbuka(int languageIndex,{forGoodUse =true}):
+  super('Umavumbuka',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmavumbuka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umalenjane extends Ikhubalo{
+  Umalenjane(int languageIndex,{forGoodUse =true}):
+  super('Umalenjane',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmalenjane[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ishaladilezenyoka extends Ikhubalo{
+  Ishaladilezenyoka(int languageIndex,{forGoodUse =true}):
+  super('Ishaladilezenyoka',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIshaladilezenyoka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Inhlaba extends Ikhubalo{
+  Inhlaba(int languageIndex,{forGoodUse =true}):
+  super('Inhlaba',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaInhlaba[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ugobho extends Ikhubalo{
+  Ugobho(int languageIndex,{forGoodUse =true}):
+  super('Ugobho',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUgobho[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ukotapeya extends Ikhubalo{
+  Ukotapeya(int languageIndex,{forGoodUse =true}):
+  super('Ukotapeya',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUkotapeya[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Uguava extends Ikhubalo{
+  Uguava (languageIndex,{forGoodUse =true}):
+  super('Uguava',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUguava[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umathunga extends Ikhubalo{
+  Umathunga (languageIndex,{forGoodUse =true}):
+  super('Umathunga',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmathunga[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ithombonkala extends Ikhubalo{
+  Ithombonkala (languageIndex,{forGoodUse =true}):
+  super('Ithombonkala',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIthombonkala[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Intuma extends Ikhubalo{
+  Intuma (languageIndex,{forGoodUse =true}):
+  super('Intuma',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIntuma[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+// Amfutha omhlaba
+class Impila extends Ikhubalo{
+  Impila (languageIndex,{forGoodUse =true}):
+  super('Impila',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaImpila[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umhlanga extends Ikhubalo{
+  Umhlanga (languageIndex,{forGoodUse =true}):
+  super('Umhlanga',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmhlanga[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umabopha extends Ikhubalo{
+  Umabopha (languageIndex,{forGoodUse =true}):
+  super('Umabopha',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmabopha[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ishongwe extends Ikhubalo{
+  Ishongwe (languageIndex,{forGoodUse =true}):
+  super('Ishongwe',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyachatha = true;
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIshongwe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umlahleni extends Ikhubalo{
+  Umlahleni (languageIndex,{forGoodUse =true}):
+  super('Umlahleni',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmlahleni[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umanzamhlophe extends Ikhubalo{
+  Umanzamhlophe (languageIndex,{forGoodUse =true}):
+  super('Umanzamhlophe',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyaphuzwa = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmanzamhlophe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umlahlankosi extends Ikhubalo{
+  Umlahlankosi (languageIndex,{forGoodUse =true}):
+  super('Umlahlankosi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyaphuzwa = true;
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmlahlankosi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Unongamela extends Ikhubalo{
+  Unongamela (languageIndex,{forGoodUse =true}):
+  super('Unongamela',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyaphuzwa = true;
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUnongamela[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umkhanyakude extends Ikhubalo{
+  Umkhanyakude (languageIndex,{forGoodUse =true}):
+  super('Umkhanyakude',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyaphuzwa = true;
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmkhanyakude[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umayisaka extends Ikhubalo{
+  String umbala;
+  Umayisaka (languageIndex,this.umbala,{forGoodUse =true}):
+  super('Umayisaka',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    iyaphuzwa = true;
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmayisaka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umadlozane extends Ikhubalo{
+  
+  Umadlozane (languageIndex,{forGoodUse =true}):
+  super('Umadlozane',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+    iyachela = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmadlozane[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ubhinini extends Ikhubalo{
+  
+  Ubhinini (languageIndex,{forGoodUse =true}):
+  super('Ubhinini',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+    iyachela = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUbhinini[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Mkhwangu extends Ikhubalo{
+  
+  Mkhwangu (languageIndex,{forGoodUse =true}):
+  super('Mkhwangu',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+    iyachela = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaMkhwangu[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Izazacacani extends Ikhubalo{
+  
+  Izazacacani (languageIndex,{forGoodUse =true}):
+  super('Izazacacani',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+    iyachela = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIzazacacani[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Velemoyeni extends Ikhubalo{
+  
+  Velemoyeni (languageIndex,{forGoodUse =true}):
+  super('Velemoyeni',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+    iyachela = true;
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaVelemoyeni[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChelaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umashwilishwili extends Ikhubalo{
+  
+  Umashwilishwili (languageIndex,{forGoodUse =true}):
+  super('Umashwilishwili',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmashwilishwili[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Iqhume extends Ikhubalo{
+  
+  Iqhume (languageIndex,{forGoodUse =true}):
+  super('Iqhume',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIqhume[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Uminimini extends Ikhubalo{
+  
+  Uminimini (languageIndex,{forGoodUse =true}):
+  super('Uminimini',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUminimini[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Uqhatha extends Ikhubalo{
+  
+  Uqhatha (languageIndex,{forGoodUse =true}):
+  super('Uqhatha',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUqhatha[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Impenduli extends Ikhubalo{
+  
+  Impenduli (languageIndex,{forGoodUse =true}):
+  super('Impenduli',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaImpenduli[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Intolwane extends Ikhubalo{
+  
+  Intolwane (languageIndex,{forGoodUse =true}):
+  super('Intolwane',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIntolwane[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ingwavuma extends Ikhubalo{
+  
+  Ingwavuma (languageIndex,{forGoodUse =true}):
+  super('Ingwavuma',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIngwavuma[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ihluze extends Ikhubalo{
+  
+  Ihluze (languageIndex,{forGoodUse =true}):
+  super('Ihluze',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIhluze[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umwelela extends Ikhubalo{
+  
+  Umwelela (languageIndex,{forGoodUse =true}):
+  super('Umwelela',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmwelela[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umhlakaza extends Ikhubalo{
+  
+  Umhlakaza (languageIndex,{forGoodUse =true}):
+  super('Umhlakaza',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmhlakaza[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Inkunguyentaba extends Ikhubalo{
+  
+  Inkunguyentaba (languageIndex,{forGoodUse =true}):
+  super('Inkunguyentaba',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaInkunguyentaba[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Uvukamalibeni extends Ikhubalo{
+  
+  Uvukamalibeni (languageIndex,{forGoodUse =true}):
+  super('Uvukamalibeni',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUvukamalibeni[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ibutho extends Ikhubalo{
+  
+  Ibutho (languageIndex,{forGoodUse =true}):
+  super('Ibutho',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIbutho[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Iphamba extends Ikhubalo{
+  
+  Iphamba (languageIndex,{forGoodUse =true}):
+  super('Iphamba',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIphamba[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Idlula extends Ikhubalo{
+  
+  Idlula (languageIndex,{forGoodUse =true}):
+  super('Idlula',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIdlula[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umathithibala extends Ikhubalo{
+  
+  Umathithibala (languageIndex,{forGoodUse =true}):
+  super('Umathithibala',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmathithibala[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umalala extends Ikhubalo{
+  
+  Umalala (languageIndex,{forGoodUse =true}):
+  super('Umalala',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmalala[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Isbhaha extends Ikhubalo{
+  
+  Isbhaha (languageIndex,{forGoodUse =true}):
+  super('Isbhaha',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIsbhaha[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Izwangomoya extends Ikhubalo{
+  
+  Izwangomoya (languageIndex,{forGoodUse =true}):
+  super('Izwangomoya',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIzwangomoya[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ikhathaza extends Ikhubalo{
+  
+  Ikhathaza (languageIndex,{forGoodUse =true}):
+  super('Ikhathaza',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIkhathaza[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umthole extends Ikhubalo{
+  
+  Umthole (languageIndex,{forGoodUse =true}):
+  super('Umthole',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmthole[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ungwebunkulu extends Ikhubalo{
+  
+  Ungwebunkulu (languageIndex,{forGoodUse =true}):
+  super('Ungwebunkulu',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUngwebunkulu[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ubhubhubhu extends Ikhubalo{
+  
+  Ubhubhubhu (languageIndex,{forGoodUse =true}):
+  super('Ubhubhubhu',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUbhubhubhu[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umqaqi extends Ikhubalo{
+  
+  Umqaqi (languageIndex,{forGoodUse =true}):
+  super('Umqaqi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmqaqi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umbili extends Ikhubalo{
+  
+  Umbili (languageIndex,{forGoodUse =true}):
+  super('Umbili',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmbili[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Sukasambe extends Ikhubalo{
+  
+  Sukasambe (languageIndex,{forGoodUse =true}):
+  super('Sukasambe',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaSukasambe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Mazulazayithole extends Ikhubalo{
+  
+  Mazulazayithole (languageIndex,{forGoodUse =true}):
+  super('Mazulazayithole',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaMazulazayithole[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Mhungulo extends Ikhubalo{
+  
+  Mhungulo (languageIndex,{forGoodUse =true}):
+  super('Mhungulo',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmhungulo[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Mampondomunyi extends Ikhubalo{
+  
+  Mampondomunyi (languageIndex,{forGoodUse =true}):
+  super('Mampondomunyi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaMampondomunyi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ndindibala extends Ikhubalo{
+  
+  Ndindibala (languageIndex,{forGoodUse =true}):
+  super('Ndindibala',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaNdindibala[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Nhliziyonkulu extends Ikhubalo{
+  
+  Nhliziyonkulu (languageIndex,{forGoodUse =true}):
+  super('Nhliziyonkulu',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaNhliziyonkulu[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Dakwa extends Ikhubalo{
+  
+  Dakwa (languageIndex,{forGoodUse =true}):
+  super('Dakwa',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUdakwa[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaChathaPhuzaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Uvukabonke extends Ikhubalo{
+  
+  Uvukabonke (languageIndex,{forGoodUse =true}):
+  super('Uvukabonke',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUvukabonke[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ungqangendlela extends Ikhubalo{
+  
+  Ungqangendlela (languageIndex,{forGoodUse =true}):
+  super('Ungqangendlela',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUngqangendlela[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ungange extends Ikhubalo{
+  
+  Ungange (languageIndex,{forGoodUse =true}):
+  super('Ungange',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUngange[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Usondela extends Ikhubalo{
+  
+  Usondela (languageIndex,{forGoodUse =true}):
+  super('Usondela',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUsondela[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umazwahlabayo extends Ikhubalo{
+  
+  Umazwahlabayo (languageIndex,{forGoodUse =true}):
+  super('Umazwahlabayo',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmazwahlabayo[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umazulazayithole extends Ikhubalo{
+  
+  Umazulazayithole (languageIndex,{forGoodUse =true}):
+  super('Umazulazayithole',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmazulazayithole[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Umoyawezwe extends Ikhubalo{
+  
+  Umoyawezwe (languageIndex,{forGoodUse =true}):
+  super('Umoyawezwe',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUmoyawezwe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Abangqongqozi extends Ikhubalo{
+  
+  Abangqongqozi (languageIndex,{forGoodUse =true}):
+  super('Abangqongqozi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaAbangqongqozi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Makhuthuka extends Ikhubalo{
+  
+  Makhuthuka (languageIndex,{forGoodUse =true}):
+  super('Makhuthuka',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaMakhuthuka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Mlomomnandi extends Ikhubalo{
+  
+  Mlomomnandi (languageIndex,{forGoodUse =true}):
+  super('Mlomomnandi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaMlomomnandi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Roslina extends Ikhubalo{
+  
+  Roslina (languageIndex,{forGoodUse =true}):
+  super('Roslina',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaRoslina[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Impishimpishi extends Ikhubalo{
+  
+  Impishimpishi (languageIndex,{forGoodUse =true}):
+  super('Impishimpishi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaImpishimpishi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Nginakile extends Ikhubalo{
+  
+  Nginakile (languageIndex,{forGoodUse =true}):
+  super('Nginakile',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUnginakile[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Ungibonisele extends Ikhubalo{
+  
+  Ungibonisele (languageIndex,{forGoodUse =true}):
+  super('Nginakilele',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaUngibonisele[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Donsuthando extends Ikhubalo{
+  
+  Donsuthando (languageIndex,{forGoodUse =true}):
+  super('Donsuthando',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaDonsuthando[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+
+class Supplier{
+  String name;
+  String location;
+  Supplier({required this.location,required this.name});
+}
+
+abstract class Amafutha extends Product{
+  String isilwane;
+  String enzani;
+  List<Supplier> suppliers = [];
+  Amafutha(int languageIndex,{required this.isilwane, required this.enzani}):super(languageIndex,name:enzani){
+    
+    suppliers.add(Supplier(location: 'Dalton',name:'Komama'));
+  }
+
+}
+
+class Amafuthengwenya extends Amafutha{
+
+
+  Amafuthengwenya(int languageIndex):super(languageIndex,isilwane:'Ngwenya',enzani:'Amafutha Edliso');
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaAmafuthengwenya[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseAmafuthengwenya[languageIndex];
+  }
+  
+}
+
+class Amafuthenhlwathi extends Amafutha{
+
+  Amafuthenhlwathi(int languageIndex):super(languageIndex,isilwane:'Nhlwathi',enzani:'Amafutha Apholisa Isilonda');
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaAmafuthenhlwathi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseAmafuthenhlwathi[languageIndex];
+  }
+  
+}
 
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -1620,6 +3968,8 @@ abstract class Umuthi extends Product{
   late Owner owner;
   List<Ikhubalo> amakhubalo = [];
   List<String> izilwane = [];
+  List<String> extras = [];
+ 
   Umuthi(String name,int languageIndex):super(languageIndex,name:name);
   
 
@@ -1648,6 +3998,7 @@ class Thandeka extends Umuthi{
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
+    price = 140;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1678,6 +4029,7 @@ class Thandekile extends Umuthi{
 
     Owner ganyile = Owner("Lwandile Ganyile", "Mayville Cato Crest 6257", true);
     owner = ganyile;
+    price = 165;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1716,6 +4068,7 @@ class Mehlothando extends Umuthi{
 
     Owner makhuzwayo = Owner("Makhuzwayo", "Dalton", false);
     owner = makhuzwayo;
+    price = 175;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1745,10 +4098,13 @@ class Thengani extends Umuthi{
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
+    price = 190;
 
     iyachela = true;
 
     amakhubalo.add(Umthathe(languageIndex));
+
+    extras.add('Brown Sugar');
   }
 
   @override
@@ -1773,6 +4129,7 @@ class Khanyisa extends Umuthi{
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
+    price = 150;
 
     iyaphalaza = true;
     amakhubalo.add(IphakamaLamanzi(languageIndex));
@@ -1807,6 +4164,7 @@ class Belungubami extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
+    price = 300;
     
     amakhubalo.add(Uskhundla(languageIndex));
     amakhubalo.add(Umyezane(languageIndex));
@@ -1877,6 +4235,7 @@ class Usemndenini extends Umuthi{
 
     Owner makhuzwayo = Owner("Makhuzwayo", "Dalton", false);
     owner = makhuzwayo;
+    price = 165;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1907,6 +4266,7 @@ class Sukakimi extends Umuthi{
 
     Owner magumede = Owner("Magumede", "Dalton", false);
     owner = magumede;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1935,8 +4295,9 @@ class Qalala extends Umuthi{
 
   Qalala(int languageIndex):super('Qalala',languageIndex){
 
-    Owner ganyile = Owner("Ganyile Lwandile", "Mayville Cato Crest 6257", false);
+    Owner ganyile = Owner("Ganyile Lwandile", "Mayville Cato Crest 6257", true);
     owner = ganyile;
+    price = 120;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1967,6 +4328,7 @@ class Safisithosami extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
+    price = 250;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1991,4 +4353,798 @@ class Safisithosami extends Umuthi{
     
     return Language.howToUseSafisithosami[languageIndex];
   }
+}
+
+class Sikimi extends Umuthi{
+
+  Sikimi(int languageIndex):super('Sikimi',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 150;
+
+    iyagquma = true;
+    iyaphalaza = true;
+    iyageza = true;
+    amakhubalo.add(Isiqunga(languageIndex)); // 3 days
+    amakhubalo.add(Unukani(languageIndex, false)); // 3 days
+    amakhubalo.add(Velabahleke(languageIndex)); // 3 days Velabahleke and Mavulakuvaliwe
+    amakhubalo.add(Mavulakuvaliwe(languageIndex)); 
+
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaIsiqunga[languageIndex],
+      Language.imiphumelaUnukani[languageIndex],
+      Language.imiphumelaMavulakuvaliwe[languageIndex],
+      Language.imiphumelaVelabahleke[languageIndex],
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.howToUseSikimi[languageIndex];
+  }
+}
+
+class Sisegcekeni extends Umuthi{
+
+  Sisegcekeni(int languageIndex):super('Sikimi',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 200;
+    
+    iyachela = true;
+    amakhubalo.add(Sgenama(languageIndex,true)); // noma esinjani i'm not sure.
+    amakhubalo.add(Mhlakazanhlansi(languageIndex)); 
+    amakhubalo.add(Maphipha(languageIndex)); 
+    
+
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaSgenama[languageIndex],
+      Language.imiphumelaMhlakazanhlansi[languageIndex],
+      Language.imiphumelaUmaphipha[languageIndex],
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.howToUseSisegcekeni[languageIndex];
+  }
+}
+
+class Mzimboshisayo extends Umuthi{
+
+  Mzimboshisayo(int languageIndex):super('Mzimboshisayo',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 300;
+    
+    iyachela = true;
+    amakhubalo.add(Ilabatheka(languageIndex)); 
+    amakhubalo.add(Inguduza(languageIndex)); 
+    amakhubalo.add(Ixhaphosi(languageIndex)); 
+    amakhubalo.add(Umavumbuka(languageIndex));
+    Umalenjane umalenjane = Umalenjane(languageIndex);
+    umalenjane.part = 'Roots';
+    amakhubalo.add(umalenjane);
+    Ishaladilezenyoka ishaladilezenyoka = Ishaladilezenyoka(languageIndex);
+    ishaladilezenyoka.part = 'Roots';
+    amakhubalo.add(ishaladilezenyoka);
+    amakhubalo.add(Inhlaba(languageIndex));
+    amakhubalo.add(Ugobho(languageIndex));
+    amakhubalo.add(Ukalumuzi(languageIndex));
+    Ukotapeya ukotapeya = Ukotapeya(languageIndex);
+    ukotapeya.part = 'Leaves';
+    amakhubalo.add(ukotapeya); // leaves
+    Uguava uguava = Uguava(languageIndex);
+    uguava.part = 'Leaves';
+    amakhubalo.add(uguava); // leaves
+
+    extras.add('Alarm');
+ 
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaMzimboshisayo[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.phuzaOnlyMuthiDirections[languageIndex]  + ' Ikota Yenkomishi Kathathu Ngelanga.';
+  }
+}
+
+class Mitha extends Umuthi{
+
+  Mitha(int languageIndex):super('Mitha',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 300;
+    
+    iyachela = true;
+    amakhubalo.add(Ithombonkala(languageIndex)); 
+    amakhubalo.add(Inguduza(languageIndex));    
+    Intuma intuma = Intuma(languageIndex);
+    intuma.description = 'Enkulu';
+    amakhubalo.add(intuma);
+    Umhlanga umhlanga = Umhlanga(languageIndex);
+    umhlanga.part = 'Roots';
+    amakhubalo.add(umhlanga);
+    amakhubalo.add(Impila(languageIndex));
+    amakhubalo.add(Sgenama(languageIndex,false));
+    amakhubalo.add(Umathunga(languageIndex));
+    amakhubalo.add(Ilabatheka(languageIndex)); 
+ 
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaMitha[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.phuzaChathaMuthiDirections[languageIndex] + '. Uchatha Ngamanzi Afudumele.';
+  }
+}
+
+class Nkomemnandi extends Umuthi{
+
+  Nkomemnandi(int languageIndex):super('Nkomemnandi',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 300;
+    
+    iyachela = true;
+    amakhubalo.add(Ilabatheka(languageIndex)); 
+    amakhubalo.add(Ishongwe(languageIndex)); 
+    amakhubalo.add(Umathunga(languageIndex)); 
+    amakhubalo.add(Umabopha(languageIndex));
+   
+ 
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaNkomemnandi[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.howToUseNkomemnandi[languageIndex];
+  }
+}
+
+class Qashwa extends Umuthi{
+
+  Qashwa(int languageIndex):super('Qashwa',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 150;
+    
+    iyachela = true;
+    amakhubalo.add(Umlahleni(languageIndex)); 
+    amakhubalo.add(Umanzamhlophe(languageIndex)); 
+    amakhubalo.add(Umlahlankosi(languageIndex)); 
+    amakhubalo.add(Inhlambamanzi(languageIndex));
+    amakhubalo.add(Isiqunga(languageIndex));
+ 
+    extras.add('Inkukhu(Ulamthuthu) Emhlophe.');
+    extras.add('Umlotha Wasekhaya Owezinkuni, Hhhayi Owamaplangwe.');
+  
+
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaQashwa[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.howToUseQashwa[languageIndex];
+  }
+}
+
+class Skhundla extends Umuthi{
+
+  Skhundla(int languageIndex):super('Skhundla',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 300;
+    
+    iyachela = true;
+    amakhubalo.add(Unongamela(languageIndex)); 
+    amakhubalo.add(Umayisaka(languageIndex,'Omhlophe')); 
+    amakhubalo.add(Umkhanyakude(languageIndex)); 
+ 
+    izilwane.add('Ndlulamithi Oil');
+
+    extras.add('Ungathola Negobandlovu Uligaye Ulibheme Uma Usuya Kulabo Ofuna Ukubagoba.');
+  
+
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaSkhundla[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class GezaUmsamo extends Umuthi{
+
+  GezaUmsamo(int languageIndex):super('Geza Umsamo',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 300;
+    
+    iyachela = true;
+    amakhubalo.add(Umadlozane(languageIndex)); 
+    amakhubalo.add(Isiqunga(languageIndex)); 
+    amakhubalo.add(Mavulakuvaliwe(languageIndex)); 
+
+    extras.add('Izinkukhu Ezimhlophe Ezimbili Olamthuthu.');
+    extras.add('Amakhandlela Awu-10 Imibala Eyehlukene.');
+  
+
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaGezaUmsamo[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Bhemuphuphe extends Umuthi{
+
+  Bhemuphuphe(int languageIndex):super('Bhemuphuphe',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 150;
+    
+    iyachela = true;
+    amakhubalo.add(Umkhondweni(languageIndex)); 
+    amakhubalo.add(Ubhinini(languageIndex)); 
+    amakhubalo.add(Mkhwangu(languageIndex)); 
+    amakhubalo.add(UvumaOmhlophe(languageIndex)); 
+    amakhubalo.add(Velemoyeni(languageIndex)); 
+    amakhubalo.add(Izazacacani(languageIndex)); 
+ 
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaBhemuphuphe[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.howToUseBhemuphuphe[languageIndex];
+  }
+}
+
+class Mhlonipheni extends Umuthi{
+
+  Mhlonipheni(int languageIndex):super('Mhlonipheni',languageIndex){
+
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    price = 220;
+    
+    iyachela = true;
+    amakhubalo.add(Umnyamathi(languageIndex)); 
+    amakhubalo.add(Insulansula(languageIndex)); 
+    amakhubalo.add(Umashwilishwili(languageIndex)); 
+    amakhubalo.add(Uminimini(languageIndex)); 
+    amakhubalo.add(Uqhatha(languageIndex)); 
+    amakhubalo.add(Impenduli(languageIndex)); 
+    amakhubalo.add(Ibheka(languageIndex));
+    amakhubalo.add(Iqhume(languageIndex));
+    amakhubalo.add(Umabusane(languageIndex));
+    amakhubalo.add(Umyezane(languageIndex));
+ 
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaMhlonipheni[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Sabeka extends Umuthi{
+
+  Sabeka(int languageIndex):super('Sabeka',languageIndex){
+
+    Owner ganyile = Owner("Ganyile Lwandile", "Mayville Cato Crest 6257", true);
+    owner = ganyile;
+    price = 320;
+
+    iyagquma = true;
+    iyaphalaza = true;
+    iyageza = true;
+    iyachela = true;
+    amakhubalo.add(Umnyamathi(languageIndex)); 
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaUmnyamathi[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Ngphuphe extends Umuthi{
+
+  Ngphuphe(int languageIndex):super('Ngphuphe',languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 150;
+
+    iyagquma = true;
+    iyaphalaza = true;
+    iyageza = true;
+    amakhubalo.add(Intolwane(languageIndex)); 
+    amakhubalo.add(Umlahlankosi(languageIndex)); 
+    amakhubalo.add(Impathampatha(languageIndex)); 
+    
+    extras.add('Impepho');
+    extras.add('Hlanganisa Lemithi Ngokulingana.');
+
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaNgphuphe[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Abakhokhe extends Umuthi{
+
+  Abakhokhe(int languageIndex):super('Abakhokhe',languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 280;
+
+    iyagquma = true;
+    iyaphalaza = true;
+    iyageza = true;
+    amakhubalo.add(Intolwane(languageIndex)); 
+    amakhubalo.add(Ingwavuma(languageIndex)); 
+    amakhubalo.add(Ihluze(languageIndex)); 
+
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaAbakhokhe[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Mdayisiwecala extends Umuthi{
+
+  Mdayisiwecala(int languageIndex):super('Mdayisiwecala',languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 1950;
+
+    iyagquma = true;
+    iyaphalaza = true;
+    iyageza = true;
+    amakhubalo.add(Ikhathaza(languageIndex)); 
+    amakhubalo.add(Ibheka(languageIndex)); 
+    amakhubalo.add(Izwangomoya(languageIndex)); 
+
+    amakhubalo.add(Umalala(languageIndex)); 
+    amakhubalo.add(Umathithibala(languageIndex)); 
+    amakhubalo.add(Iphamba(languageIndex)); 
+
+    amakhubalo.add(Imfingo(languageIndex)); 
+    amakhubalo.add(Isbhaha(languageIndex)); 
+    amakhubalo.add(Idlula(languageIndex)); 
+
+    amakhubalo.add(Umabopha(languageIndex)); 
+    amakhubalo.add(Ibutho(languageIndex)); 
+    amakhubalo.add(Uvukamalibeni(languageIndex)); 
+
+    amakhubalo.add(Inkunguyentaba(languageIndex));
+    amakhubalo.add(Umhlakaza(languageIndex));
+    amakhubalo.add(Umwelela(languageIndex));
+
+    
+
+
+    izilwane.add('Amakhala Emfene');
+    izilwane.add('Nyengelezi Oil');
+    izilwane.add('Umnyama Wemfene');
+    izilwane.add('Umnyama Wempunzi');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      Language.imiphumelaAbakhokhe[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+class Kuthole extends Umuthi{
+  
+  Kuthole (languageIndex,{forGoodUse =true}):
+  super('Kuthole',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+
+    price = 150;
+
+    amakhubalo.add(Umkhanyakude(languageIndex));
+    amakhubalo.add(Iqhume(languageIndex));
+    amakhubalo.add(Umthole(languageIndex));
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaKuthole[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseKuthole[languageIndex];
+  }
+  
+}
+
+class Wozanibathengi extends Umuthi{
+  
+  Wozanibathengi (languageIndex,{forGoodUse =true}):
+  super('Wozanibathengi',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+    price = 2950;
+
+    // Lamakhubalo awaxutshwa nalomuthi, Kodwa uqale usebenzise wona.
+    amakhubalo.add(Inhlambamanzi(languageIndex));
+    amakhubalo.add(Umsanka(languageIndex));
+
+    izilwane.add('Umhlapho Wehhashi');
+    izilwane.add('Umhlwehlwe Wembuzi');
+
+    extras.add('Impepho Yamakhehla');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaWozanibathengi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseWozanibathengi[languageIndex];
+  }
+  
+}
+
+class Bolisa extends Umuthi{
+  
+  Bolisa (languageIndex,{forGoodUse =true}):
+  super('Bolisa',
+  languageIndex){
+    iyaphalaza = true;
+    price = 130;
+
+    amakhubalo.add(Umbola(languageIndex));
+
+    extras.add('I-Five Roses');
+    extras.add('I-Honey');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaBolisa[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseBolisa[languageIndex];
+  }
+  
+}
+
+class Zaqaqeka extends Umuthi{
+  
+  Zaqaqeka (languageIndex,{forGoodUse =true}):
+  super('Zaqaqeka',
+  languageIndex){
+    iyaphalaza = true;
+    price = 130;
+
+    amakhubalo.add(Ubhubhubhu(languageIndex));
+    amakhubalo.add(Umqaqi(languageIndex));
+    amakhubalo.add(Unhlanhlemhlophe(languageIndex));
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaZaqaqeka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Akabuye extends Umuthi{
+  
+  Akabuye (languageIndex,{forGoodUse =true}):
+  super('Akabuye',
+  languageIndex){
+    iyaphalaza = true;
+    price = 130;
+
+    amakhubalo.add(Umbili(languageIndex));
+    amakhubalo.add(Sukasambe(languageIndex));
+    amakhubalo.add(Umazulazayithole(languageIndex));
+    amakhubalo.add(Umkhondweni(languageIndex));
+    amakhubalo.add(Umwelela(languageIndex));
+    amakhubalo.add(Impenduli(languageIndex));
+
+    amakhubalo.add(Mhungulo(languageIndex));
+    amakhubalo.add(Mampondomunyi(languageIndex));
+    amakhubalo.add(Ndindibala(languageIndex));
+
+    amakhubalo.add(Ndindibala(languageIndex));
+    amakhubalo.add(Nhliziyonkulu(languageIndex));
+    amakhubalo.add(Umoyawezwe(languageIndex));
+
+    amakhubalo.add(Dakwa(languageIndex));
+    amakhubalo.add(Uvukabonke(languageIndex));
+    amakhubalo.add(Ungange(languageIndex));
+
+    amakhubalo.add(Ungqangendlela(languageIndex));
+    amakhubalo.add(Abangqongqozi(languageIndex));
+    amakhubalo.add(Umazwahlabayo(languageIndex));
+
+    izilwane.add('Mkhovu Oil');
+    izilwane.add('Bone Tikoloshe');
+    izilwane.add('Skhova Oil');
+    izilwane.add('Ingwe Oil');
+    izilwane.add('Hhashi Oil');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaAkabuye[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseAkabuye[languageIndex];
+  }
+  
+}
+
+class Isigqabosothando extends Umuthi{
+  
+  Isigqabosothando (languageIndex,{forGoodUse =true}):
+  super('Isigqabosothando',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+
+    price = 300;
+
+    amakhubalo.add(Umkhanyakude(languageIndex));
+    amakhubalo.add(Velemoyeni(languageIndex));
+    amakhubalo.add(Nginakile(languageIndex));
+    amakhubalo.add(Ungibonisele(languageIndex));
+    amakhubalo.add(Makhuthuka(languageIndex));
+    amakhubalo.add(Mlomomnandi(languageIndex));
+    amakhubalo.add(Umzaneno(languageIndex));
+    amakhubalo.add(Ubhubhubhu(languageIndex));
+    amakhubalo.add(Impishimpishi(languageIndex));
+    amakhubalo.add(Roslina(languageIndex));
+
+    extras.add('Nkosazane Oil');
+    extras.add('Blue Stone');
+    extras.add('Mvubu Oil, Eyendoda, Neyesifazane');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaIsigqabosothando[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.howToUseIsigqabosothando[languageIndex];
+  }
+  
+}
+
+class Ngthandeni extends Umuthi{
+  
+  Ngthandeni (languageIndex,{forGoodUse =true}):
+  super('Ngthandeni',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+
+    price = 180;
+
+    amakhubalo.add(Donsuthando(languageIndex));
+    amakhubalo.add(Mlomomnandi(languageIndex));
+    amakhubalo.add(Iwozawoza(languageIndex));
+    amakhubalo.add(Ibheka(languageIndex));
+   
+
+    extras.add('Zonke Izinhlobo Zempepho');
+    extras.add('Zamlandela');
+    extras.add('3 Types Of Belungu Stones Including, Please Call Me And Come To Me.');
+    extras.add('Nkosazane Oil');
+    extras.add('Umlotha Wamandiya');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaDonsuthando[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
 }

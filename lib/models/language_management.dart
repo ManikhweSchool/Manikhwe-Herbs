@@ -15,7 +15,7 @@ class LanguagesTable{
   'Tshivenda',
 
   
-  'Afrikaans'
+  'Afrikaans',
 
   /**************************************************** */
   'English',

@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/languages.dart';
 import 'package:manikhwe_herbs/widgets/otp_screen.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
@@ -21,16 +20,6 @@ class _LoginState extends State<Login> {
     final _formKey = GlobalKey<FormState>();
     TextEditingController _phoneNumberController = TextEditingController();
 
-
-    void _loginUser(){
-      //print(_phoneNumberController.text);
-      //print(_passwordController.text);
-       
-
-      /*Navigator.pushReplacement(
-        context, MaterialPageRoute(
-          builder: (context)=>const LanguagesPage()));*/
-    }
 
     double buttonWidth = MediaQuery.of(context).size.width/1.2;
     double buttonBorderRadius = 30;
@@ -172,7 +161,7 @@ class _LoginState extends State<Login> {
                        Navigator.of(context).push(
                         CustomPageRoute(
                           child: OTPScreen(phoneNumber: _phoneNumberController.text,countryCode: countryCode,)
-                          /*LanguagesPage()*/),
+                        ),
                      );
                     //}
                   }, 

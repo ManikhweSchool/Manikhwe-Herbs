@@ -9,7 +9,7 @@ class ShoppingListItem extends StatelessWidget {
   final int productIndex;
   final bool inCart;
   final CartChangedCallback onCartChanged;
-  static const IconData add_shopping_cart_sharp = IconData(0xe759, fontFamily: 'MaterialIcons');
+  
   
   ShoppingListItem({
     required this.product,
@@ -26,9 +26,18 @@ class ShoppingListItem extends StatelessWidget {
     // taking place and therefore which theme to use.
 
     return inCart //
-        ? Colors.black54
+        ? Colors.blue
         : Theme.of(context).primaryColor;
   }
+
+  Color _getHeartColor() {
+    
+
+    return inCart //
+        ? Colors.pink
+        : Colors.grey;
+  }
+
 
   TextStyle? _getTextStyle(BuildContext context) {
     if (!inCart) return null;
@@ -85,7 +94,7 @@ class ShoppingListItem extends StatelessWidget {
           ),
           title: 
             Text(
-              product.name + ' [Isiwasho]',
+              product.name +  ' [${product.type}]',
               style: const TextStyle(
                 color: Colors.blue,
                 fontWeight: FontWeight.bold,
@@ -105,9 +114,9 @@ class ShoppingListItem extends StatelessWidget {
             ),
             
           dense: false,
-          trailing: const Icon(
+          trailing: Icon(
             Icons.favorite,
-            color: Colors.pink,
+            color: _getHeartColor(),
             size: 24.0,
             semanticLabel: 'Text to announce in accessibility modes',
           ),

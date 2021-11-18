@@ -59,16 +59,18 @@ class Languages{
 
   static List<String> categorize =
   [ 
-    'Ezomsebenzi',
-    'Thandeka',
+    
     'Ubusoka',
     'Imali',
     'Impumelelo',
     'Uthando',
     'Ukuthakathwa',
     'Inhlanhla',
-    'Ezobulili',
-    'Imizwa',
+    'Ezabesilisa',
+    'Ezabesifazane',
+    
+    'Ezomsebenzi',
+    
     'Ezamabhizinisi',
     'Isichitho',
     'Isikhumba',
@@ -83,6 +85,7 @@ class Languages{
     'Isilwane',
     
     'Izitha',
+    'Thandeka',
     
   ];
   
