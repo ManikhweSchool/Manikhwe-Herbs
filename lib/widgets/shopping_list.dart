@@ -12,7 +12,7 @@ class ShoppingList extends StatefulWidget {
   List<Product> products = [];
   final int languageIndex;
   final String phoneNumber;
-
+  int numberOfCustomersInStore = 1500;
   
 
   // The framework calls createState the first time
@@ -76,6 +76,7 @@ class _ShoppingListState extends State<ShoppingList> {
         case 19 : widget.products = Language.ezesilwane(widget.languageIndex);break;
         case 20 : widget.products = Language.ezezitha(widget.languageIndex);break;
         case 21 : widget.products = Language.ezokuthandeka(widget.languageIndex);break;
+        case 22 : widget.products = Language.ezamacala(widget.languageIndex);break;
       }
     });
   }
@@ -86,6 +87,7 @@ class _ShoppingListState extends State<ShoppingList> {
 
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         leading: IconButton(
           icon:const Icon(Icons.menu),
           iconSize: 30,
@@ -111,24 +113,35 @@ class _ShoppingListState extends State<ShoppingList> {
             color:Colors.white
           ),
         ],
-        
-        title: CategorySelector(onCategoryChanged: _changeCategory),
-        
-               
+        centerTitle: true,
+        title: Text('${widget.numberOfCustomersInStore} Online Customers',
+          style: const TextStyle(
+            
+            color: Colors.pink,
+            fontSize: 16,
+
+          ),
+        ),       
       ),
       body: 
-        
-        ListView(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
-          children: widget.products.map((Product product) {
-            return ShoppingListItem(
-              product: product,
-              productIndex: widget.products.indexOf(product)+1,
-              inCart: _shoppingCart.contains(product),
-              onCartChanged: _addRemoveProduct,
-            );
-          }).toList(),
-        ),
+        Column(
+          children: <Widget>[
+            CategorySelector(onCategoryChanged: _changeCategory),
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                children: widget.products.map((Product product) {
+                  return ShoppingListItem(
+                    product: product,
+                    productIndex: widget.products.indexOf(product)+1,
+                    inCart: _shoppingCart.contains(product),
+                    onCartChanged: _addRemoveProduct,
+                  );
+                }).toList(),
+              ),
+            )
+          ],
+        ) 
     );
   }
 }
@@ -296,7 +309,7 @@ class Language{
     Sabeka sabeka = Sabeka(languageIndex);
     Mhloniphe mhloniphe = Mhloniphe(languageIndex);
     Kuthole kuthole = Kuthole(languageIndex);
-    
+    Akondle akondle = Akondle(languageIndex);
 
     
     ezabesifanazeList.add(qalala); // Required
@@ -308,6 +321,7 @@ class Language{
     ezabesifanazeList.add(sabeka);
     ezabesifanazeList.add(mhloniphe);
     ezabesifanazeList.add(kuthole);
+    ezabesifanazeList.add(akondle);
 
     ezabesifanazeList.shuffle();
     return ezabesifanazeList;
@@ -324,6 +338,8 @@ class Language{
     Mhloniphe mhloniphe = Mhloniphe(languageIndex);
     Kuthole kuthole = Kuthole(languageIndex);
     Isigqabosothando isigqabosothando = Isigqabosothando(languageIndex);
+    Qinanduku qinanduku = Qinanduku(languageIndex);
+    Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
     
     ezabesilisaList.add(qalala); // Required
     ezabesilisaList.add(sukakimi); // Required
@@ -333,6 +349,8 @@ class Language{
     ezabesilisaList.add(mhloniphe);
     ezabesilisaList.add(kuthole);
     ezabesilisaList.add(isigqabosothando);
+    ezabesilisaList.add(qinanduku);
+    ezabesilisaList.add(vikasbhamu);
 
     ezabesilisaList.shuffle();
     return ezabesilisaList;
@@ -347,6 +365,7 @@ class Language{
     Sukakimi sukakimi = Sukakimi(languageIndex);
     GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
     Abakhokhe abakhokhe = Abakhokhe(languageIndex);
+    Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
     
     ezebusinessList.add(qalala); // Required
     ezebusinessList.add(sukakimi); // Required
@@ -354,6 +373,7 @@ class Language{
     ezebusinessList.add(thengani);
     ezebusinessList.add(gezaUmsamo);
     ezebusinessList.add(abakhokhe);
+    ezebusinessList.add(vikasbhamu);
 
     ezebusinessList.shuffle();
     return ezebusinessList;
@@ -457,10 +477,12 @@ class Language{
     Qalala qalala = Qalala(languageIndex);
     Sukakimi sukakimi = Sukakimi(languageIndex);
     Safisithosami safisithosami = Safisithosami(languageIndex);
+    Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
     
     ezokucuphaList.add(qalala); // Required
     ezokucuphaList.add(sukakimi); // Required
     ezokucuphaList.add(safisithosami);
+    ezokucuphaList.add(vikasbhamu);
 
     ezokucuphaList.shuffle();
     return ezokucuphaList;
@@ -568,11 +590,13 @@ class Language{
     Sukakimi sukakimi = Sukakimi(languageIndex);
     Sukadeda sukadeda = Sukadeda(languageIndex);
     Bolisa bolisa = Bolisa(languageIndex);
+    Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
 
     ezezithaList.add(qalala); // Required
     ezezithaList.add(sukakimi); // Required
     ezezithaList.add(sukadeda); // Suka Deda
     ezezithaList.add(bolisa);
+    ezezithaList.add(vikasbhamu);
 
     return ezezithaList;
   }
@@ -598,7 +622,7 @@ class Language{
     return ezokuthandekaList;
   }
 
-   static List<Product> ezedlozi(int languageIndex){
+  static List<Product> ezedlozi(int languageIndex){
     List<Product> ezempumeleloList = [];
 
     Qalala qalala = Qalala(languageIndex);
@@ -613,6 +637,25 @@ class Language{
 
     ezempumeleloList.shuffle();
     return ezempumeleloList;
+  }
+
+  static List<Product> ezamacala(int languageIndex){
+    List<Product> ezamacalaList = [];
+
+    Qalala qalala = Qalala(languageIndex);
+    Sukakimi sukakimi = Sukakimi(languageIndex);
+    Alingathethwa alingathethwa = Alingathethwa(languageIndex);
+    Qedacala qedacala = Qedacala(languageIndex);
+    Nqobacala nqobacala = Nqobacala(languageIndex);
+
+    ezamacalaList.add(qalala);
+    ezamacalaList.add(sukakimi);
+    ezamacalaList.add(alingathethwa);
+    ezamacalaList.add(qedacala);
+    ezamacalaList.add(nqobacala);
+    
+    ezamacalaList.shuffle();
+    return ezamacalaList;
   }
 
 }

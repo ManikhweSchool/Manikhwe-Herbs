@@ -12,7 +12,7 @@ class LanguagesPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-
+    FocusScope.of(context).unfocus();
     return 
     Scaffold(
       appBar: AppBar(
@@ -46,6 +46,7 @@ class LanguagesPage extends StatelessWidget{
           ),
         ],
       ),
+      
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         children: LanguagesTable.languages.map((String language) {
@@ -56,7 +57,7 @@ class LanguagesPage extends StatelessWidget{
             phoneNumber: phoneNumber,
           );
         }).toList(),
-      ),
+      )
     );
     
   }

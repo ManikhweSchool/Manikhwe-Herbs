@@ -19,7 +19,7 @@ class _CategoryState extends State<CategorySelector>{
   @override 
   Widget build(BuildContext context){
     return Container(
-      height: 60.0,
+      height: 40.0,
       color: Colors.blue,
       child: ListView.builder(
         scrollDirection: Axis.horizontal, 
@@ -33,9 +33,11 @@ class _CategoryState extends State<CategorySelector>{
               });
             },
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20.0,
-                vertical: 20.0,
+              padding: const EdgeInsets.only(
+                right: 20,
+                left:20,
+                bottom: 10,
+                top:0,
               ),
               child: Text(
                 Languages.categorize[index],

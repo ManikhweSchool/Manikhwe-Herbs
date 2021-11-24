@@ -107,7 +107,7 @@ class _OTPScreenState extends State<OTPScreen>{
           Padding(
             padding: const EdgeInsets.all(30.0),
             child: PinPut(
-              autofocus: true,
+              //autofocus: true,
               fieldsCount: 6,
               withCursor: true,
               textStyle: const TextStyle(fontSize: 25.0, color: Colors.white),
@@ -115,16 +115,20 @@ class _OTPScreenState extends State<OTPScreen>{
               eachFieldHeight: 55.0,
               onSubmit: (pin) async{
                 try{
+                  
                   await FirebaseAuth.instance.signInWithCredential(
                     PhoneAuthProvider.credential(
                       verificationId: verificationCode!, smsCode: pin))
                       .then((value) => {
+                        
                         if(value.user != null){
+                          
                           Navigator.of(context).push(
                             CustomPageRoute(child: LanguagesPage(phoneNumber: '${widget.countryCode}${widget.phoneNumber.substring(1)}',)),
                           )
                         }
                       });
+                  
                 }catch(e){
                   FocusScope.of(context).unfocus();
                   ScaffoldMessenger.of(context).showSnackBar(
