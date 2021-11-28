@@ -28,6 +28,7 @@ class _OTPScreenState extends State<OTPScreen>{
 
   @override
   void initState(){
+    
     super.initState();
     verifyPhoneNumber();
   }
@@ -39,6 +40,7 @@ class _OTPScreenState extends State<OTPScreen>{
         await FirebaseAuth.instance.signInWithCredential(credential)
         .then((value){
           if(value.user != null){
+            Navigator.of(context).pop();
             Navigator.of(context).push(
               CustomPageRoute(child: LanguagesPage(phoneNumber: '${widget.countryCode}${widget.phoneNumber.substring(1)}')),
             );

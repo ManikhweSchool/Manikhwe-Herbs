@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
-import 'package:manikhwe_herbs/widgets/bought_list.dart';
+import 'package:manikhwe_herbs/widgets/orders/bought_list.dart';
 
 
 

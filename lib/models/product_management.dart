@@ -776,10 +776,27 @@ class Language{
     '########',
   ];
 
+  static const imiphumelaMalibuye = 
+  [
+    'Uyabuyisa',
+  ];
+
+  static const imiphumelaFikabuse = 
+  [
+    'Ufika Endaweni Ubuse.',
+  ];
+
+  static const imiphumelaNdlelazimhlophe = 
+  [
+    'Izindlela Zakho Zibamhlophe.',
+  ];
+
   static const imiphumelaIsigqabosothando = 
   [
     'Senza Uthandeke Kakhulu',
   ];
+
+  
   static const howToUseIsigqabosothando = 
   [
     'Gcoba Emashiyeni, Ugcobe Nezandla, Ungayigcaba Nenduku Yakho Mawuthanda.',
@@ -4498,6 +4515,69 @@ class Isdikili extends Ikhubalo{
   }
   
 }
+
+class Ndlelazimhlophe  extends Ikhubalo{
+  Ndlelazimhlophe (languageIndex,{forGoodUse =true}):
+  super('Ndlelazimhlophe',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaNdlelazimhlophe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+  
+}
+  
+class Fikabuse  extends Ikhubalo{
+  Fikabuse (languageIndex,{forGoodUse =true}):
+  super('Fikabuse',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaFikabuse[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+  
+class Malibuye  extends Ikhubalo{
+   Malibuye (languageIndex,{forGoodUse =true}):
+  super('Malibuye',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    iyageza = true; 
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [Language.imiphumelaMalibuye[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return Language.gqumaGezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
+
 
 
 class Supplier{

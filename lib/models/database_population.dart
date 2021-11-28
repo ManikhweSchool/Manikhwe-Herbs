@@ -44,7 +44,7 @@ class OrderDAO{
 
   Future<void> saveOrder(Order order) async{
 
-    CollectionReference orders = FirebaseFirestore.instance.collection('/orders/order');
+    /*CollectionReference orders = FirebaseFirestore.instance.collection('/orders/order');
     //FirebaseAuth auth = FirebaseAuth.instance;
     //String orderId = auth.currentUser!.uid.toString();
 
@@ -57,7 +57,10 @@ class OrderDAO{
       'products': order.products,
       'is_delivered': order.isDelivered,
       'order_id': ++orderId
-    });
+    });*/
+    CollectionReference db = FirebaseFirestore.instance.collection('/mycollection');
+    db.add({'variable' : order.deliveryDate.toString()});
+
     return;
   }
 

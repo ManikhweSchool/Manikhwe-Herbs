@@ -4,11 +4,13 @@ import 'package:manikhwe_herbs/models/customer_management.dart';
 import 'package:manikhwe_herbs/models/database_population.dart';
 import 'package:manikhwe_herbs/models/order_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
-import 'package:manikhwe_herbs/widgets/bought_list.dart';
+import 'package:manikhwe_herbs/widgets/orders/bought_list.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:manikhwe_herbs/widgets/login.dart';
+import 'package:manikhwe_herbs/widgets/entrance/languages.dart';
+import 'package:manikhwe_herbs/widgets/entrance/login.dart';
 import 'package:manikhwe_herbs/widgets/orders/date_picker.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
+import 'package:manikhwe_herbs/widgets/orders/welcome_page.dart';
 
 
 
@@ -82,43 +84,6 @@ class _PaymentScreenState extends State<PaymentScreen> {
     );
   }
 
-  _welcomeDialog(BuildContext context) async {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return Expanded(
-          child: AlertDialog(
-            title: Center(child: Text(Languages.successfulAlertTitle[widget.languageIndex])),
-            content: Text(Languages.successfulAlertContent[widget.languageIndex]),
-            backgroundColor: Colors.blue,
-            titleTextStyle: const TextStyle(
-              color:Colors.red, 
-              fontSize: 20, 
-              fontWeight: FontWeight.bold,
-            ),
-            contentTextStyle: const TextStyle(
-              color:Colors.white, 
-              fontSize: 14, 
-              fontWeight: FontWeight.bold,
-            ),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    CustomPageRoute(
-                      child: Login(),
-                    )
-                  );
-                },
-                child: const Text('OK', style: TextStyle(color: Colors.white),),
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-
     return 
       Scaffold(
         body: Center(
@@ -154,7 +119,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       ),
                       
                       
-                      //textInputAction: TextInputAction.next,
+                      textInputAction: TextInputAction.done,
                       cursorColor: Colors.blue,
                       decoration: const InputDecoration(
                         prefixIcon: Icon(Icons.location_city_sharp),
@@ -198,13 +163,17 @@ class _PaymentScreenState extends State<PaymentScreen> {
                         customer.addOrder(order);
                         orderDAO.saveOrder(order);
 
+
                         if(_addressController.text.isNotEmpty){
-                          _welcomeDialog(context);
+                          Navigator.of(context).pop();
+                          Navigator.of(context).push(
+                            CustomPageRoute(
+                              child: WelcomeScreen(phoneNumber: widget.phoneNumber,languageIndex: widget.languageIndex,),
+                            ),
+                          );
                         }else{
                           _displayDialog(context);
                         }
-                        
-                        // Now send a message saying order recieved successfully.
                         
                       }, 
                       child: const Text('Request Delivery'),
@@ -227,12 +196,5 @@ class Languages{
   ];
   static final unsuccessfulAlertContent = [
     'Shiya I-Address Yalapho Ofuna Ukulethelwa Khona Impahla Yakho.'
-  ];
-
-  static final successfulAlertTitle = [
-    'Siyakubongela'
-  ];
-  static final successfulAlertContent = [
-    'Silitholile I-Order Lakho, Sizobuyeka Kuwe Ngokushesha.'
   ];
 }

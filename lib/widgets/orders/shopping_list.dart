@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
-import 'package:manikhwe_herbs/widgets/category_selector.dart';
-import 'package:manikhwe_herbs/widgets/order_screen.dart';
+import 'package:manikhwe_herbs/widgets/orders/category_selector.dart';
+import 'package:manikhwe_herbs/widgets/orders/order_screen.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
-import 'package:manikhwe_herbs/widgets/shopping_list_item.dart';
+import 'package:manikhwe_herbs/widgets/orders/shopping_list_item.dart';
 
 class ShoppingList extends StatefulWidget {
   ShoppingList(this.languageIndex,{required this.phoneNumber, Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
-import 'package:manikhwe_herbs/widgets/bought_list_item.dart';
+import 'package:manikhwe_herbs/widgets/orders/bought_list_item.dart';
 import 'package:manikhwe_herbs/widgets/orders/date_picker.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 import 'package:manikhwe_herbs/widgets/orders/payment.dart';
@@ -26,6 +26,20 @@ class BoughtList extends StatefulWidget {
 }
 
 class _BoughtListState extends State<BoughtList> {
+  
+  @override
+  void initState() {
+    // This method execute only when this state is created for the first time.
+    // It get executed befor the build method.
+    super.initState();
+  }
+
+  @override
+  void didUpdateWidget(covariant BoughtList oldWidget) {
+    // This method will get executed whenever SeekedProduct get external data.
+    // This method is called before the build method.
+    super.didUpdateWidget(oldWidget);
+  }
   
   void _removeProduct(Product product) {
     setState(() {

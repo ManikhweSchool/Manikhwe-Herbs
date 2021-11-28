@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/languages.dart';
-import 'package:manikhwe_herbs/widgets/login.dart';
+import 'package:manikhwe_herbs/widgets/entrance/login.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,14 +25,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         primarySwatch: Colors.blue,
       ),
-      home: Login()/*,const  LanguagesPage(phoneNumber:'+27717572711'),*/
-        /*Center(
-          child: 
-          ShoppingList(
-            0,
-            phoneNumber:'+27717572711',
-          ),
-        ),*/
+      home: Login(),
+        
     );
   }
 }

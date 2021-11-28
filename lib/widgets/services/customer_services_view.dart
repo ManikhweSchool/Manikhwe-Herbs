@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/customer_management.dart';
 import 'package:manikhwe_herbs/models/service_management.dart';
-import 'package:manikhwe_herbs/widgets/service_view.dart';
-import 'package:manikhwe_herbs/widgets/specialist_profile_two.dart';
+import 'package:manikhwe_herbs/widgets/services/service_view.dart';
+import 'package:manikhwe_herbs/widgets/services/specialist_profile_two.dart';
 
 class CustomerServicesView extends StatelessWidget{
   

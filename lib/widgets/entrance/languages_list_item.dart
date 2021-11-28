@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
-import 'package:manikhwe_herbs/widgets/shopping_list.dart';
+import 'package:manikhwe_herbs/widgets/orders/shopping_list.dart';
+import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
 typedef CartChangedCallback = Function(Product product, bool inCart);
 
@@ -55,11 +56,15 @@ class LanguagesListItem extends StatelessWidget {
       case "Sepeti":languageIndex = 6;break;
       case "Setswane":languageIndex = 7;break;
       case "Tshivenda":languageIndex = 8;break;
-      case "Afrikaans":languageIndex = 0;break;
+      case "Afrikaans":languageIndex = 9;break;
       default :languageIndex = 10;
     }
 
-    Navigator.push(context,MaterialPageRoute(builder:(context)=>ShoppingList(languageIndex,phoneNumber:phoneNumber),));
+    if(languageIndex==0){
+      Navigator.of(context).push(CustomPageRoute(child: ShoppingList(languageIndex,phoneNumber:phoneNumber),),);
+    }
+    
+    //Navigator.push(context,MaterialPageRoute(builder:(context)=>ShoppingList(languageIndex,phoneNumber:phoneNumber),));
   }
 
 

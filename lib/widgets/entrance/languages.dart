@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/languages_list_item.dart';
+import 'package:manikhwe_herbs/widgets/entrance/languages_list_item.dart';
+import 'package:manikhwe_herbs/widgets/drawer/navigation_drawer_widget.dart';
 
-import '../models/language_management.dart';
+import '../../models/language_management.dart';
 
 class LanguagesPage extends StatelessWidget{
 
@@ -12,18 +13,19 @@ class LanguagesPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    FocusScope.of(context).unfocus();
+    
     return 
     Scaffold(
+      //drawer: NavigationDrawerWidger(),
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        leading: 
+        /*leading: 
         IconButton(
           icon:const Icon(Icons.menu),
           iconSize: 30,
           color: Colors.white,
           onPressed: (){},
-        ),
+        ),*/
         centerTitle: true,
         title: 
         const Text(

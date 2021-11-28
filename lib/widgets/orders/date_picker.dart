@@ -16,6 +16,20 @@ class _DatePickerState extends State<DatePicker>{
   
   DateTime validationDate = DateTime.now().subtract(const Duration(days: 1));
   DateTime deliveryDate = DateTime.now().subtract(const Duration(days: 1));
+
+  @override
+  void initState() {
+    // This method execute only when this state is created for the first time.
+    // It get executed befor the build method.
+    super.initState();
+  }
+
+  @override
+  void didUpdateWidget(covariant DatePicker oldWidget) {
+    // This method will get executed whenever DatePicker get external data.
+    // This method is called before the build method.
+    super.didUpdateWidget(oldWidget);
+  }
   
 
   // our text controller

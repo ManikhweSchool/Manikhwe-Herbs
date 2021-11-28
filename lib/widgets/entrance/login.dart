@@ -2,7 +2,7 @@ import 'dart:ui';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/otp_screen.dart';
+import 'package:manikhwe_herbs/widgets/entrance/otp_screen.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
 class Login extends StatefulWidget {
@@ -151,19 +151,13 @@ class _LoginState extends State<Login> {
                   ),
                   
                   onPressed: (){
-                    //String pattern = r'^([0][6|7|8][0-9]){10}$';
-                    //RegExp regExp = RegExp(pattern);
-                    /*if(_phoneNumberController.text.isNotEmpty
-                    && _phoneNumberController.text.length==10 
-                    && (_phoneNumberController.text.startsWith('06') 
-                    || _phoneNumberController.text.startsWith('07') 
-                    || _phoneNumberController.text.startsWith('08'))){*/
+                      Navigator.of(context).pop();
                        Navigator.of(context).push(
                         CustomPageRoute(
                           child: OTPScreen(phoneNumber: _phoneNumberController.text,countryCode: countryCode,)
                         ),
                      );
-                    //}
+                    
                   }, 
                   child: const Text('Next'),
                 ),
