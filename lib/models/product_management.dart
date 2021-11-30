@@ -936,6 +936,22 @@ abstract class Product{
     price = 100;
   }
 
+  Map<String, dynamic> toMap() {
+    return {
+      'name': name,
+      'price': price,
+      'type': type,
+      'iyagquma': iyagquma,
+      'iyageza': iyageza,
+      'iyaphalaza': iyaphalaza,
+      'iyachela': iyachela,
+      'iyachatha': iyachatha,
+      'iyaphuzwa': iyaphuzwa,
+      //'imiphumela': findPurpose(),
+      //'how_to_use': howToUse()
+    };
+  }
+
   void generateProductName(){
     
   }
@@ -4840,7 +4856,7 @@ class Belungubami extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 300;
+    price = 450;
     
     amakhubalo.add(Uskhundla(languageIndex));
     amakhubalo.add(Umyezane(languageIndex));

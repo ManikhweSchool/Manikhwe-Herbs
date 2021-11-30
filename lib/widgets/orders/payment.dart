@@ -20,6 +20,7 @@ class PaymentScreen extends StatefulWidget {
   final List<Product> products;
   final int languageIndex;
   final double totalAmount;
+  final DateTime deliveryDate;
 
   const PaymentScreen(
     {
@@ -28,6 +29,7 @@ class PaymentScreen extends StatefulWidget {
       required this.phoneNumber,
       required this.products,
       required this.totalAmount,
+      required this.deliveryDate,
     }
   ) : super(key: key);
 
@@ -157,7 +159,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           address: _addressController.text,
                           customer: customer,
                           products: widget.products,
-                          deliveryDate: DateTime.now(), // Need To Be Changed.
+                          deliveryDate: widget.deliveryDate, 
                         );
 
                         customer.addOrder(order);

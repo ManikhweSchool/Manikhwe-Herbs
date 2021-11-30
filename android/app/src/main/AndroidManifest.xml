@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.manikhweherbs.manikhwe_herbs">
    <application
-        android:label="manikhwe_herbs"
+        android:label="Help"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

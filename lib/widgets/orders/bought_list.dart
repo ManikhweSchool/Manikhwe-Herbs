@@ -114,6 +114,7 @@ class _BoughtListState extends State<BoughtList> {
                       languageIndex: widget.languageIndex,
                       phoneNumber: widget.phoneNumber,
                       products: widget.orderList,
+                      deliveryDate: widget.datePicker.deliveryDate,
                     ),
                   )
                 

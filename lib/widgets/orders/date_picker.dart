@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/widgets/orders/date_picker_helper.dart';
 
 class DatePicker extends StatefulWidget{
+  
   String text = 'Pick Delivery Date';
+  DateTime validationDate = DateTime.now().subtract(const Duration(days: 1));
+  DateTime deliveryDate = DateTime.now().subtract(const Duration(days: 1));
 
   DatePicker({Key? key}) : super(key: key);
 
@@ -14,8 +17,7 @@ class DatePicker extends StatefulWidget{
 class _DatePickerState extends State<DatePicker>{
 
   
-  DateTime validationDate = DateTime.now().subtract(const Duration(days: 1));
-  DateTime deliveryDate = DateTime.now().subtract(const Duration(days: 1));
+  
 
   @override
   void initState() {
@@ -54,8 +56,8 @@ class _DatePickerState extends State<DatePicker>{
     }
 
     setState((){
-      deliveryDate=newDate;
-      widget.text = 'Delivery Date - ${deliveryDate.day}\\${deliveryDate.month}\\${deliveryDate.year}';
+      widget.deliveryDate=newDate;
+      widget.text = 'Delivery Date - ${widget.deliveryDate.day}\\${widget.deliveryDate.month}\\${widget.deliveryDate.year}';
     });
   }
 

@@ -57,7 +57,26 @@ class LanguagesListItem extends StatelessWidget {
       case "Setswane":languageIndex = 7;break;
       case "Tshivenda":languageIndex = 8;break;
       case "Afrikaans":languageIndex = 9;break;
-      default :languageIndex = 10;
+      case "English":languageIndex = 10;break;
+      case "Swahili":languageIndex = 11;break;
+      case "Amharic":languageIndex = 12;break;
+      case "Yoruba":languageIndex = 13;break;
+      case "Oromo":languageIndex = 14;break;
+      case "Hausa":languageIndex = 15;break;
+      case "IGBO":languageIndex = 16;break;
+      case "Shona":languageIndex = 17;break;
+      case "Arabic":languageIndex = 18;break;
+      case "Portuguese":languageIndex = 19;break;
+      case "Somali":languageIndex = 20;break;
+      case "Berber":languageIndex = 21;break;
+      case "Malagasy":languageIndex = 22;break;
+      case "Fula":languageIndex = 23;break;
+      case "Luo":languageIndex = 24;break;
+      case "Songhay":languageIndex = 25;break;
+      case "Nubian":languageIndex = 26;break;
+      case "Maasai":languageIndex = 27;break;
+      default: languageIndex = -1;
+      
     }
 
     if(languageIndex==0){

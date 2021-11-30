@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:manikhwe_herbs/models/customer_management.dart';
 import 'package:manikhwe_herbs/models/order_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
 import 'package:manikhwe_herbs/models/service_management.dart';
@@ -39,30 +40,20 @@ class SpecialistDAO{
 }
 
 class OrderDAO{
-  static int orderId = 0;
-
 
   Future<void> saveOrder(Order order) async{
 
-    /*CollectionReference orders = FirebaseFirestore.instance.collection('/orders/order');
+    CollectionReference orders = FirebaseFirestore.instance.collection('/orders');
     //FirebaseAuth auth = FirebaseAuth.instance;
     //String orderId = auth.currentUser!.uid.toString();
 
     orders.add({
-      'delivery_address': order.deliveryDate,
-      'total_amount': order.totalAmount,
-      'request_date': order.requestDate,
-      'deliverry_date': order.deliveryDate,
-      'customer': order.customer,
-      'products': order.products,
-      'is_delivered': order.isDelivered,
-      'order_id': ++orderId
-    });*/
-    CollectionReference db = FirebaseFirestore.instance.collection('/mycollection');
-    db.add({'variable' : order.deliveryDate.toString()});
+      'order': order.toMap()
+    });
 
     return;
   }
+  
 
   static void deleteFailedOrder(int orderID){
     
