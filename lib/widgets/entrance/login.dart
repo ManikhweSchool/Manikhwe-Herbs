@@ -34,6 +34,7 @@ class _LoginState extends State<Login> {
               key:_formKey,
               child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              
               children: <Widget>[
                 
                 Padding(
@@ -47,7 +48,7 @@ class _LoginState extends State<Login> {
                   child:
                     SizedBox(
                     width: MediaQuery.of(context).size.width/2,
-                    height: 150,
+                    height: 140,
                     child: 
                       Column(
                         children: [

@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
@@ -13,7 +16,9 @@ class ShoppingList extends StatefulWidget {
   final int languageIndex;
   final String phoneNumber;
   int numberOfCustomersInStore = 1500;
-  
+
+  void increaseNumberOfCustomersInStore(){numberOfCustomersInStore++;}
+  void decreaseNumberOfCustomersInStore(){numberOfCustomersInStore--;}
 
   // The framework calls createState the first time
   // a widget appears at a given location in the tree.
@@ -34,6 +39,7 @@ class _ShoppingListState extends State<ShoppingList> {
   void initState() {
     
     _changeCategory(0);
+    updateCustomersInStore();
  
     super.initState();
   }
@@ -81,9 +87,32 @@ class _ShoppingListState extends State<ShoppingList> {
     });
   }
 
+  updateCustomersInStore(){
+    int waitingPeriod = 5;
+    final _random = Random();
+
+    Timer.periodic(Duration(seconds: waitingPeriod), (timer) {
+
+      setState((){
+        if(_random.nextInt(2)==0){
+          widget.increaseNumberOfCustomersInStore();
+        }
+        else{
+          widget.decreaseNumberOfCustomersInStore();
+        }
+        print(DateTime.now());
+        waitingPeriod = 5 + _random.nextInt(16 - 5);
+        }
+      );
+      
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
+
+    
 
     return Scaffold(
       appBar: AppBar(
@@ -159,6 +188,8 @@ class Language{
     Kuthole kuthole = Kuthole(languageIndex);
     Isigqabosothando isigqabosothando = Isigqabosothando(languageIndex);
     Ngthandeni ngthandeni = Ngthandeni(languageIndex);
+    SbambeleloXXX sbambeleloXXX = SbambeleloXXX(languageIndex);
+    SbambeleloXYZ sbambeleloXYZ = SbambeleloXYZ(languageIndex);
     
     ubusokaList.add(qalala); // Required
     ubusokaList.add(sukakimi); // Required
@@ -168,6 +199,8 @@ class Language{
     ubusokaList.add(kuthole);
     ubusokaList.add(isigqabosothando);
     ubusokaList.add(ngthandeni);
+    ubusokaList.add(sbambeleloXXX);
+    ubusokaList.add(sbambeleloXYZ);
 
     ubusokaList.shuffle();
     return ubusokaList;
@@ -183,6 +216,9 @@ class Language{
     Sukakimi sukakimi = Sukakimi(languageIndex);
     GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
     Abakhokhe abakhokhe = Abakhokhe(languageIndex);
+    Mpilemnandi mpilemnandi = Mpilemnandi(languageIndex);
+    Donsamali donsamali = Donsamali(languageIndex);
+    Malungabaleki malungabaleki = Malungabaleki(languageIndex);
     
     imaliList.add(qalala); // Required
     imaliList.add(sukakimi); // Required
@@ -191,6 +227,9 @@ class Language{
     imaliList.add(khanyisa);
     imaliList.add(gezaUmsamo);
     imaliList.add(abakhokhe);
+    imaliList.add(mpilemnandi);
+    imaliList.add(donsamali);
+    imaliList.add(malungabaleki);
 
     imaliList.shuffle();
     return imaliList;
@@ -208,6 +247,9 @@ class Language{
     Kuthole kuthole = Kuthole(languageIndex);
     Akabuye akabuye = Akabuye(languageIndex);
     Ngthandeni ngthandeni = Ngthandeni(languageIndex);
+    Mndenongaxabani mndenongaxabani = Mndenongaxabani(languageIndex);
+    Mndenozwanayo mndenozwanayo = Mndenozwanayo(languageIndex);
+    SbambeleloXXX sbambeleloXXX = SbambeleloXXX(languageIndex);
     
     ezothandoList.add(qalala); // Required
     ezothandoList.add(sukakimi); // Required
@@ -218,6 +260,9 @@ class Language{
     ezothandoList.add(kuthole);
     ezothandoList.add(akabuye);
     ezothandoList.add(ngthandeni);
+    ezothandoList.add(mndenongaxabani);
+    ezothandoList.add(mndenozwanayo);
+    ezothandoList.add(sbambeleloXXX);
 
     ezothandoList.shuffle();
     return ezothandoList;
@@ -235,6 +280,10 @@ class Language{
     Bhemuphuphe bhemuphuphe = Bhemuphuphe(languageIndex);
     Abakhokhe abakhokhe = Abakhokhe(languageIndex);
     Bolisa bolisa = Bolisa(languageIndex);
+    Mpilemnandi mpilemnandi = Mpilemnandi(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
+    Donsamali donsamali = Donsamali(languageIndex);
+    Malungabaleki malungabaleki = Malungabaleki(languageIndex);
     
     ezempumeleloList.add(qalala); // Required
     ezempumeleloList.add(sukakimi); // Required
@@ -246,6 +295,10 @@ class Language{
     ezempumeleloList.add(bhemuphuphe);
     ezempumeleloList.add(abakhokhe);
     ezempumeleloList.add(bolisa);
+    ezempumeleloList.add(mpilemnandi);
+    ezempumeleloList.add(hambamthakathi);
+    ezempumeleloList.add(donsamali);
+    ezempumeleloList.add(malungabaleki);
 
     ezempumeleloList.shuffle();
     return ezempumeleloList;
@@ -264,6 +317,11 @@ class Language{
     Asiphephe asiphephe = Asiphephe(languageIndex);
     Mabeze mabeze = Mabeze(languageIndex);
     Asisinde asisinde = Asisinde(languageIndex);
+    Mndenongaxabani mndenongaxabani = Mndenongaxabani(languageIndex);
+    Mndenozwanayo mndenozwanayo = Mndenozwanayo(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
+    Hambamoyombi hambamoyombi = Hambamoyombi(languageIndex);
+    Ubelethiswane ubelethiswane = Ubelethiswane(languageIndex);
     
     ezokuthakathwaList.add(qalala); // Required
     ezokuthakathwaList.add(sukakimi); // Required
@@ -275,6 +333,11 @@ class Language{
     ezokuthakathwaList.add(asiphephe);
     ezokuthakathwaList.add(mabeze);
     ezokuthakathwaList.add(asisinde);
+    ezokuthakathwaList.add(mndenongaxabani);
+    ezokuthakathwaList.add(mndenozwanayo);
+    ezokuthakathwaList.add(hambamthakathi);
+    ezokuthakathwaList.add(hambamoyombi);
+    ezokuthakathwaList.add(ubelethiswane);
 
     ezokuthakathwaList.shuffle();
     return ezokuthakathwaList;
@@ -287,11 +350,13 @@ class Language{
     Qalala qalala = Qalala(languageIndex);
     Sukakimi sukakimi = Sukakimi(languageIndex);
     GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
+    Mpilemnandi mpilemnandi = Mpilemnandi(languageIndex);
     
     inhlanhlaList.add(qalala); // Required
     inhlanhlaList.add(sukakimi); // Required
     inhlanhlaList.add(khanyisa);
     inhlanhlaList.add(gezaUmsamo);
+    inhlanhlaList.add(mpilemnandi);
 
     inhlanhlaList.shuffle();
     return inhlanhlaList;
@@ -340,6 +405,7 @@ class Language{
     Isigqabosothando isigqabosothando = Isigqabosothando(languageIndex);
     Qinanduku qinanduku = Qinanduku(languageIndex);
     Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
+    SbambeleloXXX sbambeleloXXX = SbambeleloXXX(languageIndex);
     
     ezabesilisaList.add(qalala); // Required
     ezabesilisaList.add(sukakimi); // Required
@@ -351,6 +417,7 @@ class Language{
     ezabesilisaList.add(isigqabosothando);
     ezabesilisaList.add(qinanduku);
     ezabesilisaList.add(vikasbhamu);
+    ezabesilisaList.add(sbambeleloXXX);
 
     ezabesilisaList.shuffle();
     return ezabesilisaList;
@@ -366,6 +433,11 @@ class Language{
     GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
     Abakhokhe abakhokhe = Abakhokhe(languageIndex);
     Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
+    Mpilemnandi mpilemnandi = Mpilemnandi(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
+    Donsamali donsamali = Donsamali(languageIndex);
+    Malungabaleki malungabaleki = Malungabaleki(languageIndex);
+    
     
     ezebusinessList.add(qalala); // Required
     ezebusinessList.add(sukakimi); // Required
@@ -374,6 +446,11 @@ class Language{
     ezebusinessList.add(gezaUmsamo);
     ezebusinessList.add(abakhokhe);
     ezebusinessList.add(vikasbhamu);
+    ezebusinessList.add(mpilemnandi);
+    ezebusinessList.add(hambamthakathi);
+    ezebusinessList.add(donsamali);
+    ezebusinessList.add(malungabaleki);
+    
 
     ezebusinessList.shuffle();
     return ezebusinessList;
@@ -408,6 +485,9 @@ class Language{
     Sikimi sikimi = Sikimi(languageIndex);
     Sisegcekeni sisegcekeni = Sisegcekeni(languageIndex);
     Bolisa bolisa = Bolisa(languageIndex);
+    Mndenongaxabani mndenongaxabani = Mndenongaxabani(languageIndex);
+    Mndenozwanayo mndenozwanayo = Mndenozwanayo(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
 
 
     ezesichithoList.add(usemndenini);
@@ -421,6 +501,9 @@ class Language{
     ezesichithoList.add(sikimi);
     ezesichithoList.add(sisegcekeni);
     ezesichithoList.add(bolisa);
+    ezesichithoList.add(mndenongaxabani);
+    ezesichithoList.add(mndenozwanayo);
+    ezesichithoList.add(hambamthakathi);
 
     ezesichithoList.shuffle();
     return ezesichithoList;
@@ -478,11 +561,14 @@ class Language{
     Sukakimi sukakimi = Sukakimi(languageIndex);
     Safisithosami safisithosami = Safisithosami(languageIndex);
     Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
     
     ezokucuphaList.add(qalala); // Required
     ezokucuphaList.add(sukakimi); // Required
     ezokucuphaList.add(safisithosami);
     ezokucuphaList.add(vikasbhamu);
+    ezokucuphaList.add(hambamthakathi);
+
 
     ezokucuphaList.shuffle();
     return ezokucuphaList;
@@ -502,6 +588,9 @@ class Language{
     GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
     Kuthole kuthole = Kuthole(languageIndex);
     Ngthandeni ngthandeni = Ngthandeni(languageIndex);
+    Mpilemnandi mpilemnandi = Mpilemnandi(languageIndex);
+    Donsamali donsamali = Donsamali(languageIndex);
+    Malungabaleki malungabaleki = Malungabaleki(languageIndex);
     
     ezomsebenziList.add(qalala); // Required
     ezomsebenziList.add(sukakimi); // Required
@@ -515,6 +604,9 @@ class Language{
     ezomsebenziList.add(gezaUmsamo);
     ezomsebenziList.add(kuthole);
     ezomsebenziList.add(ngthandeni);
+    ezomsebenziList.add(mpilemnandi);
+    ezomsebenziList.add(donsamali);
+    ezomsebenziList.add(malungabaleki);
 
     ezomsebenziList.shuffle();
     return ezomsebenziList;
@@ -527,11 +619,16 @@ class Language{
     Sukakimi sukakimi = Sukakimi(languageIndex);
     Safisithosami safisithosami = Safisithosami(languageIndex);
     Bolisa bolisa = Bolisa(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
+    Hambamoyombi hambamoyombi = Hambamoyombi(languageIndex);
+
     
     ezabagulayoList.add(qalala); // Required
     ezabagulayoList.add(sukakimi); // Required
     ezabagulayoList.add(safisithosami);
     ezabagulayoList.add(bolisa);
+    ezabagulayoList.add(hambamthakathi);
+    ezabagulayoList.add(hambamoyombi);
 
     ezabagulayoList.shuffle();
     return ezabagulayoList;
@@ -543,10 +640,17 @@ class Language{
     Usemndenini usemndenini = Usemndenini(languageIndex);
     Qalala qalala = Qalala(languageIndex);
     Bolisa bolisa = Bolisa(languageIndex);
+    Mndenongaxabani mndenongaxabani = Mndenongaxabani(languageIndex);
+    Mndenozwanayo mndenozwanayo = Mndenozwanayo(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
+
     
     ezomndeniList.add(qalala); // Required
     ezomndeniList.add(usemndenini);
     ezomndeniList.add(bolisa);
+    ezomndeniList.add(mndenongaxabani);
+    ezomndeniList.add(mndenozwanayo);
+    ezomndeniList.add(hambamthakathi);
 
     ezomndeniList.shuffle();
     return ezomndeniList;
@@ -558,11 +662,15 @@ class Language{
     Sukadeda sukadeda = Sukadeda(languageIndex);
     Qalala qalala = Qalala(languageIndex);
     Sukakimi sukakimi = Sukakimi(languageIndex);
+    Hambamoyombi hambamoyombi = Hambamoyombi(languageIndex);
+    Ubelethiswane ubelethiswane = Ubelethiswane(languageIndex);
     
     ezesilwaneList.add(qalala); // Required
     ezesilwaneList.add(sukakimi); // Required
 
     ezesilwaneList.add(sukadeda); 
+    ezesilwaneList.add(hambamoyombi); 
+    ezesilwaneList.add(ubelethiswane); 
 
     ezesilwaneList.shuffle();
     return ezesilwaneList;
@@ -574,10 +682,14 @@ class Language{
     Qalala qalala = Qalala(languageIndex);
     Sukakimi sukakimi = Sukakimi(languageIndex);
     Abakhokhe abakhokhe = Abakhokhe(languageIndex);
+    Donsamali donsamali = Donsamali(languageIndex);
+    Malungabaleki malungabaleki = Malungabaleki(languageIndex);
 
     ezezikweletuList.add(qalala); // Required
     ezezikweletuList.add(sukakimi); // Required
     ezezikweletuList.add(abakhokhe);
+    ezezikweletuList.add(donsamali);
+    ezezikweletuList.add(malungabaleki);
 
     ezezikweletuList.shuffle();
     return ezezikweletuList;
@@ -591,12 +703,16 @@ class Language{
     Sukadeda sukadeda = Sukadeda(languageIndex);
     Bolisa bolisa = Bolisa(languageIndex);
     Vikasbhamu vikasbhamu = Vikasbhamu(languageIndex);
+    Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
+    Hambamoyombi hambamoyombi = Hambamoyombi(languageIndex);
 
     ezezithaList.add(qalala); // Required
     ezezithaList.add(sukakimi); // Required
     ezezithaList.add(sukadeda); // Suka Deda
     ezezithaList.add(bolisa);
     ezezithaList.add(vikasbhamu);
+    ezezithaList.add(hambamthakathi);
+    ezezithaList.add(hambamoyombi);
 
     return ezezithaList;
   }
@@ -629,11 +745,15 @@ class Language{
     Sukakimi sukakimi = Sukakimi(languageIndex);
     GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
     Bhemuphuphe bhemuphuphe = Bhemuphuphe(languageIndex);
+    Mndenongaxabani mndenongaxabani = Mndenongaxabani(languageIndex);
+    Mndenozwanayo mndenozwanayo = Mndenozwanayo(languageIndex);
     
     ezempumeleloList.add(qalala); // Required
     ezempumeleloList.add(sukakimi); // Required
     ezempumeleloList.add(gezaUmsamo);
     ezempumeleloList.add(bhemuphuphe);
+    ezempumeleloList.add(mndenongaxabani);
+    ezempumeleloList.add(mndenozwanayo);
 
     ezempumeleloList.shuffle();
     return ezempumeleloList;
