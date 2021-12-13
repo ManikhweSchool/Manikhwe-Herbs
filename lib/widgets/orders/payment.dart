@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/customer_management.dart';
-import 'package:manikhwe_herbs/models/database_population.dart';
+import 'package:manikhwe_herbs/models/dao/database_population.dart';
 import 'package:manikhwe_herbs/models/order_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
 import 'package:manikhwe_herbs/widgets/orders/bought_list.dart';

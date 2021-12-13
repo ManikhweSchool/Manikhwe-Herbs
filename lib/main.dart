@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
      pub global run rename --appname "Network Upp"
      */
 
+    //   keytool -genkey -v -keystore c:\Users\Test\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+
+
     return MaterialApp(
       title: 'Manikhwe Herbs',
       debugShowCheckedModeBanner: false,
