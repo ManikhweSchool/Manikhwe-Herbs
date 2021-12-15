@@ -145,6 +145,47 @@ class ProductResultLanguage{
   ['Uqeda Icala',
   ];
 
+  static const imiphumelaShayizitha =
+  ['Ukugadlayo Udabula Amafu.',
+  ];
+
+  static const imiphumelaQinaXXX =
+  ['Owokuqina',
+  ];
+
+  static const imiphumelaNqobazitha =
+  ['Usatshwa Izitha Zakho.',
+  ];
+
+  static const imiphumelaCuphathuna =
+  ['Uyaziphindisesela Loyo Oshoniwe Umangabe Ufe Ngesandla Somuthu Noma Somthakathi.',
+  ];
+
+  static const imiphumelaLumbanxeba =
+  ['Owoku Lumba Inxeba Uma Ugwaziwe Noma Udutshuliwe.',
+  ];
+
+  static const imiphumelaWeqiziko =
+  ['Uma Ungumuntu Wedlozi Kade Ulale Nomuntu Ongamlobolanga '
+  'Noma Ongakulobolanga, Fanele Usebenzise Lomuthi Emva Kokuya '
+  'Ocansini Ukuze Idlozi Lakho Lingeke Ligcole.',
+  ];
+
+  static const imiphumelaPhindisa =
+  ['Lomuthi Ulungele Umuntu Othole Into Abamthakatha Ngayo Egcekeni, Lomuthi Uyibuyisela Emuva Leyonto.',
+  ];
+
+  static const imiphumelaAmafuthebhanoyi =
+  ['Enza Isibunge Sakho Sisebenze Ngampela.',
+  ];
+
+  static const imiphumelaThandekaABC =
+  ['Uthandeka Ngendlela Exakayo Ebantwini.',
+  ];
+
+  static const imiphumelaSusaschithoXXX =
+  ['Siphelanya Isichitho, Kubuye Nokuhlonipheka.',
+  ];
 
   static const imiphumelaBolisa = ['Uyabolisa Okubi Okwenziwe Noma Okwenziwa Kuwe.',];
 

@@ -542,7 +542,144 @@ class TreeResultLanguage{
     '#######'
   ];
 
-  
+  static const imiphumelaUmsuzwane =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUnsukumbili =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUgibeleweni =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUmashweleshwele =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUndabungehlele =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUndodemnyama =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUsehlangengalo =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUdlulabehlezi =
+  [
+    'Udlulabehlezi'
+  ];
+
+  static const imiphumelaUmkhokhu =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUkhuhlu =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUmathutha =
+  [
+    'Uyathuthisana'
+  ];
+
+  static const imiphumelaUmhlakuva =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUzulacwathile =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaMuziwawula =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUzikhungele =
+  [
+    'Uyacupha'
+  ];
+
+  static const imiphumelaUdabulamafu =
+  [
+    'Ungena Kwezokubulala'
+  ];
+
+  static const imiphumelaUzehlo =
+  [
+    'Ungena Kwezamabhadi'
+  ];
+
+  static const imiphumelaUginakamagadlela =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUkhathibesonga =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaIjabula =
+  [
+    'Liyajabulisa'
+  ];
+
+  static const imiphumelaIlanda =
+  [
+    'Liyalanda'
+  ];
+
+  static const imiphumelaIhlalanyosi =
+  [
+    'Liyadonsa'
+  ];
+
+  static const imiphumelaImpilane =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaIngevu =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUndiyaza =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUmbadlanga =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUjundu =
+  [
+    '#######'
+  ];
+
+
+
+
 
   static const imiphumelaIhluze =
   [

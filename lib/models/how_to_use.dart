@@ -242,6 +242,43 @@ class HowToUseLanguage{
   ['Phuza Ikota Yenkomishi Kathathu Ngelanga.',
   ];
 
+  static const howToUseQinaXXX =
+  ['Ugcaba Ngemuva Kwamadlebe Nasokhakhayini Izinhlanga Ezimbili.',
+  ];
+
+  static const howToUseNqobazitha =
+  ['Lomuthi Uwuhlanganisa Nothuvi Wenja Omhlophe, Ugqume, Ugeze, Uphalaze Ngawo Ezinsuku Ezingu-7.',
+  ];
+
+  static const howToUseCuphathuna =
+  ['Vuvuzela Lomuthi Emgodini Wethuna. Wukhulumise Usho Ukuthi Sbanibani Ziphindiselele Kolowo Okubulele.',
+  ];
+
+  static const howToUseLumbanxeba =
+  ['Gcoba Inxeba, Ulibhandishe Izinsukwananje, Uyozwa Ngento.',
+  ];
+
+  static const howToUseShayizitha =
+  ['Gquma Ngalomithi Ogayiwe 1 Day, Imba Umgodi Ufake Amanzi Ogqume Ngawo Kulomgodi Kuqala, '
+  'Ulandelanise Ngezimpahla Zakho Ongeke Usazigqoka, Kulandele Lomuthi Oyisigaqa '
+  'Usiwugwaze Ngezinaliti Eziyisikhombisa. Uma Usukwenzile Loku Ngokulandelana '
+  'Njengoba Kushiwo Usungawugqiba Umgodi. Usuyophalazele Lapho Ogqibe Khona '
+  'Izinsuku Ezingu-14, Ugqume Ekhaya Ngalomuthi Ogayiwe Uchithe Kulendawo Kulezinsuku Ezingu-14.',
+  ];
+
+
+  static const howToUseWeqiziko =
+  ['Gquma, Geza, Phalaza Usuku Olulodwa.',
+  ];
+
+  static const howToUsePhindisa =
+  ['Usokha Ispoon Esigcwele Ku-10L Kuya Ku-20L Salomuthi, Ufake Naleyonto Oyithole Egcekeni Abakuthakatha Ngayo, Uchele Igceke.',
+  ];
+
+  static const howToUseAmafuthebhanoyi =
+  ['Hlanganisa Nesibunge Sakho Ushunqise.',
+  ];
+
   static const howToUseQashwa = [
     'Uthenga Inkukhu Emhlophe Ulamthuthu Uyihlinze Lapho Ushisela Khona Impepho, Ucele Ukuthola Umsebenzi. Bese '
     'Uwuhlukanisa Kabili Lomuthi, Owokuqala Uwufaka Emanzini Afudumele Ufake Nosu(Inyama Yangaphakathi), '

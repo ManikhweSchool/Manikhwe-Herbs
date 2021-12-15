@@ -1573,7 +1573,9 @@ class Idlula extends Tree{
 
 class Umathithibala extends Tree{
   
-  Umathithibala ({forGoodUse =true}):
+  String omncaneNomaOmkhulu;
+
+  Umathithibala ({this.omncaneNomaOmkhulu='',forGoodUse =true}):
   super('Umathithibala');
 
   @override
@@ -4371,6 +4373,465 @@ class Usmayedwa  extends Tree{
   @override
   List<String> findPurpose(int languageIndex) {
     return [TreeResultLanguage.imiphumelaUsmayedwa[languageIndex]];
+  }
+
+}
+
+class Umsuzwane  extends Tree{
+  
+  Umsuzwane({forGoodUse =true,}):
+  super('Umsuzwane');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmsuzwane;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmsuzwane[languageIndex]];
+  }
+
+}
+
+class Unsukumbili  extends Tree{
+  
+  Unsukumbili({forGoodUse =true,}):
+  super('Unsukumbili');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUnsukumbili;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUnsukumbili[languageIndex]];
+  }
+
+}
+
+class Ujundu  extends Tree{
+  
+  Ujundu({forGoodUse =true,}):
+  super('Unsukumbili');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUjundu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUjundu[languageIndex]];
+  }
+
+}
+
+class Umbadlanga  extends Tree{
+  
+  Umbadlanga({forGoodUse =true,}):
+  super('Umbadlanga');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmbadlanga;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmbadlanga[languageIndex]];
+  }
+
+}
+
+class Impilane  extends Tree{
+  
+  Impilane({forGoodUse =true,}):
+  super('Impilane');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaImpilane;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaImpilane[languageIndex]];
+  }
+
+}
+
+class Undiyaza  extends Tree{
+  
+  Undiyaza({forGoodUse =true,}):
+  super('Undiyaza');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUndiyaza;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUndiyaza[languageIndex]];
+  }
+
+}
+
+class Ingevu  extends Tree{
+  
+  Ingevu({forGoodUse =true,}):
+  super('Ingevu');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIngevu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIngevu[languageIndex]];
+  }
+
+}
+
+class Ugibeleweni  extends Tree{
+  
+  Ugibeleweni({forGoodUse =true,}):
+  super('Ugibeleweni');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUgibeleweni;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUgibeleweni[languageIndex]];
+  }
+
+}
+
+class Ilanda  extends Tree{
+  
+  Ilanda({forGoodUse =true,}):
+  super('Ilanda');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIlanda;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIlanda[languageIndex]];
+  }
+
+}
+
+class Ijabula  extends Tree{
+  
+  Ijabula({forGoodUse =true,}):
+  super('Ijabula');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIjabula;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIjabula[languageIndex]];
+  }
+
+}
+
+class Ihlalanyosi  extends Tree{
+  
+  Ihlalanyosi({forGoodUse =true,}):
+  super('Ihlalanyosi');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIhlalanyosi;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIhlalanyosi[languageIndex]];
+  }
+
+}
+
+class Uginakamagadlela  extends Tree{
+  
+  Uginakamagadlela({forGoodUse =true,}):
+  super('Uginakamagadlela');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUginakamagadlela;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUginakamagadlela[languageIndex]];
+  }
+
+}
+
+class Ukhathibesonga  extends Tree{
+  
+  Ukhathibesonga({forGoodUse =true,}):
+  super('Ukhathibesonga');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUkhathibesonga;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUkhathibesonga[languageIndex]];
+  }
+
+}
+
+class Udabulamafu  extends Tree{
+  
+  Udabulamafu({forGoodUse =true,}):
+  super('Udabulamafu');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUdabulamafu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUdabulamafu[languageIndex]];
+  }
+
+}
+
+class Uzehlo  extends Tree{
+  
+  Uzehlo({forGoodUse =true,}):
+  super('Uzehlo');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUzehlo;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUzehlo[languageIndex]];
+  }
+
+}
+
+class Umathutha  extends Tree{
+  
+  Umathutha({forGoodUse =true,}):
+  super('Uzehlo');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmathutha;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmathutha[languageIndex]];
+  }
+
+}
+
+class Uzikhungele  extends Tree{
+  
+  Uzikhungele({forGoodUse =true,}):
+  super('Uzikhungele');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUzikhungele;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUzikhungele[languageIndex]];
+  }
+
+}
+
+class Uzulacwathile  extends Tree{
+  
+  Uzulacwathile({forGoodUse =true,}):
+  super('Uzulacwathile');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUzulacwathile;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUzulacwathile[languageIndex]];
+  }
+
+}
+
+class Muziwawula  extends Tree{
+  
+  Muziwawula({forGoodUse =true,}):
+  super('Muziwawula');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaMuziwawula;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaMuziwawula[languageIndex]];
+  }
+
+}
+
+class Usehlangengalo  extends Tree{
+  
+  Usehlangengalo({forGoodUse =true,}):
+  super('Usehlangengalo');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUsehlangengalo;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUsehlangengalo[languageIndex]];
+  }
+
+}
+
+class Umhlakuva  extends Tree{
+  
+  Umhlakuva({forGoodUse =true,}):
+  super('Umhlakuva');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmhlakuva;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmhlakuva[languageIndex]];
+  }
+
+}
+
+class Undodemnyama  extends Tree{
+  
+  Undodemnyama({forGoodUse =true,}):
+  super('Undodemnyama');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUndodemnyama;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUndodemnyama[languageIndex]];
+  }
+
+}
+
+class Ukhuhlu  extends Tree{
+  
+  Ukhuhlu({forGoodUse =true,}):
+  super('Ukhuhlu');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUkhuhlu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUkhuhlu[languageIndex]];
+  }
+
+}
+
+class Umashweleshwele  extends Tree{
+  
+  Umashweleshwele({forGoodUse =true,}):
+  super('Umashweleshwele');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmashweleshwele;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmashweleshwele[languageIndex]];
+  }
+
+}
+
+class Umkhokhu  extends Tree{
+  
+  Umkhokhu({forGoodUse =true,}):
+  super('Umkhokhu');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmkhokhu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmkhokhu[languageIndex]];
+  }
+
+}
+
+class Udlulabehlezi  extends Tree{
+  
+  Udlulabehlezi({forGoodUse =true,}):
+  super('Udlulabehlezi');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUdlulabehlezi;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUdlulabehlezi[languageIndex]];
+  }
+
+}
+
+class Undabungehlele  extends Tree{
+  
+  Undabungehlele({forGoodUse =true,}):
+  super('Undabungehlele');
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUndabungehlele;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUndabungehlele[languageIndex]];
   }
 
 }
