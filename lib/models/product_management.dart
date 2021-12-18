@@ -41,16 +41,12 @@ abstract class Product{
 
   Map<String, dynamic> toMap() {
     return {
-      'name': name,
-      'price': price,
-      'type': type,
-      'result': findPurpose(),
-      'how_to_use': howToUse()
+      'name ': name,
+      'price ': price,
+      'type ': type,
+      'result ': findPurpose(),
+      'how_to_use ': howToUse()
     };
-  }
-
-  void generateProductName(){
-    
   }
 
   // What are the consiquences of using this product?
@@ -441,6 +437,14 @@ class Owner{
   String address = "Mayville Cato Crest 6257";
 
   Owner(this.fullName, this.address,this.isMale);
+
+  Map<String, dynamic> toMap() {
+    return {
+      'owner_name ': fullName,
+      'owner_gender ': isMale?'Male':'Female',
+      'owner_address': address,
+    };
+  }
 }
 
 abstract class Umuthi extends Product{
@@ -451,6 +455,51 @@ abstract class Umuthi extends Product{
  
   Umuthi(String name,int languageIndex):super(languageIndex,name:name);
   
+  @override
+  Map<String, dynamic> toMap() {
+    return {
+      'name ': name,
+      'price ': price,
+      'type ': type,
+      'result ': findPurpose(),
+      'how_to_use ': howToUse(),
+      'trees ' : _getTrees(),
+      'animals ': _getAnimals(),
+      'extras ': _getExtras(),
+      'owner ': owner.toMap()
+    };
+  }
+
+  
+  Set<String> _getTrees(){
+    Set<String> nicknames = {};
+
+    for(int i = 0; i < amakhubalo.length;i++){
+      nicknames.add(amakhubalo[i].nickname);
+    }
+
+    return nicknames;
+  }
+
+  Set<String> _getExtras(){
+    Set<String> otherThings = {};
+
+    for(int i = 0; i < extras.length;i++){
+      otherThings.add(extras[i]);
+    }
+
+    return otherThings;
+  }
+
+  Set<String> _getAnimals(){
+    Set<String> animals = {};
+
+    for(int i = 0; i < izilwane.length;i++){
+      animals.add(izilwane[i]);
+    }
+
+    return animals;
+  }
 
   void addTree(Tree tree){
     amakhubalo.add(tree);
@@ -1032,6 +1081,7 @@ class Qashwa extends Umuthi{
  
     extras.add('Inkukhu(Ulamthuthu) Emhlophe.');
     extras.add('Umlotha Wasekhaya Owezinkuni, Hhhayi Owamaplangwe.');
+    extras.add('Usu Inyama Yangaphakathi');
   
 
   }
@@ -3234,6 +3284,265 @@ class QinaXXX extends Umuthi{
   @override
   String howToUse() {
     return HowToUseLanguage.howToUseQinaXXX[languageIndex] ;
+  }
+  
+}
+
+class Yakhumuzi extends Umuthi{
+  
+  Yakhumuzi(int languageIndex, {forGoodUse =true}):
+  super('Yakhumuzi',
+  languageIndex){
+    iyachela = true;
+
+    price = 185;
+
+    
+    amakhubalo.add(Umabopha());
+    Umbune umbune = Umbune();
+    umbune.description = 'Angazi Noma Umuthi Noma Isilwane Lesi.';
+    amakhubalo.add(umbune);
+    Imbabazane imbabazane = Imbabazane();
+    imbabazane.description = 'Angazi Noma Umuthi Noma Isilwane Lesi.';
+    amakhubalo.add(imbabazane);
+    izilwane.add('Ufudu Neck Oil');
+    
+    extras.add('Milk Long Life');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaYakhumuzi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseYakhumuzi[languageIndex] ;
+  }
+  
+}
+
+class Ngfunumsebenzi extends Umuthi{
+  
+  Ngfunumsebenzi(int languageIndex, {forGoodUse =true}):
+  super('Ngfunumsebenzi',
+  languageIndex){
+    iyachela = true;
+
+    price = 145;
+
+    
+    amakhubalo.add(Ingwavuma());
+    amakhubalo.add(Umphumeleli());
+    amakhubalo.add(Uskhundla());
+    amakhubalo.add(UvumaOmhlophe());
+    
+    amakhubalo.add(Sehlulamanye());
+    amakhubalo.add(Unhlanhlemhlophe());
+    amakhubalo.add(Umampunzana());
+    amakhubalo.add(Ufikubuse());
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaNgfunumsebenzi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseNgfunumsebenzi[languageIndex] ;
+  }
+  
+}
+
+class Khulumisidlozi extends Umuthi{
+  
+  Khulumisidlozi(int languageIndex, {forGoodUse =true}):
+  super('Khulumisidlozi',
+  languageIndex){
+    iyachela = true;
+
+    price = 145;
+
+    
+    amakhubalo.add(Ungqangendlela());
+    amakhubalo.add(Uqhume());
+    amakhubalo.add(Umadlozane());
+    
+    izilwane.add('Ishoba Lenyathi');
+    
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaKhulumisidlozi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseKhulumisidlozi[languageIndex] ;
+  }
+  
+}
+
+// How To Use?
+class Hlola extends Umuthi{
+  
+  Hlola(int languageIndex, {forGoodUse =true}):
+  super('Hlola',
+  languageIndex){
+    iyachela = true;
+
+    price = 145;
+
+    
+    amakhubalo.add(Umhlahlo());
+    amakhubalo.add(Umkhondweni());
+    amakhubalo.add(Ungibonisele());
+    amakhubalo.add(Umusa());
+    amakhubalo.add(Imamatheka());
+    
+    izilwane.add('Ikhala Lenja');
+    
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaHlola[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseHlola[languageIndex] ;
+  }
+  
+}
+
+class Donsabafazi extends Umuthi{
+  
+  Donsabafazi(int languageIndex, {forGoodUse =true}):
+  super('Donsabafazi',
+  languageIndex){
+    iyachela = true;
+
+    price = 160;
+
+    
+    amakhubalo.add(Umathinta());
+    amakhubalo.add(Uvuma());
+    amakhubalo.add(Umnyamathi());
+    amakhubalo.add(Umunyu());
+    
+    izilwane.add('Mvubu Oil');
+    izilwane.add('Mpukane Oil');
+    izilwane.add('Green Mamba Oil');
+    izilwane.add('Nkosazane Oil');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaDonsabafazi[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseDonsabafazi[languageIndex] ;
+  }
+  
+}
+
+class Uhlangalwabo extends Umuthi{
+  
+  Uhlangalwabo(int languageIndex, {forGoodUse =true}):
+  super('Uhlangalwabo',
+  languageIndex){
+    iyachela = true;
+
+    price = 250;
+
+    
+    amakhubalo.add(Ushendelomkhwekazi());
+    amakhubalo.add(Usheshelingene());
+    Uqhume uqhume = Uqhume();
+    uqhume.description = 'Umfazothethayo';
+    amakhubalo.add(uqhume);
+    amakhubalo.add(Uqhume());
+    amakhubalo.add(Uzeneke());
+    amakhubalo.add(Ilukuluku());
+    amakhubalo.add(Umalinga());
+    amakhubalo.add(Umalilisa());
+    amakhubalo.add(Umdlandlovu());
+    amakhubalo.add(Intolwane());
+    amakhubalo.add(Umphumeleli());
+    amakhubalo.add(Isiwisa());
+    amakhubalo.add(Isiqomiso());
+    
+    izilwane.add('Mpukane Oil');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaUhlangalwabo[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseUhlangalwabo[languageIndex] ;
+  }
+  
+}
+
+class IsikhafuloBMW extends Umuthi{
+  
+  IsikhafuloBMW(int languageIndex, {forGoodUse =true}):
+  super('IsikhafuloBMW',
+  languageIndex){
+    iyachela = true;
+
+    price = 220;
+
+    Uzililo uzililo = Uzililo();
+    uzililo.description = 'Umkhulu';
+    amakhubalo.add(uzililo);
+    amakhubalo.add(Ummemezi(umbala:'Red'));
+    amakhubalo.add(Ummemezi(umbala:'White'));
+    amakhubalo.add(Ilukuluku());
+    amakhubalo.add(Umayisaka('Red'));
+    amakhubalo.add(Umalilisa());
+    amakhubalo.add(Mlomomnandi());
+    amakhubalo.add(Umazulazayithole());
+    amakhubalo.add(Umkhondweni());
+    amakhubalo.add(Isbhaka());
+    amakhubalo.add(Ugina());
+    
+    amakhubalo.add(Iwozawoza());
+    amakhubalo.add(Sehlulamanye());
+    amakhubalo.add(Umkhondweni());
+    Indabulaluvalo indabulaluvalo = Indabulaluvalo();
+    indabulaluvalo.description = 'Yonke';
+    amakhubalo.add(Solo());
+    amakhubalo.add(indabulaluvalo);
+    amakhubalo.add(Uhhabiya());
+    amakhubalo.add(Umthathe());
+    amakhubalo.add(Abaphaphi());
+    amakhubalo.add(Abangqongqozi());
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaIsikhafuloBMW[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseIsikhafuloBMW[languageIndex] ;
   }
   
 }

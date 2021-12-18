@@ -562,6 +562,78 @@ class TreeResultLanguage{
     '#######'
   ];
 
+  static const imiphumelaUsheshelingene =
+  [
+    'Wenza Kube Lula Ukuya Ocansini.'
+  ];
+
+  static const imiphumelaUshendelomkhwekazi =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaUmhlahlo =
+  [
+    '######'
+  ];
+
+  static const imiphumelaUhhabiya =
+  [
+    '######'
+  ];
+
+  static const imiphumelaUgina =
+  [
+    '#######'
+  ];
+
+  static const imiphumelaIsbhaka =
+  [
+    '######'
+  ];
+
+  static const imiphumelaUmdlandlovu =
+  [
+    'Ugoba Nabakhulu'
+  ];
+
+  static const imiphumelaIlukuluku =
+  [
+    'Ubanelukuluku'
+  ];
+
+  static const imiphumelaIsiwisa =
+  [
+    'Siyawisa'
+  ];
+
+  static const imiphumelaIsiqomiso =
+  [
+    'Siyaqomisa'
+  ];
+
+
+  static const imiphumelaUfikubuse =
+  [
+    'Lapho Ofike Khona Uyabusa.'
+  ];
+
+  static const imiphumelaUmphumeleli =
+  [
+    'Uyaphumelelisa'
+  ];
+
+  static const imiphumelaImbabazane =
+  [
+    '#######'
+  ];
+
+
+  static const imiphumelaUmbune =
+  [
+    '#######'
+  ];
+
   static const imiphumelaUndabungehlele =
   [
     '#######'

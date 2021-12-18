@@ -145,8 +145,37 @@ class ProductResultLanguage{
   ['Uqeda Icala',
   ];
 
+  static const imiphumelaIsikhafuloBMW =
+  ['Ikuqoma Ithanda Ingathandi.',
+  ];
+
+  static const imiphumelaUhlangalwabo =
+  ['Uhlanga Lwabesifazane',
+  ];
+
+  static const imiphumelaHlola =
+  ['Uwusebenzisa Uma Ufuna Ukubuyisa Ingilosi Yakho Yokuhlola.',
+  ];
+
   static const imiphumelaShayizitha =
   ['Ukugadlayo Udabula Amafu.',
+  ];
+
+  static const imiphumelaDonsabafazi =
+  ['Udonsa Abafazi',
+  ];
+
+  static const imiphumelaKhulumisidlozi =
+  ['Enza Idlozi Lakho Likhulume.',
+  ];
+
+
+  static const imiphumelaNgfunumsebenzi =
+  ['Owomuntu Ofuna Umsebenzi. Engathi Ungathola Nomuthi Ekuthiwa \'U-Qashwa\' Uma Unawo Amandla, Yebo Kuyasiza Kodwa Akuphoqi.',
+  ];
+
+  static const imiphumelaYakhumuzi =
+  ['Uyokunihlanganisa Ninowakwakho, Isebenza Ngokwenza Ucansi.',
   ];
 
   static const imiphumelaQinaXXX =

@@ -242,6 +242,36 @@ class HowToUseLanguage{
   ['Phuza Ikota Yenkomishi Kathathu Ngelanga.',
   ];
 
+  static const howToUseIsikhafuloBMW =
+  ['Uthela Esandleni Uwukhulumise Umuthi, Ubize Leyontombi Ngegama Nesibongo Uphephethe. '
+  'Ungakwenzela Lapho Ohlala Khona Ngo 00:00 Ebusuku, Noma Ukwenzele Eduze Lwalapho Ihlala Khona Intombi'
+  ' Noma Ingasikhathi Sini.',
+  ];
+
+  static const howToUseHlola =
+  ['Gquma, Geza, Phalaza, Gcaba',
+  ];
+
+  static const howToUseUhlangalwabo =
+  ['Gcaba Noma Ikuphi Kulezindawo - Ipipi, Igilo, Amashiya, Isilevu, Ulwimi, Iziqhomo Nasemuva Kwentamo.',
+  ];
+
+  static const howToUseDonsabafazi =
+  ['Gcoba Amashiya, Uhlikihle  Nezandla, Usungabathintake Abesifazane.',
+  ];
+
+  static const howToUseYakhumuzi =
+  ['Phuza Ikota Yenkomishi Kabili Ngelanga.',
+  ];
+
+  static const howToUseKhulumisidlozi =
+  ['Khulumisa Igwebu Lalomuthi, Ugcime, Ugeze, Uphalaze.',
+  ];
+
+  static const howToUseNgfunumsebenzi =
+  ['Phuza Ikota Yenkomishi Kabili Ngelanga.',
+  ];
+
   static const howToUseQinaXXX =
   ['Ugcaba Ngemuva Kwamadlebe Nasokhakhayini Izinhlanga Ezimbili.',
   ];

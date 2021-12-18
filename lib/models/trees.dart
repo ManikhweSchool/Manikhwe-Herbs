@@ -6,6 +6,7 @@ abstract class Tree{
   String name;
   String part = 'amaxholo';
   String description = '';
+  String nickname = '';
   
 
   Tree(this.name,
@@ -14,6 +15,7 @@ abstract class Tree{
   Map<String, dynamic> toMap() {
     return {
       'tree_name ': name,
+      'tree_nick_name ': nickname,
       'tree_result': findPurposeInAllLanguages()
     };
   }
@@ -36,7 +38,9 @@ abstract class Tree{
 class Velabahleke extends Tree{
 
   Velabahleke({forGoodUse =true}):
-  super('Velabahleke');
+  super('Velabahleke'){
+    nickname = 'A0';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -56,7 +60,9 @@ class Velabahleke extends Tree{
 class Mavulakuvaliwe extends Tree{
 
   Mavulakuvaliwe({forGoodUse =true}):
-  super('Mavulakuvaliwe');
+  super('Mavulakuvaliwe'){
+    nickname = 'A1';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -78,7 +84,9 @@ class Sgenama extends Tree{
   bool esibovu;
 
   Sgenama(this.esibovu,{forGoodUse =true}):
-  super('Sgenama');
+  super('Sgenama'){
+    nickname = 'A2';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -98,7 +106,9 @@ class Sgenama extends Tree{
 class Maphipha extends Tree{
 
   Maphipha({forGoodUse =true}):
-  super('Maphipha');
+  super('Maphipha'){
+    nickname = 'A3';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -119,7 +129,9 @@ class Maphipha extends Tree{
 class Mhlakazanhlansi extends Tree{
 
   Mhlakazanhlansi({forGoodUse =true}):
-  super('Mhlakazanhlansi');
+  super('Mhlakazanhlansi'){
+    nickname = 'A4';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -139,7 +151,9 @@ class Mhlakazanhlansi extends Tree{
 class Isiqunga extends Tree{
 
   Isiqunga({forGoodUse =true}):
-  super('Isiqunga');
+  super('Isiqunga'){
+    nickname = 'A5';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -158,7 +172,9 @@ class Isiqunga extends Tree{
 class Umzaneno extends Tree{
 
   Umzaneno({forGoodUse =true}):
-  super('Umzaneno');
+  super('Umzaneno'){
+    nickname = 'A6';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -177,7 +193,9 @@ class Umzaneno extends Tree{
 class Imamatheka extends Tree{
 
   Imamatheka({forGoodUse =true}):
-  super('Imamatheka');
+  super('Imamatheka'){
+    nickname = 'A7';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -198,7 +216,9 @@ class Uvuma extends Tree{
   late bool omhlophe;
 
   Uvuma({forGoodUse =true}):
-  super('Uvuma');
+  super('Uvuma'){
+    nickname = 'A8';
+  }
 
   void setOmhlophe(bool omhlophe){
     this.omhlophe = omhlophe;
@@ -221,7 +241,9 @@ class Uvuma extends Tree{
 class Iwozawoza extends Tree{
 
   Iwozawoza({forGoodUse =true}):
-  super('Iwozawoza');
+  super('Iwozawoza'){
+    nickname = 'A9';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -239,7 +261,9 @@ class Iwozawoza extends Tree{
 
 class Izinsipho extends Tree{
   Izinsipho({forGoodUse =true}):
-  super('Izinsipho');
+  super('Izinsipho'){
+    nickname = 'Izinsipho Zomqombothi';
+  }
   @override
   List<String> findPurpose(int languageIndex) {
     return [
@@ -257,7 +281,9 @@ class Izinsipho extends Tree{
 class Umbola extends Tree{
 
   Umbola({forGoodUse =true}):
-  super('Umbola');
+  super('Umbola'){
+    nickname = 'B0';
+  }
 
   @override 
   List<String> findPurpose(int languageIndex){
@@ -276,7 +302,9 @@ class Umbola extends Tree{
 class Umanzamnyama extends Tree{
 
   Umanzamnyama({forGoodUse =true}):
-  super('Umanzamnyama');
+  super('Umanzamnyama'){
+    nickname = 'B1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -293,7 +321,9 @@ class Umanzamnyama extends Tree{
 class Inhlambamanzi extends Tree{
 
   Inhlambamanzi({forGoodUse =true}):
-  super('Inhlambamanzi');
+  super('Inhlambamanzi'){
+    nickname = 'B2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -310,7 +340,9 @@ class Inhlambamanzi extends Tree{
 class Umsanka extends Tree{
 
   Umsanka({forGoodUse =true}):
-  super('Umsanka');
+  super('Umsanka'){
+    nickname = 'B3red or B3white';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -327,7 +359,9 @@ class Umsanka extends Tree{
 class Umagwazucaca extends Tree{
 
   Umagwazucaca({forGoodUse =true}):
-  super('Umagwazucaca');
+  super('Umagwazucaca'){
+    nickname = 'B4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -345,7 +379,9 @@ class Umagwazucaca extends Tree{
 class Umabelejongosi extends Tree{
 
   Umabelejongosi({forGoodUse =true}):
-  super('Umabelejongosi');
+  super('Umabelejongosi'){
+    nickname = 'B5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -363,7 +399,9 @@ class Umabelejongosi extends Tree{
 class Impathampatha extends Tree{
 
   Impathampatha({forGoodUse =true}):
-  super('Impathampatha');
+  super('Impathampatha'){
+    nickname = 'B6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -380,7 +418,9 @@ class Impathampatha extends Tree{
 class Ukalumuzi extends Tree{
 
   Ukalumuzi({forGoodUse =true}):
-  super('Ukalumuzi');
+  super('Ukalumuzi'){
+    nickname = 'B7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -398,7 +438,9 @@ class Unukani extends Tree{
   bool male;
 
   Unukani(this.male,{forGoodUse =true}):
-  super('Unukani ' + ((male)?'Wesilisa':'Wesifazane'));
+  super('Unukani ' + ((male)?'Wesilisa':'Wesifazane')){
+    nickname = 'B8male or B8female';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -414,7 +456,9 @@ class Unukani extends Tree{
 
 class Umthathe extends Tree{
   Umthathe({forGoodUse =true}):
-  super('Umthathe');
+  super('Umthathe'){
+    nickname = 'B9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -429,7 +473,9 @@ class Umthathe extends Tree{
 
 class IphakamaLamanzi extends Tree{
   IphakamaLamanzi({forGoodUse =true}):
-  super('IphakamaLamanzi');
+  super('IphakamaLamanzi'){
+    nickname = 'C0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -444,7 +490,9 @@ class IphakamaLamanzi extends Tree{
 
 class IphakamaLentaba extends Tree{
   IphakamaLentaba({forGoodUse =true}):
-  super('IphakamaLentaba');
+  super('IphakamaLentaba'){
+    nickname = 'C1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -459,7 +507,9 @@ class IphakamaLentaba extends Tree{
 
 class Izibu extends Tree{
   Izibu({forGoodUse =true}):
-  super('Izibu');
+  super('Izibu'){
+    nickname = 'C2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -475,7 +525,9 @@ class Izibu extends Tree{
 
 class Uskhundla extends Tree{
   Uskhundla({forGoodUse =true}):
-  super('Uskhundla');
+  super('Uskhundla'){
+    nickname = 'C3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -491,7 +543,9 @@ class Uskhundla extends Tree{
 
 class Umyezane extends Tree{
   Umyezane({forGoodUse =true}):
-  super('Umyezane');
+  super('Umyezane'){
+    nickname = 'C4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -507,7 +561,9 @@ class Umyezane extends Tree{
 
 class Umabusane extends Tree{
   Umabusane({forGoodUse =true}):
-  super('Umabusane');
+  super('Umabusane'){
+    nickname = 'C5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -523,7 +579,9 @@ class Umabusane extends Tree{
 
 class UmusaOmkhulu extends Tree{
   UmusaOmkhulu({forGoodUse =true}):
-  super('UmusaOmkhulu');
+  super('UmusaOmkhulu'){
+    nickname = 'C6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -539,7 +597,9 @@ class UmusaOmkhulu extends Tree{
 
 class Umdatshukelwa extends Tree{
   Umdatshukelwa({forGoodUse =true}):
-  super('Umdatsukelwa');
+  super('Umdatsukelwa'){
+    nickname = 'C7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -555,7 +615,9 @@ class Umdatshukelwa extends Tree{
 
 class Undlelazimhlophe extends Tree{
   Undlelazimhlophe({forGoodUse =true}):
-  super('Undlelazimhlophe');
+  super('Undlelazimhlophe'){
+    nickname = 'C7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -571,7 +633,9 @@ class Undlelazimhlophe extends Tree{
 
 class Umunyu extends Tree{
   Umunyu({forGoodUse =true}):
-  super('Umunyu');
+  super('Umunyu'){
+    nickname = 'C9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -587,7 +651,9 @@ class Umunyu extends Tree{
 
 class Ikhokhelo extends Tree{
   Ikhokhelo({forGoodUse =true}):
-  super('Ikhokhelo');
+  super('Ikhokhelo'){
+    nickname = 'D0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -603,7 +669,9 @@ class Ikhokhelo extends Tree{
 
 class Insulansula extends Tree{
   Insulansula({forGoodUse =true}):
-  super('Insulansula');
+  super('Insulansula'){
+    nickname = 'D1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -619,7 +687,9 @@ class Insulansula extends Tree{
 
 class Uzeneke extends Tree{
   Uzeneke({forGoodUse =true}):
-  super('Uzeneke');
+  super('Uzeneke'){
+    nickname = 'D2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -635,7 +705,9 @@ class Uzeneke extends Tree{
 
 class Ibheka extends Tree{
   Ibheka({forGoodUse =true}):
-  super('Ibheka');
+  super('Ibheka'){
+    nickname = 'D3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -651,7 +723,9 @@ class Ibheka extends Tree{
 
 class Unkungwini extends Tree{
   Unkungwini({forGoodUse =true}):
-  super('Unkungwini');
+  super('Unkungwini'){
+    nickname = 'D4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -667,7 +741,9 @@ class Unkungwini extends Tree{
 
 class Imfingo extends Tree{
   Imfingo({forGoodUse =true}):
-  super('Imfingo');
+  super('Imfingo'){
+    nickname = 'D5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -684,7 +760,9 @@ class Imfingo extends Tree{
 // Ingobamakhosi
 class Umnyamathi extends Tree{
   Umnyamathi({forGoodUse =true}):
-  super('Umnyamathi');
+  super('Umnyamathi'){
+    nickname = 'D6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -700,7 +778,9 @@ class Umnyamathi extends Tree{
 
 class Unhlanhlemhlophe extends Tree{
   Unhlanhlemhlophe({forGoodUse =true}):
-  super('Unhlanhlemhlophe');
+  super('Unhlanhlemhlophe'){
+    nickname = 'D7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -716,7 +796,9 @@ class Unhlanhlemhlophe extends Tree{
 
 class Unhliziyonkulu extends Tree{
   Unhliziyonkulu({forGoodUse =true}):
-  super('Unhliziyonkulu');
+  super('Unhliziyonkulu'){
+    nickname = 'D8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -732,7 +814,9 @@ class Unhliziyonkulu extends Tree{
 
 class Umhlahlandlela extends Tree{
   Umhlahlandlela({forGoodUse =true}):
-  super('Umhlahlandlela');
+  super('Umhlahlandlela'){
+    nickname = 'D9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -748,7 +832,9 @@ class Umhlahlandlela extends Tree{
 
 class Umklele extends Tree{
   Umklele({forGoodUse =true}):
-  super('Umklele');
+  super('Umklele'){
+    nickname = 'E0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -764,7 +850,9 @@ class Umklele extends Tree{
 
 class Uguleni extends Tree{
   Uguleni({forGoodUse =true}):
-  super('Uguleni');
+  super('Uguleni'){
+    nickname = 'E1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -780,7 +868,9 @@ class Uguleni extends Tree{
 
 class Uqhumelwabafazi extends Tree{
   Uqhumelwabafazi({forGoodUse =true}):
-  super('Uqhumelwabafazi');
+  super('Uqhumelwabafazi'){
+    nickname = 'E2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -796,7 +886,9 @@ class Uqhumelwabafazi extends Tree{
 
 class UvumaOmhlophe extends Tree{
   UvumaOmhlophe({forGoodUse =true}):
-  super('UvumaOmhlophe');
+  super('UvumaOmhlophe'){
+    nickname = 'E3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -812,7 +904,9 @@ class UvumaOmhlophe extends Tree{
 
 class Vuka extends Tree{
   Vuka({forGoodUse =true}):
-  super('Vuka');
+  super('Vuka'){
+    nickname = 'E4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -828,7 +922,9 @@ class Vuka extends Tree{
 
 class Umkhondweni extends Tree{
   Umkhondweni({forGoodUse =true}):
-  super('Umkhondweni');
+  super('Umkhondweni'){
+    nickname = 'E5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -844,7 +940,9 @@ class Umkhondweni extends Tree{
 
 class Icishamlilo extends Tree{
   Icishamlilo({forGoodUse =true}):
-  super('Icishamlilo');
+  super('Icishamlilo'){
+    nickname = 'E6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -863,7 +961,9 @@ class Ilabatheka extends Tree{
   Ilabatheka(
     this.elendoda,
     {forGoodUse =true}
-  ):super('Ilabatheka');
+  ):super('Ilabatheka'){
+    nickname = 'E7male or E7female';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -879,7 +979,9 @@ class Ilabatheka extends Tree{
 
 class Inguduza extends Tree{
   Inguduza({forGoodUse =true}):
-  super('Inguduza');
+  super('Inguduza'){
+    nickname = 'E8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -895,7 +997,9 @@ class Inguduza extends Tree{
 
 class Ixhaphosi extends Tree{
   Ixhaphosi({forGoodUse =true}):
-  super('Ixhaphosi');
+  super('Ixhaphosi'){
+    nickname = 'E9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -911,7 +1015,9 @@ class Ixhaphosi extends Tree{
 
 class Umavumbuka extends Tree{
   Umavumbuka({forGoodUse =true}):
-  super('Umavumbuka');
+  super('Umavumbuka'){
+    nickname = 'F0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -927,7 +1033,9 @@ class Umavumbuka extends Tree{
 
 class Umalenjane extends Tree{
   Umalenjane({forGoodUse =true}):
-  super('Umalenjane');
+  super('Umalenjane'){
+    nickname = 'F1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -943,7 +1051,9 @@ class Umalenjane extends Tree{
 
 class Ishaladilezenyoka extends Tree{
   Ishaladilezenyoka({forGoodUse =true}):
-  super('Ishaladilezenyoka');
+  super('Ishaladilezenyoka'){
+    nickname = 'F2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -959,7 +1069,9 @@ class Ishaladilezenyoka extends Tree{
 
 class Inhlaba extends Tree{
   Inhlaba({forGoodUse =true}):
-  super('Inhlaba');
+  super('Inhlaba'){
+    nickname = 'F3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -975,7 +1087,9 @@ class Inhlaba extends Tree{
 
 class Ugobho extends Tree{
   Ugobho({forGoodUse =true}):
-  super('Ugobho');
+  super('Ugobho'){
+    nickname = 'F4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -991,7 +1105,9 @@ class Ugobho extends Tree{
 
 class Ukotapeya extends Tree{
   Ukotapeya({forGoodUse =true}):
-  super('Ukotapeya');
+  super('Ukotapeya'){
+    nickname = 'F5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1007,7 +1123,9 @@ class Ukotapeya extends Tree{
 
 class Uguava extends Tree{
   Uguava ({forGoodUse =true}):
-  super('Uguava');
+  super('Uguava'){
+    nickname = 'F6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1023,7 +1141,9 @@ class Uguava extends Tree{
 
 class Umathunga extends Tree{
   Umathunga ({forGoodUse =true}):
-  super('Umathunga');
+  super('Umathunga'){
+    nickname = 'F7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1039,7 +1159,9 @@ class Umathunga extends Tree{
 
 class Ithombonkala extends Tree{
   Ithombonkala ({forGoodUse =true}):
-  super('Ithombonkala');
+  super('Ithombonkala'){
+    nickname = 'F8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1055,7 +1177,9 @@ class Ithombonkala extends Tree{
 
 class Intuma extends Tree{
   Intuma ({forGoodUse =true}):
-  super('Intuma');
+  super('Intuma'){
+    nickname = 'F9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1072,7 +1196,9 @@ class Intuma extends Tree{
 // Amfutha omhlaba
 class Impila extends Tree{
   Impila ({forGoodUse =true}):
-  super('Impila');
+  super('Impila'){
+    nickname = 'G0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1088,7 +1214,9 @@ class Impila extends Tree{
 
 class Umhlanga extends Tree{
   Umhlanga ({forGoodUse =true}):
-  super('Umhlanga');
+  super('Umhlanga'){
+    nickname = 'G1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1104,7 +1232,9 @@ class Umhlanga extends Tree{
 
 class Umabopha extends Tree{
   Umabopha ({forGoodUse =true}):
-  super('Umabopha');
+  super('Umabopha'){
+    nickname = 'G2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1120,7 +1250,9 @@ class Umabopha extends Tree{
 
 class Ishongwe extends Tree{
   Ishongwe ({forGoodUse =true}):
-  super('Ishongwe');
+  super('Ishongwe'){
+    nickname = 'G3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1136,7 +1268,9 @@ class Ishongwe extends Tree{
 
 class Umlahleni extends Tree{
   Umlahleni ({forGoodUse =true}):
-  super('Umlahleni');
+  super('Umlahleni'){
+    nickname = 'G4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1152,7 +1286,9 @@ class Umlahleni extends Tree{
 
 class Umanzamhlophe extends Tree{
   Umanzamhlophe ({forGoodUse =true}):
-  super('Umanzamhlophe');
+  super('Umanzamhlophe'){
+    nickname = 'G5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1168,7 +1304,9 @@ class Umanzamhlophe extends Tree{
 
 class Umlahlankosi extends Tree{
   Umlahlankosi ({forGoodUse =true}):
-  super('Umlahlankosi');
+  super('Umlahlankosi'){
+    nickname = 'G6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1184,7 +1322,9 @@ class Umlahlankosi extends Tree{
 
 class Unongamela extends Tree{
   Unongamela ({forGoodUse =true}):
-  super('Unongamela');
+  super('Unongamela'){
+    nickname = 'G7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1200,7 +1340,9 @@ class Unongamela extends Tree{
 
 class Umkhanyakude extends Tree{
   Umkhanyakude ({forGoodUse =true}):
-  super('Umkhanyakude');
+  super('Umkhanyakude'){
+    nickname = 'G8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1217,7 +1359,9 @@ class Umkhanyakude extends Tree{
 class Umayisaka extends Tree{
   String umbala;
   Umayisaka (this.umbala,{forGoodUse =true}):
-  super('Umayisaka');
+  super('Umayisaka'){
+    nickname = 'G9red or G9White';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1234,7 +1378,9 @@ class Umayisaka extends Tree{
 class Umadlozane extends Tree{
   
   Umadlozane ({forGoodUse =true}):
-  super('Umadlozane');
+  super('Umadlozane'){
+    nickname = 'H0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1250,7 +1396,9 @@ class Umadlozane extends Tree{
 class Ubhinini extends Tree{
   
   Ubhinini ({forGoodUse =true}):
-  super('Ubhinini');
+  super('Ubhinini'){
+    nickname = 'H1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1267,7 +1415,9 @@ class Ubhinini extends Tree{
 class Mkhwangu extends Tree{
   
   Mkhwangu ({forGoodUse =true}):
-  super('Mkhwangu');
+  super('Mkhwangu'){
+    nickname = 'H2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1283,7 +1433,9 @@ class Mkhwangu extends Tree{
 class Izazacacani extends Tree{
   
   Izazacacani ({forGoodUse =true}):
-  super('Izazacacani');
+  super('Izazacacani'){
+    nickname = 'H3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1299,7 +1451,9 @@ class Izazacacani extends Tree{
 class Velemoyeni extends Tree{
   
   Velemoyeni ({forGoodUse =true}):
-  super('Velemoyeni');
+  super('Velemoyeni'){
+    nickname = 'H4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1315,7 +1469,9 @@ class Velemoyeni extends Tree{
 class Umashwilishwili extends Tree{
   
   Umashwilishwili ({forGoodUse =true}):
-  super('Umashwilishwili');
+  super('Umashwilishwili'){
+    nickname = 'H5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1332,7 +1488,9 @@ class Umashwilishwili extends Tree{
 class Iqhume extends Tree{
   
   Iqhume ({forGoodUse =true}):
-  super('Iqhume');
+  super('Iqhume'){
+    nickname = 'H6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1349,7 +1507,9 @@ class Iqhume extends Tree{
 class Uminimini extends Tree{
   
   Uminimini ({forGoodUse =true}):
-  super('Uminimini');
+  super('Uminimini'){
+    nickname = 'H7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1366,7 +1526,9 @@ class Uminimini extends Tree{
 class Uqhatha extends Tree{
   
   Uqhatha ({forGoodUse =true}):
-  super('Uqhatha');
+  super('Uqhatha'){
+    nickname = 'H8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1384,7 +1546,9 @@ class Uqhatha extends Tree{
 class Impenduli extends Tree{
   
   Impenduli ({forGoodUse =true}):
-  super('Impenduli');
+  super('Impenduli'){
+    nickname = 'H9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1401,7 +1565,9 @@ class Impenduli extends Tree{
 class Intolwane extends Tree{
   
   Intolwane ({forGoodUse =true}):
-  super('Intolwane');
+  super('Intolwane'){
+    nickname = 'I0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1418,7 +1584,9 @@ class Intolwane extends Tree{
 class Ingwavuma extends Tree{
   
   Ingwavuma ({forGoodUse =true}):
-  super('Ingwavuma');
+  super('Ingwavuma'){
+    nickname = 'I1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1435,7 +1603,9 @@ class Ingwavuma extends Tree{
 class Ihluze extends Tree{
   
   Ihluze ({forGoodUse =true}):
-  super('Ihluze');
+  super('Ihluze'){
+    nickname = 'I2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1452,7 +1622,9 @@ class Ihluze extends Tree{
 class Umwelela extends Tree{
   
   Umwelela ({forGoodUse =true}):
-  super('Umwelela');
+  super('Umwelela'){
+    nickname = 'I3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1471,7 +1643,9 @@ class Umhlakaza extends Tree{
   String umbala;
 
   Umhlakaza ({forGoodUse =true, this.umbala='',}):
-  super('Umhlakaza');
+  super('Umhlakaza'){
+    nickname = 'I4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1488,7 +1662,9 @@ class Umhlakaza extends Tree{
 class Inkunguyentaba extends Tree{
   
   Inkunguyentaba ({forGoodUse =true}):
-  super('Inkunguyentaba');
+  super('Inkunguyentaba'){
+    nickname = 'I5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1505,7 +1681,9 @@ class Inkunguyentaba extends Tree{
 class Uvukamalibeni extends Tree{
   
   Uvukamalibeni ({forGoodUse =true}):
-  super('Uvukamalibeni');
+  super('Uvukamalibeni'){
+    nickname = 'I6';
+  }
   
 
   @override
@@ -1523,7 +1701,9 @@ class Uvukamalibeni extends Tree{
 class Ibutho extends Tree{
   
   Ibutho ({forGoodUse =true}):
-  super('Ibutho');
+  super('Ibutho'){
+    nickname = 'I7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1540,7 +1720,9 @@ class Ibutho extends Tree{
 class Iphamba extends Tree{
   String elingakanani;
   Iphamba ({this.elingakanani='',forGoodUse =true}):
-  super('Iphamba');
+  super('Iphamba'){
+    nickname = 'I8small or I8big';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1557,7 +1739,9 @@ class Iphamba extends Tree{
 class Idlula extends Tree{
   
   Idlula ({forGoodUse =true}):
-  super('Idlula');
+  super('Idlula'){
+    nickname = 'I0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1576,7 +1760,9 @@ class Umathithibala extends Tree{
   String omncaneNomaOmkhulu;
 
   Umathithibala ({this.omncaneNomaOmkhulu='',forGoodUse =true}):
-  super('Umathithibala');
+  super('Umathithibala'){
+    nickname = 'J0small or J0big';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1593,7 +1779,9 @@ class Umathithibala extends Tree{
 class Umalala extends Tree{
   
   Umalala ({forGoodUse =true}):
-  super('Umalala');
+  super('Umalala'){
+    nickname = 'J1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1610,7 +1798,9 @@ class Umalala extends Tree{
 class Isbhaha extends Tree{
   
   Isbhaha ({forGoodUse =true}):
-  super('Isbhaha');
+  super('Isbhaha'){
+    nickname = 'J2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1627,7 +1817,9 @@ class Isbhaha extends Tree{
 class Izwangomoya extends Tree{
   
   Izwangomoya ({forGoodUse =true}):
-  super('Izwangomoya');
+  super('Izwangomoya'){
+    nickname = 'J3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1644,7 +1836,9 @@ class Izwangomoya extends Tree{
 class Ikhathaza extends Tree{
   
   Ikhathaza ({forGoodUse =true}):
-  super('Ikhathaza');
+  super('Ikhathaza'){
+    nickname = 'J4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1661,7 +1855,9 @@ class Ikhathaza extends Tree{
 class Umthole extends Tree{
   
   Umthole ({forGoodUse =true}):
-  super('Umthole');
+  super('Umthole'){
+    nickname = 'J5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1678,7 +1874,9 @@ class Umthole extends Tree{
 class Ungwebunkulu extends Tree{
   
   Ungwebunkulu ({forGoodUse =true}):
-  super('Ungwebunkulu');
+  super('Ungwebunkulu'){
+    nickname = 'J6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1695,7 +1893,9 @@ class Ungwebunkulu extends Tree{
 class Ubhubhubhu extends Tree{
   
   Ubhubhubhu ({forGoodUse =true}):
-  super('Ubhubhubhu');
+  super('Ubhubhubhu'){
+    nickname = 'J7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1712,7 +1912,9 @@ class Ubhubhubhu extends Tree{
 class Umqaqi extends Tree{
   
   Umqaqi ({forGoodUse =true}):
-  super('Umqaqi');
+  super('Umqaqi'){
+    nickname = 'J8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1729,7 +1931,9 @@ class Umqaqi extends Tree{
 class Umbili extends Tree{
   
   Umbili ({forGoodUse =true}):
-  super('Umbili');
+  super('Umbili'){
+    nickname = 'J9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1746,7 +1950,9 @@ class Umbili extends Tree{
 class Sukasambe extends Tree{
   
   Sukasambe ({forGoodUse =true}):
-  super('Sukasambe');
+  super('Sukasambe'){
+    nickname = 'K0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1763,7 +1969,9 @@ class Sukasambe extends Tree{
 class Mazulazayithole extends Tree{
   
   Mazulazayithole ({forGoodUse =true}):
-  super('Mazulazayithole');
+  super('Mazulazayithole'){
+    nickname = 'K1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1780,7 +1988,9 @@ class Mazulazayithole extends Tree{
 class Mhungulo extends Tree{
   
   Mhungulo ({forGoodUse =true}):
-  super('Mhungulo');
+  super('Mhungulo'){
+    nickname = 'K2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1797,7 +2007,9 @@ class Mhungulo extends Tree{
 class Mampondomunyi extends Tree{
   
   Mampondomunyi ({forGoodUse =true}):
-  super('Mampondomunyi');
+  super('Mampondomunyi'){
+    nickname = 'K3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1814,7 +2026,9 @@ class Mampondomunyi extends Tree{
 class Ndindibala extends Tree{
   
   Ndindibala ({forGoodUse =true}):
-  super('Ndindibala');
+  super('Ndindibala'){
+    nickname = 'K4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1831,7 +2045,9 @@ class Ndindibala extends Tree{
 class Nhliziyonkulu extends Tree{
   
   Nhliziyonkulu ({forGoodUse =true}):
-  super('Nhliziyonkulu');
+  super('Nhliziyonkulu'){
+    nickname = 'K5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1848,7 +2064,9 @@ class Nhliziyonkulu extends Tree{
 class Dakwa extends Tree{
   
   Dakwa ({forGoodUse =true}):
-  super('Dakwa');
+  super('Dakwa'){
+    nickname = 'K6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1865,7 +2083,9 @@ class Dakwa extends Tree{
 class Uvukabonke extends Tree{
   
   Uvukabonke ({forGoodUse =true}):
-  super('Uvukabonke');
+  super('Uvukabonke'){
+    nickname = 'K7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1882,7 +2102,9 @@ class Uvukabonke extends Tree{
 class Ungqangendlela extends Tree{
   
   Ungqangendlela ({forGoodUse =true}):
-  super('Ungqangendlela');
+  super('Ungqangendlela'){
+    nickname = 'K8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1899,7 +2121,9 @@ class Ungqangendlela extends Tree{
 class Ungange extends Tree{
   
   Ungange ({forGoodUse =true}):
-  super('Ungange');
+  super('Ungange'){
+    nickname = 'K9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1916,7 +2140,9 @@ class Ungange extends Tree{
 class Usondela extends Tree{
   
   Usondela ({forGoodUse =true}):
-  super('Usondela');
+  super('Usondela'){
+    nickname = 'L0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1933,7 +2159,9 @@ class Usondela extends Tree{
 class Umazwahlabayo extends Tree{
   
   Umazwahlabayo ({forGoodUse =true}):
-  super('Umazwahlabayo');
+  super('Umazwahlabayo'){
+    nickname = 'L1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1950,7 +2178,9 @@ class Umazwahlabayo extends Tree{
 class Umazulazayithole extends Tree{
   
   Umazulazayithole ({forGoodUse =true}):
-  super('Umazulazayithole');
+  super('Umazulazayithole'){
+    nickname = 'L2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1967,7 +2197,9 @@ class Umazulazayithole extends Tree{
 class Umoyawezwe extends Tree{
   
   Umoyawezwe ({forGoodUse =true}):
-  super('Umoyawezwe');
+  super('Umoyawezwe'){
+    nickname = 'L3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -1984,7 +2216,9 @@ class Umoyawezwe extends Tree{
 class Abangqongqozi extends Tree{
   
   Abangqongqozi ({forGoodUse =true}):
-  super('Abangqongqozi');
+  super('Abangqongqozi'){
+    nickname = 'L4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2001,7 +2235,9 @@ class Abangqongqozi extends Tree{
 class Makhuthuka extends Tree{
   
   Makhuthuka ({forGoodUse =true}):
-  super('Makhuthuka');
+  super('Makhuthuka'){
+    nickname = 'L5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2018,7 +2254,9 @@ class Makhuthuka extends Tree{
 class Mlomomnandi extends Tree{
   
   Mlomomnandi ({forGoodUse =true}):
-  super('Mlomomnandi');
+  super('Mlomomnandi'){
+    nickname = 'L6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2035,7 +2273,9 @@ class Mlomomnandi extends Tree{
 class Roslina extends Tree{
   
   Roslina ({forGoodUse =true}):
-  super('Roslina');
+  super('Roslina'){
+    nickname = 'L7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2052,7 +2292,9 @@ class Roslina extends Tree{
 class Impishimpishi extends Tree{
   
   Impishimpishi ({forGoodUse =true}):
-  super('Impishimpishi');
+  super('Impishimpishi'){
+    nickname = 'L8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2069,7 +2311,9 @@ class Impishimpishi extends Tree{
 class Nginakile extends Tree{
   
   Nginakile ({forGoodUse =true}):
-  super('Nginakile');
+  super('Nginakile'){
+    nickname = 'L9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2086,7 +2330,9 @@ class Nginakile extends Tree{
 class Ungibonisele extends Tree{
   
   Ungibonisele ({forGoodUse =true}):
-  super('Nginakilele');
+  super('Nginakilele'){
+    nickname = 'M0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2103,7 +2349,9 @@ class Ungibonisele extends Tree{
 class Donsuthando extends Tree{
   
   Donsuthando ({forGoodUse =true}):
-  super('Donsuthando');
+  super('Donsuthando'){
+    nickname = 'M1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2120,7 +2368,9 @@ class Donsuthando extends Tree{
 class IphakamaLaphezulu extends Tree{
   
   IphakamaLaphezulu ({forGoodUse =true}):
-  super('IphakamaLaphezulu');
+  super('IphakamaLaphezulu'){
+    nickname = 'M2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2137,7 +2387,9 @@ class IphakamaLaphezulu extends Tree{
 class Dumaphansi extends Tree{
   
   Dumaphansi ({forGoodUse =true}):
-  super('Dumaphansi');
+  super('Dumaphansi'){
+    nickname = 'M3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2154,7 +2406,9 @@ class Dumaphansi extends Tree{
 class Sehlulamanye extends Tree{
   
   Sehlulamanye ({forGoodUse =true}):
-  super('Sehlulamanye');
+  super('Sehlulamanye'){
+    nickname = 'M4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2171,7 +2425,9 @@ class Sehlulamanye extends Tree{
 class Inkomfe extends Tree{
   
   Inkomfe ({forGoodUse =true}):
-  super('Inkomfe');
+  super('Inkomfe'){
+    nickname = 'M5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2188,7 +2444,9 @@ class Inkomfe extends Tree{
 class Umahlokoloza extends Tree{
   
   Umahlokoloza ({forGoodUse =true}):
-  super('Umahlokoloza');
+  super('Umahlokoloza'){
+    nickname = 'M6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2205,7 +2463,9 @@ class Umahlokoloza extends Tree{
 class Ubhoqo extends Tree{
   
   Ubhoqo ({forGoodUse =true}):
-  super('Ubhoqo');
+  super('Ubhoqo'){
+    nickname = 'M7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2222,7 +2482,9 @@ class Ubhoqo extends Tree{
 class Ukhovithi extends Tree{
   
   Ukhovithi ({forGoodUse =true}):
-  super('Ukhovithi');
+  super('Ukhovithi'){
+    nickname = 'M8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2238,7 +2500,9 @@ class Ukhovithi extends Tree{
 class Uqonsi extends Tree{
   
   Uqonsi ({forGoodUse =true}):
-  super('Uqonsi');
+  super('Uqonsi'){
+    nickname = 'M9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2255,7 +2519,9 @@ class Uqonsi extends Tree{
 class Bangalala extends Tree{
   
   Bangalala ({forGoodUse =true}):
-  super('Bangalala');
+  super('Bangalala'){
+    nickname = 'N0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2272,7 +2538,9 @@ class Bangalala extends Tree{
 class Mbizakayivuthwa extends Tree{
   
   Mbizakayivuthwa ({forGoodUse =true}):
-  super('Mbizakayivuthwa');
+  super('Mbizakayivuthwa'){
+    nickname = 'N1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2289,7 +2557,9 @@ class Mbizakayivuthwa extends Tree{
 class Ishaqa extends Tree{
   
   Ishaqa ({forGoodUse =true}):
-  super('Ishaqa');
+  super('Ishaqa'){
+    nickname = 'N2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2306,7 +2576,9 @@ class Ishaqa extends Tree{
 class Ucalakalithethwa extends Tree{
   
   Ucalakalithethwa ({forGoodUse =true}):
-  super('Ucalakalithethwa');
+  super('Ucalakalithethwa'){
+    nickname = 'N3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2323,7 +2595,9 @@ class Ucalakalithethwa extends Tree{
 class Unyathelo extends Tree{
   
   Unyathelo ({forGoodUse =true}):
-  super('Unyathelo');
+  super('Unyathelo'){
+    nickname = 'N4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2340,7 +2614,9 @@ class Unyathelo extends Tree{
 class Mthunyelelwa extends Tree{
   
   Mthunyelelwa ({forGoodUse =true}):
-  super('Mthunyelelwa');
+  super('Mthunyelelwa'){
+    nickname = 'N5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2357,7 +2633,9 @@ class Mthunyelelwa extends Tree{
 class Mayime extends Tree{
   
   Mayime ({forGoodUse =true}):
-  super('Mayime');
+  super('Mayime'){
+    nickname = 'N6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2374,7 +2652,9 @@ class Mayime extends Tree{
 class Umacashosizini extends Tree{
   
   Umacashosizini ({forGoodUse =true}):
-  super('Umacashosizini');
+  super('Umacashosizini'){
+    nickname = 'N7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2392,7 +2672,9 @@ class Umacashosizini extends Tree{
 class Iphendulula extends Tree{
   
   Iphendulula ({forGoodUse =true}):
-  super('Iphendulula');
+  super('Iphendulula'){
+    nickname = 'N8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2409,7 +2691,9 @@ class Iphendulula extends Tree{
 class Isithuladu extends Tree{
   
   Isithuladu ({forGoodUse =true}):
-  super('Isithuladu');
+  super('Isithuladu'){
+    nickname = 'N9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2426,7 +2710,9 @@ class Isithuladu extends Tree{
 class Isdikili extends Tree{
   
   Isdikili ({forGoodUse =true}):
-  super('Isdikili');
+  super('Isdikili'){
+    nickname = 'O0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2442,7 +2728,9 @@ class Isdikili extends Tree{
 
 class Ndlelazimhlophe  extends Tree{
   Ndlelazimhlophe ({forGoodUse =true}):
-  super('Ndlelazimhlophe');
+  super('Ndlelazimhlophe'){
+    nickname = 'O1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2458,7 +2746,9 @@ class Ndlelazimhlophe  extends Tree{
   
 class Fikabuse  extends Tree{
   Fikabuse ({forGoodUse =true}):
-  super('Fikabuse');
+  super('Fikabuse'){
+    nickname = 'O2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2473,7 +2763,9 @@ class Fikabuse  extends Tree{
   
 class Malibuye  extends Tree{
    Malibuye ({forGoodUse =true}):
-  super('Malibuye');
+  super('Malibuye'){
+    nickname = 'O3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2489,7 +2781,9 @@ class Malibuye  extends Tree{
 // Isihlahla Sezindoni
 class Ibunda  extends Tree{
    Ibunda ({forGoodUse =true}):
-  super('Ibunda');
+  super('Ibunda'){
+    nickname = 'O4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2504,7 +2798,9 @@ class Ibunda  extends Tree{
 
 class Sondeza  extends Tree{
    Sondeza ({forGoodUse =true}):
-  super('Sondeza');
+  super('Sondeza'){
+    nickname = 'O5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2519,7 +2815,9 @@ class Sondeza  extends Tree{
 
 class Umpikayiboni  extends Tree{
    Umpikayiboni ({forGoodUse =true}):
-  super('Umpikayiboni');
+  super('Umpikayiboni'){
+    nickname = 'O6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2534,7 +2832,9 @@ class Umpikayiboni  extends Tree{
 
 class Umayihlanganise  extends Tree{
    Umayihlanganise ({forGoodUse =true}):
-  super('Umayihlanganise');
+  super('Umayihlanganise'){
+    nickname = 'O7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2549,7 +2849,9 @@ class Umayihlanganise  extends Tree{
 
 class Untulwa  extends Tree{
    Untulwa ({forGoodUse =true}):
-  super('Untulwa');
+  super('Untulwa'){
+    nickname = 'O8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2564,7 +2866,9 @@ class Untulwa  extends Tree{
 
 class Umganu  extends Tree{
    Umganu ({forGoodUse =true}):
-  super('Umganu');
+  super('Umganu'){
+    nickname = 'O9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2579,7 +2883,9 @@ class Umganu  extends Tree{
 
 class Imfeyenkawu  extends Tree{
    Imfeyenkawu ({forGoodUse =true}):
-  super('Imfeyenkawu');
+  super('Imfeyenkawu'){
+    nickname = 'P0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2594,7 +2900,9 @@ class Imfeyenkawu  extends Tree{
 
 class Inqaqifindo  extends Tree{
    Inqaqifindo ({forGoodUse =true}):
-  super('Inqaqifindo');
+  super('Inqaqifindo'){
+    nickname = 'P1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2609,7 +2917,9 @@ class Inqaqifindo  extends Tree{
 
 class IphakamaLogagane  extends Tree{
    IphakamaLogagane ({forGoodUse =true}):
-  super('IphakamaLogagane');
+  super('IphakamaLogagane'){
+    nickname = 'P2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2624,7 +2934,9 @@ class IphakamaLogagane  extends Tree{
 
 class Ivulandlela  extends Tree{
    Ivulandlela ({forGoodUse =true}):
-  super('Ivulandlela');
+  super('Ivulandlela'){
+    nickname = 'P3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2639,7 +2951,9 @@ class Ivulandlela  extends Tree{
 
 class Inhlanhlemhlophe  extends Tree{
    Inhlanhlemhlophe ({forGoodUse =true}):
-  super('Inhlanhlemhlophe');
+  super('Inhlanhlemhlophe'){
+    nickname = 'P4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2654,7 +2968,9 @@ class Inhlanhlemhlophe  extends Tree{
 
 class Hlabazihlangane  extends Tree{
    Hlabazihlangane ({forGoodUse =true}):
-  super('Hlabazihlangane');
+  super('Hlabazihlangane'){
+    nickname = 'P5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2669,7 +2985,9 @@ class Hlabazihlangane  extends Tree{
 
 class Umpikayihlangulwa  extends Tree{
    Umpikayihlangulwa ({forGoodUse =true}):
-  super('Umpikayihlangulwa');
+  super('Umpikayihlangulwa'){
+    nickname = 'P6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2683,7 +3001,9 @@ class Umpikayihlangulwa  extends Tree{
 
 class Dukanezwe  extends Tree{
    Dukanezwe ({forGoodUse =true}):
-  super('Dukanezwe');
+  super('Dukanezwe'){
+    nickname = 'P7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2698,7 +3018,9 @@ class Dukanezwe  extends Tree{
 
 class Qeduhlobo  extends Tree{
    Qeduhlobo ({forGoodUse =true}):
-  super('Qeduhlobo');
+  super('Qeduhlobo'){
+    nickname = 'P8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2713,7 +3035,9 @@ class Qeduhlobo  extends Tree{
 
 class Mpikayihlangulwa  extends Tree{
    Mpikayihlangulwa ({forGoodUse =true}):
-  super('Mpikayihlangulwa');
+  super('Mpikayihlangulwa'){
+    nickname = 'P9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2729,7 +3053,9 @@ class Mpikayihlangulwa  extends Tree{
 // Sgenama
 class Isnama  extends Tree{
    Isnama ({forGoodUse =true}):
-  super('Isnama');
+  super('Isnama'){
+    nickname = 'Q0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2744,7 +3070,9 @@ class Isnama  extends Tree{
 
 class Mdlandlovu  extends Tree{
    Mdlandlovu ({forGoodUse =true}):
-  super('Mdlandlovu');
+  super('Mdlandlovu'){
+    nickname = 'Q1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2758,7 +3086,9 @@ class Mdlandlovu  extends Tree{
 
 class Intwalubombo  extends Tree{
    Intwalubombo ({forGoodUse =true}):
-  super('Intwalubombo');
+  super('Intwalubombo'){
+    nickname = 'Q2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2774,7 +3104,9 @@ class Intwalubombo  extends Tree{
 
 class Insonga  extends Tree{
    Insonga ({forGoodUse =true}):
-  super('Insonga');
+  super('Insonga'){
+    nickname = 'Q3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2789,7 +3121,9 @@ class Insonga  extends Tree{
 
 class Isiwisa  extends Tree{
    Isiwisa ({forGoodUse =true}):
-  super('Isiwisa');
+  super('Isiwisa'){
+    nickname = 'Q4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2805,7 +3139,9 @@ class Isiwisa  extends Tree{
 
 class Usukasambe  extends Tree{
    Usukasambe ({forGoodUse =true}):
-  super('Usukasambe');
+  super('Usukasambe'){
+    nickname = 'Q5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2820,7 +3156,9 @@ class Usukasambe  extends Tree{
 
 class Iphuphuma  extends Tree{
    Iphuphuma ({forGoodUse =true}):
-  super('Iphuphuma');
+  super('Iphuphuma'){
+    nickname = 'Q6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2834,7 +3172,9 @@ class Iphuphuma  extends Tree{
 
 class Ungelengele  extends Tree{
    Ungelengele ({forGoodUse =true}):
-  super('Ungelengele');
+  super('Ungelengele'){
+    nickname = 'Q7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2850,7 +3190,9 @@ class Ungelengele  extends Tree{
 
 class Uzifunele  extends Tree{
    Uzifunele ({forGoodUse =true}):
-  super('Uzifunele');
+  super('Uzifunele'){
+    nickname = 'Q8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2866,7 +3208,9 @@ class Uzifunele  extends Tree{
 
 class Umhululuka  extends Tree{
    Umhululuka ({forGoodUse =true}):
-  super('Umhululuka');
+  super('Umhululuka'){
+    nickname = 'Q9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2882,7 +3226,9 @@ class Umhululuka  extends Tree{
 
 class Undwendweni  extends Tree{
    Undwendweni ({forGoodUse =true}):
-  super('Undwendweni');
+  super('Undwendweni'){
+    nickname = 'R0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2898,7 +3244,9 @@ class Undwendweni  extends Tree{
 
 class Ibutha  extends Tree{
    Ibutha ({forGoodUse =true}):
-  super('Ibutha');
+  super('Ibutha'){
+    nickname = 'R1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2914,7 +3262,9 @@ class Ibutha  extends Tree{
 
 class Iletha  extends Tree{
    Iletha ({forGoodUse =true}):
-  super('Iletha');
+  super('Iletha'){
+    nickname = 'R2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2930,7 +3280,9 @@ class Iletha  extends Tree{
 
 class Umhlalanyosi  extends Tree{
    Umhlalanyosi ({forGoodUse =true}):
-  super('Umhlalanyosi');
+  super('Umhlalanyosi'){
+    nickname = 'R3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2946,7 +3298,9 @@ class Umhlalanyosi  extends Tree{
 
 class Umbhamabhama  extends Tree{
    Umbhamabhama ({forGoodUse =true}):
-  super('Umbhamabhama');
+  super('Umbhamabhama'){
+    nickname = 'R4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2961,7 +3315,9 @@ class Umbhamabhama  extends Tree{
 
 class Isthaphuka  extends Tree{
    Isthaphuka ({forGoodUse =true}):
-  super('Isthaphuka');
+  super('Isthaphuka'){
+    nickname = 'R5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2977,7 +3333,9 @@ class Isthaphuka  extends Tree{
 
 class Umathinta  extends Tree{
    Umathinta ({forGoodUse =true}):
-  super('Umathinta');
+  super('Umathinta'){
+    nickname = 'R6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -2993,7 +3351,9 @@ class Umathinta  extends Tree{
 
 class Umababaza  extends Tree{
    Umababaza ({forGoodUse =true}):
-  super('Umababaza');
+  super('Umababaza'){
+    nickname = 'R7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3009,7 +3369,9 @@ class Umababaza  extends Tree{
 
 class Uvutha  extends Tree{
    Uvutha ({forGoodUse =true}):
-  super('Uvutha');
+  super('Uvutha'){
+    nickname = 'R8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3023,7 +3385,9 @@ class Uvutha  extends Tree{
 
 class Usokalakwazulu  extends Tree{
   Usokalakwazulu ({forGoodUse =true}):
-  super('Usokalakwazulu');
+  super('Usokalakwazulu'){
+    nickname = 'R9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3039,7 +3403,9 @@ class Usokalakwazulu  extends Tree{
 
 class Umgxhume  extends Tree{
   Umgxhume ({forGoodUse =true}):
-  super('Umgxhume');
+  super('Umgxhume'){
+    nickname = 'S0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3055,7 +3421,9 @@ class Umgxhume  extends Tree{
 
 class Untombikayibhinci  extends Tree{
   Untombikayibhinci ({forGoodUse =true}):
-  super('Untombikayibhinci');
+  super('Untombikayibhinci'){
+    nickname = 'S1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3071,7 +3439,9 @@ class Untombikayibhinci  extends Tree{
 
 class Umalinga  extends Tree{
   Umalinga ({forGoodUse =true}):
-  super('Umalinga');
+  super('Umalinga'){
+    nickname = 'S2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3087,7 +3457,9 @@ class Umalinga  extends Tree{
 
 class Uzililo  extends Tree{
   Uzililo ({forGoodUse =true}):
-  super('Uzililo');
+  super('Uzililo'){
+    nickname = 'S3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3104,7 +3476,9 @@ class Uzililo  extends Tree{
 class Uvuka  extends Tree{
   String uhlobo;
   Uvuka ({forGoodUse =true, this.uhlobo=''}):
-  super('Uvuka');
+  super('Uvuka'){
+    nickname = 'S4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3120,7 +3494,9 @@ class Uvuka  extends Tree{
 
 class Uvendle  extends Tree{
   Uvendle ({forGoodUse =true}):
-  super('Uvendle');
+  super('Uvendle'){
+    nickname = 'S5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3136,7 +3512,9 @@ class Uvendle  extends Tree{
 
 class Umthunyelelwa  extends Tree{
   Umthunyelelwa ({forGoodUse =true}):
-  super('Umthunyelelwa');
+  super('Umthunyelelwa'){
+    nickname = 'S6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3152,7 +3530,9 @@ class Umthunyelelwa  extends Tree{
 
 class Unhliziyongise  extends Tree{
   Unhliziyongise ({forGoodUse =true}):
-  super('Unhliziyongise');
+  super('Unhliziyongise'){
+    nickname = 'S7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3168,7 +3548,9 @@ class Unhliziyongise  extends Tree{
 
 class Udelunina  extends Tree{
   Udelunina ({forGoodUse =true}):
-  super('Udelunina');
+  super('Udelunina'){
+    nickname = 'S8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3184,7 +3566,9 @@ class Udelunina  extends Tree{
 
 class Umnandinoveshe  extends Tree{
   Umnandinoveshe ({forGoodUse =true}):
-  super('Umnandinoveshe');
+  super('Umnandinoveshe'){
+    nickname = 'S9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3201,7 +3585,9 @@ class Umnandinoveshe  extends Tree{
 class Usmunyu  extends Tree{
   String umbala;
   Usmunyu ({forGoodUse =true,this.umbala=''}):
-  super('Usmunyu');
+  super('Usmunyu'){
+    nickname = 'T0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3218,7 +3604,9 @@ class Usmunyu  extends Tree{
 class Usvumelwano  extends Tree{
   
   Usvumelwano ({forGoodUse =true,}):
-  super('Usvumelwano');
+  super('Usvumelwano'){
+    nickname = 'T1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3235,7 +3623,9 @@ class Usvumelwano  extends Tree{
 class Langa  extends Tree{
   
   Langa ({forGoodUse =true,}):
-  super('Langa');
+  super('Langa'){
+    nickname = 'T2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3251,7 +3641,9 @@ class Langa  extends Tree{
 class Mwohloza  extends Tree{
   
   Mwohloza ({forGoodUse =true,}):
-  super('Mwohloza');
+  super('Mwohloza'){
+    nickname = 'T3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3268,7 +3660,9 @@ class Mwohloza  extends Tree{
 class Maguqu  extends Tree{
   
   Maguqu ({forGoodUse =true,}):
-  super('Maguqu');
+  super('Maguqu'){
+    nickname = 'T4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3285,7 +3679,9 @@ class Maguqu  extends Tree{
 class Solo  extends Tree{
   
   Solo({forGoodUse =true,}):
-  super('Solo');
+  super('Solo'){
+    nickname = 'T5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3302,7 +3698,9 @@ class Solo  extends Tree{
 class Phindemva  extends Tree{
   
   Phindemva({forGoodUse =true,}):
-  super('Phindemva');
+  super('Phindemva'){
+    nickname = 'T6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3318,7 +3716,9 @@ class Phindemva  extends Tree{
 class Impindamshaye  extends Tree{
   
   Impindamshaye({forGoodUse =true,}):
-  super('Impindamshaye');
+  super('Impindamshaye'){
+    nickname = 'T7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3334,7 +3734,9 @@ class Impindamshaye  extends Tree{
 class Umxoshe  extends Tree{
   
   Umxoshe({forGoodUse =true,}):
-  super('Umxoshe');
+  super('Umxoshe'){
+    nickname = 'T8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3351,7 +3753,9 @@ class Umxoshe  extends Tree{
 class Umvuthuza  extends Tree{
   
   Umvuthuza({forGoodUse =true,}):
-  super('Umvuthuza');
+  super('Umvuthuza'){
+    nickname = 'T9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3368,7 +3772,9 @@ class Umvuthuza  extends Tree{
 class Ugezamashwa  extends Tree{
   
   Ugezamashwa({forGoodUse =true,}):
-  super('Ugezamashwa');
+  super('Ugezamashwa'){
+    nickname = 'U0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3385,7 +3791,9 @@ class Ugezamashwa  extends Tree{
 class Uqhume  extends Tree{
   
   Uqhume({forGoodUse =true,}):
-  super('Uqhume');
+  super('Uqhume'){
+    nickname = 'U1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3402,7 +3810,9 @@ class Uqhume  extends Tree{
 class Ukhanyisa  extends Tree{
   
   Ukhanyisa({forGoodUse =true,}):
-  super('Ukhanyisa');
+  super('Ukhanyisa'){
+    nickname = 'U2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3419,7 +3829,9 @@ class Ukhanyisa  extends Tree{
 class Uphophoma  extends Tree{
   
   Uphophoma({forGoodUse =true,}):
-  super('Uphophoma');
+  super('Uphophoma'){
+    nickname = 'U3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3436,7 +3848,9 @@ class Uphophoma  extends Tree{
 class Usdumo  extends Tree{
   
   Usdumo({forGoodUse =true,}):
-  super('Usdumo');
+  super('Usdumo'){
+    nickname = 'U4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3453,7 +3867,9 @@ class Usdumo  extends Tree{
 class Umalambakuphiwa  extends Tree{
   
   Umalambakuphiwa({forGoodUse =true,}):
-  super('Umalambakuphiwa');
+  super('Umalambakuphiwa'){
+    nickname = 'U5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3468,7 +3884,9 @@ class Umalambakuphiwa  extends Tree{
 class Umanzikagesi  extends Tree{
   
   Umanzikagesi({forGoodUse =true,}):
-  super('Umanzikagesi');
+  super('Umanzikagesi'){
+    nickname = 'U6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3484,7 +3902,9 @@ class Umanzikagesi  extends Tree{
 class Ufenisi  extends Tree{
   
   Ufenisi({forGoodUse =true,}):
-  super('Ufenisi');
+  super('Ufenisi'){
+    nickname = 'U7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3500,7 +3920,9 @@ class Ufenisi  extends Tree{
 class Umzwilili  extends Tree{
   
   Umzwilili({forGoodUse =true,}):
-  super('Umzwilili');
+  super('Umzwilili'){
+    nickname = 'U8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3516,7 +3938,9 @@ class Umzwilili  extends Tree{
 class Ismemo  extends Tree{
   
   Ismemo({forGoodUse =true,}):
-  super('Ismemo');
+  super('Ismemo'){
+    nickname = 'U9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3532,7 +3956,9 @@ class Ismemo  extends Tree{
 class Uslepe  extends Tree{
   String umbala;
   Uslepe({this.umbala='',forGoodUse =true,}):
-  super('Uslepe');
+  super('Uslepe'){
+    nickname = 'V0red or V0white';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3549,7 +3975,9 @@ class Uslepe  extends Tree{
 class Umhungulu  extends Tree{
   
   Umhungulu({forGoodUse =true,}):
-  super('Umhungulu');
+  super('Umhungulu'){
+    nickname = 'V1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3566,7 +3994,9 @@ class Umhungulu  extends Tree{
 class Isigoba  extends Tree{
   
   Isigoba({forGoodUse =true,}):
-  super('Isigoba');
+  super('Isigoba'){
+    nickname = 'V2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3583,7 +4013,9 @@ class Isigoba  extends Tree{
 class Insontane  extends Tree{
   
   Insontane({forGoodUse =true,}):
-  super('Insontane');
+  super('Insontane'){
+    nickname = 'V3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3600,7 +4032,9 @@ class Insontane  extends Tree{
 class Iqonqo  extends Tree{
   
   Iqonqo({forGoodUse =true,}):
-  super('Iqonqo');
+  super('Iqonqo'){
+    nickname = 'V4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3617,7 +4051,9 @@ class Iqonqo  extends Tree{
 class Umpentshisi  extends Tree{
   
   Umpentshisi({forGoodUse =true,}):
-  super('Iqonqo');
+  super('Umpentshisi'){
+    nickname = 'V5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3634,7 +4070,9 @@ class Umpentshisi  extends Tree{
 class Umqoqongo  extends Tree{
   
   Umqoqongo({forGoodUse =true,}):
-  super('Umqoqongo');
+  super('Umqoqongo'){
+    nickname = 'V6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3651,7 +4089,9 @@ class Umqoqongo  extends Tree{
 class InyokaIziphinda  extends Tree{
   
   InyokaIziphinda({forGoodUse =true,}):
-  super('InyokaIziphinda');
+  super('InyokaIziphinda'){
+    nickname = 'V7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3667,7 +4107,9 @@ class InyokaIziphinda  extends Tree{
 class Umbulalansingisi  extends Tree{
   
   Umbulalansingisi({forGoodUse =true,}):
-  super('Umbulalansingisi');
+  super('Umbulalansingisi'){
+    nickname = 'V8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3684,7 +4126,9 @@ class Umbulalansingisi  extends Tree{
 class Impindabathakathi  extends Tree{
   
   Impindabathakathi({forGoodUse =true,}):
-  super('Impindabathakathi');
+  super('Impindabathakathi'){
+    nickname = 'V9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3701,7 +4145,9 @@ class Impindabathakathi  extends Tree{
 class Inyazangoma  extends Tree{
   String umbala;
   Inyazangoma({required this.umbala,forGoodUse =true,}):
-  super('Inyazangoma');
+  super('Inyazangoma'){
+    nickname = 'W0red or W0black';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3718,7 +4164,9 @@ class Inyazangoma  extends Tree{
 class Iphunyuka  extends Tree{
   
   Iphunyuka({forGoodUse =true,}):
-  super('Iphunyuka');
+  super('Iphunyuka'){
+    nickname = 'W1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3734,7 +4182,9 @@ class Iphunyuka  extends Tree{
 class Umlulama  extends Tree{
   
   Umlulama({forGoodUse =true,}):
-  super('Umlulama');
+  super('Umlulama'){
+    nickname = 'W2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3751,7 +4201,9 @@ class Umlulama  extends Tree{
 class Ucacane  extends Tree{
   
   Ucacane({forGoodUse =true,}):
-  super('Ucacane');
+  super('Ucacane'){
+    nickname = 'W3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3768,7 +4220,9 @@ class Ucacane  extends Tree{
 class Indlulamithi  extends Tree{
   
   Indlulamithi({forGoodUse =true,}):
-  super('Indlulamithi');
+  super('Indlulamithi'){
+    nickname = 'W4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3785,7 +4239,9 @@ class Indlulamithi  extends Tree{
 class Ubhuma  extends Tree{
   
   Ubhuma({forGoodUse =true,}):
-  super('Ubhuma');
+  super('Ubhuma'){
+    nickname = 'W5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3802,7 +4258,9 @@ class Ubhuma  extends Tree{
 class Untumbadlozi  extends Tree{
   
   Untumbadlozi({forGoodUse =true,}):
-  super('Untumbadlozi');
+  super('Untumbadlozi'){
+    nickname = 'W6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3819,7 +4277,9 @@ class Untumbadlozi  extends Tree{
 class Umalibuye  extends Tree{
   
   Umalibuye({forGoodUse =true,}):
-  super('Umalibuye');
+  super('Umalibuye'){
+    nickname = 'W7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3837,7 +4297,9 @@ class Umalibuye  extends Tree{
 class Abaprofit  extends Tree{
   
   Abaprofit({forGoodUse =true,}):
-  super('Abaprofit');
+  super('Abaprofit'){
+    nickname = 'W8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3854,7 +4316,9 @@ class Abaprofit  extends Tree{
 class Ummemezi  extends Tree{
   String umbala;
   Ummemezi({required this.umbala,forGoodUse =true,}):
-  super('Ummemezi');
+  super('Ummemezi'){
+    nickname = 'W9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3871,7 +4335,9 @@ class Ummemezi  extends Tree{
 class Gwanyama  extends Tree{
   
   Gwanyama({forGoodUse =true,}):
-  super('Gwanyama');
+  super('Gwanyama'){
+    nickname = 'X0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3889,7 +4355,9 @@ class Gwanyama  extends Tree{
 class Umampunzana  extends Tree{
   
   Umampunzana({forGoodUse =true,}):
-  super('Umampunzana');
+  super('Umampunzana'){
+    nickname = 'X1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3906,7 +4374,9 @@ class Umampunzana  extends Tree{
 class Uyizanazo  extends Tree{
   
   Uyizanazo({forGoodUse =true,}):
-  super('Uyizanazo');
+  super('Uyizanazo'){
+    nickname = 'X2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3924,7 +4394,9 @@ class Uyizanazo  extends Tree{
 class Isambulo  extends Tree{
   
   Isambulo({forGoodUse =true,}):
-  super('Isambulo');
+  super('Isambulo'){
+    nickname = 'X3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3943,7 +4415,9 @@ class Isambulo  extends Tree{
 class Uvungulomoya  extends Tree{
   
   Uvungulomoya({forGoodUse =true,}):
-  super('Uvungulomoya');
+  super('Uvungulomoya'){
+    nickname = 'X4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3962,7 +4436,9 @@ class Uvungulomoya  extends Tree{
 class Umalilisa  extends Tree{
   
   Umalilisa({forGoodUse =true,}):
-  super('Umalilisa');
+  super('Umalilisa'){
+    nickname = 'X5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -3981,7 +4457,9 @@ class Umalilisa  extends Tree{
 class Umusa  extends Tree{
   
   Umusa({forGoodUse =true,}):
-  super('Umusa');
+  super('Umusa'){
+    nickname = 'X6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4000,7 +4478,9 @@ class Umusa  extends Tree{
 class Abaphaphi  extends Tree{
   
   Abaphaphi({forGoodUse =true,}):
-  super('Abaphaphi');
+  super('Abaphaphi'){
+    nickname = 'X7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4019,7 +4499,9 @@ class Abaphaphi  extends Tree{
 class Indabulaluvalo  extends Tree{
   
   Indabulaluvalo({forGoodUse =true,}):
-  super('Indabulaluvalo');
+  super('Indabulaluvalo'){
+    nickname = 'X8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4038,7 +4520,9 @@ class Indabulaluvalo  extends Tree{
 class Uslonda  extends Tree{
   
   Uslonda({forGoodUse =true,}):
-  super('Uslonda');
+  super('Uslonda'){
+    nickname = 'X8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4057,7 +4541,9 @@ class Uslonda  extends Tree{
 class Usnwazi  extends Tree{
   
   Usnwazi({forGoodUse =true,}):
-  super('Usnwazi');
+  super('Usnwazi'){
+    nickname = 'X9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4076,7 +4562,9 @@ class Usnwazi  extends Tree{
 class Umwohloza  extends Tree{
   
   Umwohloza({forGoodUse =true,}):
-  super('Umwohloza');
+  super('Umwohloza'){
+    nickname = 'Y0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4095,7 +4583,9 @@ class Umwohloza  extends Tree{
 class Umbunga  extends Tree{
   
   Umbunga({forGoodUse =true,}):
-  super('Umbunga');
+  super('Umbunga'){
+    nickname = 'Y1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4114,7 +4604,9 @@ class Umbunga  extends Tree{
 class Umgxamu  extends Tree{
   
   Umgxamu({forGoodUse =true,}):
-  super('Umgxamu');
+  super('Umgxamu'){
+    nickname = 'Y2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4133,7 +4625,9 @@ class Umgxamu  extends Tree{
 class Iqhobolozela  extends Tree{
   
   Iqhobolozela({forGoodUse =true,}):
-  super('Iqhobolozela');
+  super('Iqhobolozela'){
+    nickname = 'Y3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4153,7 +4647,9 @@ class Iqhobolozela  extends Tree{
 class Ihlunguhlungu  extends Tree{
   
   Ihlunguhlungu({forGoodUse =true,}):
-  super('Ihlunguhlungu');
+  super('Ihlunguhlungu'){
+    nickname = 'Y4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4173,7 +4669,9 @@ class Ihlunguhlungu  extends Tree{
 class Umasendenja  extends Tree{
   
   Umasendenja({forGoodUse =true,}):
-  super('Umasendenja');
+  super('Umasendenja'){
+    nickname = 'Y5';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4192,7 +4690,9 @@ class Umasendenja  extends Tree{
 class Ufikalishona  extends Tree{
   
   Ufikalishona({forGoodUse =true,}):
-  super('Ufikalishona');
+  super('Ufikalishona'){
+    nickname = 'Y6';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4211,7 +4711,9 @@ class Ufikalishona  extends Tree{
 class Umluthe  extends Tree{
   
   Umluthe({forGoodUse =true,}):
-  super('Umluthe');
+  super('Umluthe'){
+    nickname = 'Y7';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4230,7 +4732,9 @@ class Umluthe  extends Tree{
 class Usimanaye  extends Tree{
   
   Usimanaye({forGoodUse =true,}):
-  super('Usimanaye');
+  super('Usimanaye'){
+    nickname = 'Y8';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4249,7 +4753,9 @@ class Usimanaye  extends Tree{
 class Umabuya  extends Tree{
   
   Umabuya({forGoodUse =true,}):
-  super('Umabuya');
+  super('Umabuya'){
+    nickname = 'Y9';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4268,7 +4774,9 @@ class Umabuya  extends Tree{
 class Incamashela  extends Tree{
   
   Incamashela({forGoodUse =true,}):
-  super('Incamashela');
+  super('Incamashela'){
+    nickname = 'Z0';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4287,7 +4795,9 @@ class Incamashela  extends Tree{
 class Icubudwane  extends Tree{
   
   Icubudwane({forGoodUse =true,}):
-  super('Icubudwane');
+  super('Icubudwane'){
+    nickname = 'Z1';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4305,7 +4815,9 @@ class Icubudwane  extends Tree{
 class Umhlakula  extends Tree{
   
   Umhlakula({forGoodUse =true,}):
-  super('Umhlakula');
+  super('Umhlakula'){
+    nickname = 'Z2';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4324,7 +4836,9 @@ class Umhlakula  extends Tree{
 class Udlutshani  extends Tree{
   
   Udlutshani({forGoodUse =true,}):
-  super('Udlutshani');
+  super('Udlutshani'){
+    nickname = 'Z3';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4343,7 +4857,9 @@ class Udlutshani  extends Tree{
 class Ibohlololo  extends Tree{
   
   Ibohlololo({forGoodUse =true,}):
-  super('Ibohlololo');
+  super('Ibohlololo'){
+    nickname = 'Z4';
+  }
 
   @override
   List<String> findPurpose(int languageIndex) {
@@ -4363,7 +4879,9 @@ class Ibohlololo  extends Tree{
 class Usmayedwa  extends Tree{
   
   Usmayedwa({forGoodUse =true,}):
-  super('Usmayedwa');
+  super('Usmayedwa'){
+    nickname = 'Z5';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4380,7 +4898,9 @@ class Usmayedwa  extends Tree{
 class Umsuzwane  extends Tree{
   
   Umsuzwane({forGoodUse =true,}):
-  super('Umsuzwane');
+  super('Umsuzwane'){
+    nickname = 'Z6';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4397,7 +4917,9 @@ class Umsuzwane  extends Tree{
 class Unsukumbili  extends Tree{
   
   Unsukumbili({forGoodUse =true,}):
-  super('Unsukumbili');
+  super('Unsukumbili'){
+    nickname = 'Z7';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4414,7 +4936,9 @@ class Unsukumbili  extends Tree{
 class Ujundu  extends Tree{
   
   Ujundu({forGoodUse =true,}):
-  super('Unsukumbili');
+  super('Unsukumbili'){
+    nickname = 'Z8';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4431,7 +4955,9 @@ class Ujundu  extends Tree{
 class Umbadlanga  extends Tree{
   
   Umbadlanga({forGoodUse =true,}):
-  super('Umbadlanga');
+  super('Umbadlanga'){
+    nickname = 'Z9';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4448,7 +4974,9 @@ class Umbadlanga  extends Tree{
 class Impilane  extends Tree{
   
   Impilane({forGoodUse =true,}):
-  super('Impilane');
+  super('Impilane'){
+    nickname = 'AA';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4465,7 +4993,9 @@ class Impilane  extends Tree{
 class Undiyaza  extends Tree{
   
   Undiyaza({forGoodUse =true,}):
-  super('Undiyaza');
+  super('Undiyaza'){
+    nickname = 'AB';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4482,7 +5012,9 @@ class Undiyaza  extends Tree{
 class Ingevu  extends Tree{
   
   Ingevu({forGoodUse =true,}):
-  super('Ingevu');
+  super('Ingevu'){
+    nickname = 'AC';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4499,7 +5031,9 @@ class Ingevu  extends Tree{
 class Ugibeleweni  extends Tree{
   
   Ugibeleweni({forGoodUse =true,}):
-  super('Ugibeleweni');
+  super('Ugibeleweni'){
+    nickname = 'AD';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4516,7 +5050,9 @@ class Ugibeleweni  extends Tree{
 class Ilanda  extends Tree{
   
   Ilanda({forGoodUse =true,}):
-  super('Ilanda');
+  super('Ilanda'){
+    nickname = 'AE';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4533,7 +5069,9 @@ class Ilanda  extends Tree{
 class Ijabula  extends Tree{
   
   Ijabula({forGoodUse =true,}):
-  super('Ijabula');
+  super('Ijabula'){
+    nickname = 'AF';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4550,7 +5088,9 @@ class Ijabula  extends Tree{
 class Ihlalanyosi  extends Tree{
   
   Ihlalanyosi({forGoodUse =true,}):
-  super('Ihlalanyosi');
+  super('Ihlalanyosi'){
+    nickname = 'AG';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4567,7 +5107,9 @@ class Ihlalanyosi  extends Tree{
 class Uginakamagadlela  extends Tree{
   
   Uginakamagadlela({forGoodUse =true,}):
-  super('Uginakamagadlela');
+  super('Uginakamagadlela'){
+    nickname = 'AH';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4584,7 +5126,9 @@ class Uginakamagadlela  extends Tree{
 class Ukhathibesonga  extends Tree{
   
   Ukhathibesonga({forGoodUse =true,}):
-  super('Ukhathibesonga');
+  super('Ukhathibesonga'){
+    nickname = 'AI';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4601,7 +5145,9 @@ class Ukhathibesonga  extends Tree{
 class Udabulamafu  extends Tree{
   
   Udabulamafu({forGoodUse =true,}):
-  super('Udabulamafu');
+  super('Udabulamafu'){
+    nickname = 'AJ';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4618,7 +5164,9 @@ class Udabulamafu  extends Tree{
 class Uzehlo  extends Tree{
   
   Uzehlo({forGoodUse =true,}):
-  super('Uzehlo');
+  super('Uzehlo'){
+    nickname = 'AK';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4635,7 +5183,9 @@ class Uzehlo  extends Tree{
 class Umathutha  extends Tree{
   
   Umathutha({forGoodUse =true,}):
-  super('Uzehlo');
+  super('Uzehlo'){
+    nickname = 'AL';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4652,7 +5202,9 @@ class Umathutha  extends Tree{
 class Uzikhungele  extends Tree{
   
   Uzikhungele({forGoodUse =true,}):
-  super('Uzikhungele');
+  super('Uzikhungele'){
+    nickname = 'AM';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4669,7 +5221,9 @@ class Uzikhungele  extends Tree{
 class Uzulacwathile  extends Tree{
   
   Uzulacwathile({forGoodUse =true,}):
-  super('Uzulacwathile');
+  super('Uzulacwathile'){
+    nickname = 'AN';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4686,7 +5240,9 @@ class Uzulacwathile  extends Tree{
 class Muziwawula  extends Tree{
   
   Muziwawula({forGoodUse =true,}):
-  super('Muziwawula');
+  super('Muziwawula'){
+    nickname = 'AO';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4703,7 +5259,9 @@ class Muziwawula  extends Tree{
 class Usehlangengalo  extends Tree{
   
   Usehlangengalo({forGoodUse =true,}):
-  super('Usehlangengalo');
+  super('Usehlangengalo'){
+    nickname = 'AP';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4720,7 +5278,9 @@ class Usehlangengalo  extends Tree{
 class Umhlakuva  extends Tree{
   
   Umhlakuva({forGoodUse =true,}):
-  super('Umhlakuva');
+  super('Umhlakuva'){
+    nickname = 'AQ';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4737,7 +5297,9 @@ class Umhlakuva  extends Tree{
 class Undodemnyama  extends Tree{
   
   Undodemnyama({forGoodUse =true,}):
-  super('Undodemnyama');
+  super('Undodemnyama'){
+    nickname = 'AR';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4754,7 +5316,9 @@ class Undodemnyama  extends Tree{
 class Ukhuhlu  extends Tree{
   
   Ukhuhlu({forGoodUse =true,}):
-  super('Ukhuhlu');
+  super('Ukhuhlu'){
+    nickname = 'AS';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4771,7 +5335,9 @@ class Ukhuhlu  extends Tree{
 class Umashweleshwele  extends Tree{
   
   Umashweleshwele({forGoodUse =true,}):
-  super('Umashweleshwele');
+  super('Umashweleshwele'){
+    nickname = 'AT';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4788,7 +5354,9 @@ class Umashweleshwele  extends Tree{
 class Umkhokhu  extends Tree{
   
   Umkhokhu({forGoodUse =true,}):
-  super('Umkhokhu');
+  super('Umkhokhu'){
+    nickname = 'AU';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4805,7 +5373,9 @@ class Umkhokhu  extends Tree{
 class Udlulabehlezi  extends Tree{
   
   Udlulabehlezi({forGoodUse =true,}):
-  super('Udlulabehlezi');
+  super('Udlulabehlezi'){
+    nickname = 'AV';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4822,7 +5392,9 @@ class Udlulabehlezi  extends Tree{
 class Undabungehlele  extends Tree{
   
   Undabungehlele({forGoodUse =true,}):
-  super('Undabungehlele');
+  super('Undabungehlele'){
+    nickname = 'AW';
+  }
 
   @override
   List<String> findPurposeInAllLanguages() {
@@ -4832,6 +5404,253 @@ class Undabungehlele  extends Tree{
   @override
   List<String> findPurpose(int languageIndex) {
     return [TreeResultLanguage.imiphumelaUndabungehlele[languageIndex]];
+  }
+
+}
+
+class Umbune  extends Tree{
+  
+  Umbune({forGoodUse =true,}):
+  super('Umbune'){
+    nickname = 'AX';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmbune;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmbune[languageIndex]];
+  }
+
+}
+
+class Imbabazane  extends Tree{
+  
+  Imbabazane({forGoodUse =true,}):
+  super('Imbabazane'){
+    nickname = 'AY';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaImbabazane;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaImbabazane[languageIndex]];
+  }
+
+}
+
+class Umphumeleli  extends Tree{
+  
+  Umphumeleli({forGoodUse =true,}):
+  super('Umphumeleli'){
+    nickname = 'AZ';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmphumeleli;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmphumeleli[languageIndex]];
+  }
+
+}
+
+class Umhlahlo  extends Tree{
+  
+  Umhlahlo({forGoodUse =true,}):
+  super('Umhlahlo'){
+    nickname = 'BA';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmhlahlo;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmhlahlo[languageIndex]];
+  }
+
+}
+
+class Usheshelingene  extends Tree{
+  
+  Usheshelingene({forGoodUse =true,}):
+  super('Usheshelingene'){
+    nickname = 'BB';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUsheshelingene;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUsheshelingene[languageIndex]];
+  }
+
+}
+
+class Ushendelomkhwekazi  extends Tree{
+  
+  Ushendelomkhwekazi({forGoodUse =true,}):
+  super('Ushendelomkhwekazi'){
+    nickname = 'BC';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUshendelomkhwekazi;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUshendelomkhwekazi[languageIndex]];
+  }
+
+}
+
+class Isiqomiso  extends Tree{
+  
+  Isiqomiso({forGoodUse =true,}):
+  super('Isiqomiso'){
+    nickname = 'BD';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIsiqomiso;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIsiqomiso[languageIndex]];
+  }
+
+}
+
+class Umdlandlovu  extends Tree{
+  
+  Umdlandlovu({forGoodUse =true,}):
+  super('Umdlandlovu'){
+    nickname = 'BE';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmdlandlovu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmdlandlovu[languageIndex]];
+  }
+
+}
+
+class Ilukuluku  extends Tree{
+  
+  Ilukuluku({forGoodUse =true,}):
+  super('Ilukuluku'){
+    nickname = 'BF';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIlukuluku;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIlukuluku[languageIndex]];
+  }
+
+}
+
+class Isbhaka  extends Tree{
+  
+  Isbhaka({forGoodUse =true,}):
+  super('Isbhaka'){
+    nickname = 'BG';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaIsbhaka;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaIsbhaka[languageIndex]];
+  }
+
+}
+
+class Ugina  extends Tree{
+  
+  Ugina({forGoodUse =true,}):
+  super('Ugina'){
+    nickname = 'BH';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUgina;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUgina[languageIndex]];
+  }
+
+}
+
+class Uhhabiya  extends Tree{
+  
+  Uhhabiya({forGoodUse =true,}):
+  super('Uhhabiya'){
+    nickname = 'BI';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUhhabiya;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUhhabiya[languageIndex]];
+  }
+
+}
+
+class Ufikubuse  extends Tree{
+  
+  Ufikubuse({forGoodUse =true,}):
+  super('Ufikubuse'){
+    nickname = 'BJ';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUfikubuse;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUfikubuse[languageIndex]];
   }
 
 }
