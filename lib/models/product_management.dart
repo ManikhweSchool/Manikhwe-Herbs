@@ -596,7 +596,7 @@ class Mehlothando extends Umuthi{
 
     Owner makhuzwayo = Owner("Makhuzwayo", "Dalton", false);
     owner = makhuzwayo;
-    price = 175;
+    price = 145;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -626,7 +626,7 @@ class Thengani extends Umuthi{
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 190;
+    price = 135;
 
     iyachela = true;
 
@@ -840,7 +840,7 @@ class Safisithosami extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 450;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -910,7 +910,7 @@ class Sisegcekeni extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 200;
+    price = 180;
     
     iyachela = true;
     amakhubalo.add(Sgenama(true)); // noma esinjani i'm not sure.
@@ -945,7 +945,7 @@ class Mzimboshisayo extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 320;
+    price = 220;
     
     iyachela = true;
     amakhubalo.add(Ilabatheka(true)); 
@@ -995,7 +995,7 @@ class Mitha extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 1300;
+    price = 280;
     
     iyachela = true;
     amakhubalo.add(Ithombonkala()); 
@@ -1258,7 +1258,7 @@ class Sabeka extends Umuthi{
 
     Owner ganyile = Owner("Ganyile Lwandile", "Mayville Cato Crest 6257", true);
     owner = ganyile;
-    price = 320;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1331,7 +1331,7 @@ class Abakhokhe extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
 
-    price = 280;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1367,7 +1367,7 @@ class Mdayisiwecala extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
 
-    price = 1950;
+    price = 1450;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1456,7 +1456,7 @@ class Wozanibathengi extends Umuthi{
     iyaphalaza = true;
     iyagquma = true;
     iyageza = true; 
-    price = 1550;
+    price = 450;
 
     // Lamakhubalo awaxutshwa nalomuthi, Kodwa uqale usebenzise wona.
     amakhubalo.add(Inhlambamanzi());
@@ -1487,7 +1487,7 @@ class Bolisa extends Umuthi{
   super('Bolisa',
   languageIndex){
     iyaphalaza = true;
-    price = 230;
+    price = 180;
 
     amakhubalo.add(Umbola());
 
@@ -1594,7 +1594,7 @@ class Isigqabosothando extends Umuthi{
     iyagquma = true;
     iyageza = true; 
 
-    price = 300;
+    price = 220;
 
     amakhubalo.add(Umkhanyakude());
     amakhubalo.add(Velemoyeni());
@@ -1710,7 +1710,7 @@ class Masendamakhulu extends Umuthi{
   super('Masendamakhulu',
   languageIndex){
     iyaphalaza = true;
-    price = 380;
+    price = 280;
 
     amakhubalo.add(Inkomfe());
     amakhubalo.add(Umahlokoloza());
@@ -1767,10 +1767,10 @@ class Vikasbhamu extends Umuthi{
   super('Vikasbhamu',
   languageIndex){
     iyaphalaza = true;
-    price = 1200;
+    price = 800;
 
     amakhubalo.add(Mbizakayivuthwa());
-    amakhubalo.add(Ibheka()); // Nkungwini
+    amakhubalo.add(Unkungwini()); 
     amakhubalo.add(Sehlulamanye());
     amakhubalo.add(Ishaqa());
 
@@ -1860,7 +1860,7 @@ class Nqobacala extends Umuthi{
   super('Nqobacala',
   languageIndex){
     iyaphalaza = true;
-    price = 1500;
+    price = 1200;
 
     amakhubalo.add(Ucalakalithethwa()); 
     amakhubalo.add(Umhlakaza());
@@ -1889,7 +1889,7 @@ class Mndenongaxabani extends Umuthi{
   super('Mndenongaxabani',
   languageIndex){
     iyaphalaza = true;
-    price = 330;
+    price = 230;
 
     amakhubalo.add(Ibunda()); 
     amakhubalo.add(Mayime());
@@ -1924,7 +1924,7 @@ class Mndenozwanayo extends Umuthi{
   super('Mndenozwanayo',
   languageIndex){
     iyaphalaza = true;
-    price = 300;
+    price = 175;
 
     amakhubalo.add(Untulwa()); 
     amakhubalo.add(Umganu());
@@ -1982,7 +1982,7 @@ class Hambamthakathi extends Umuthi{
   super('Hambamthakathi',
   languageIndex){
     iyaphalaza = true;
-    price = 230;
+    price = 190;
 
     amakhubalo.add(Qeduhlobo()); 
     amakhubalo.add(Mpikayihlangulwa());
@@ -2039,7 +2039,7 @@ class Ubelethiswane extends Umuthi{
   super('Ubelethiswane',
   languageIndex){
     iyaphalaza = true;
-    price = 450;
+    price = 380;
 
     amakhubalo.add(Umhlakaza(umbala: 'Omnyama')); 
     amakhubalo.add(Unukani( true));
@@ -2109,7 +2109,7 @@ class Malungabaleki extends Umuthi{
   super('Malungabaleki',
   languageIndex){
     iyaphalaza = true;
-    price = 275;
+    price = 175;
 
     amakhubalo.add(Isthaphuka()); 
     amakhubalo.add(Iletha());
@@ -2136,7 +2136,7 @@ class SbambeleloXXX extends Umuthi{
   super('SbambeleloXXX',
   languageIndex){
     iyaphalaza = true;
-    price = 275;
+    price = 195;
 
     amakhubalo.add(Umathinta()); 
     amakhubalo.add(Umunyu());
@@ -2375,7 +2375,7 @@ class Ozalwembethe extends Umuthi{
     amakhubalo.add(Unhlanhlemhlophe()); 
       
 
-    extras.add('Amakhandlela - White, Yellow, Blue');
+    extras.add('Amakhandlela - White, Yellow, Blue, Red');
     extras.add('Imbasa Yehhashi');
     extras.add('Umhlapho Wehhashi');
 
@@ -2399,7 +2399,7 @@ class NyokaEsiswini extends Umuthi{
   super('NyokaEsiswini',
   languageIndex){
     iyaphalaza = true;
-    price = 395;
+    price = 195;
 
     Umqoqongo umqoqongo = Umqoqongo();
     umqoqongo.description = 'Impande';
@@ -2786,7 +2786,7 @@ class Babambanokwezinja extends Umuthi{
   super('Babambanokwezinja',
   languageIndex){
     iyaphalaza = true;
-    price = 485;
+    price = 285;
 
     Isnama isnama = Isnama();
     isnama.description = 'Zonke Izinhlobo Zesinama';
@@ -2824,7 +2824,7 @@ class Tholamawele extends Umuthi{
   super('Tholamawele',
   languageIndex){
     iyaphalaza = true;
-    price = 785;
+    price = 485;
 
 
     amakhubalo.add(Udlutshani());
@@ -2854,7 +2854,7 @@ class BohlasisuXXX extends Umuthi{
   super('BohlasisuXXX',
   languageIndex){
     iyaphalaza = true;
-    price = 585;
+    price = 385;
  
     
 
@@ -3206,6 +3206,46 @@ class Cuphathuna extends Umuthi{
   @override
   String howToUse() {
     return HowToUseLanguage.howToUseCuphathuna[languageIndex] ;
+  }
+  
+}
+
+
+class Cuphasdumbu extends Umuthi{
+  
+  Cuphasdumbu(int languageIndex, {forGoodUse =true}):
+  super('Cuphasdumbu',
+  languageIndex){
+    iyageza = true;
+
+    price = 385;
+
+    amakhubalo.add(Unhliziyonkulu());
+    amakhubalo.add(Muziwawula());
+    amakhubalo.add(Umababaza());
+    amakhubalo.add(Umahlabekufeni());
+    amakhubalo.add(Isbhaha());
+    Uvuka vuka = Uvuka();
+    vuka.description = 'Bonke';
+    amakhubalo.add(vuka);
+    amakhubalo.add(Phindemva());
+    Inyazangoma inyazangoma = Inyazangoma(umbala:'Elibovu');
+    inyazangoma.description = 'Akushiwongo Elinjani';
+    amakhubalo.add(inyazangoma);
+    amakhubalo.add(Umthathe());
+
+    
+    izilwane.add('Mamba Oil');
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaCuphasdumbu[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseCuphasdumbu[languageIndex] ;
   }
   
 }

@@ -242,6 +242,10 @@ class HowToUseLanguage{
   ['Phuza Ikota Yenkomishi Kathathu Ngelanga.',
   ];
 
+  static const howToUseCuphasdumbu =
+  ['Uyasigeza Isidumbu Ngalomuthi Ube Usitshela Ukuthi Asiziphindiselele.',
+  ];
+
   static const howToUseIsikhafuloBMW =
   ['Uthela Esandleni Uwukhulumise Umuthi, Ubize Leyontombi Ngegama Nesibongo Uphephethe. '
   'Ungakwenzela Lapho Ohlala Khona Ngo 00:00 Ebusuku, Noma Ukwenzele Eduze Lwalapho Ihlala Khona Intombi'

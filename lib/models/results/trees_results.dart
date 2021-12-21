@@ -577,6 +577,11 @@ class TreeResultLanguage{
     '######'
   ];
 
+  static const imiphumelaUmahlabekufeni =
+  [
+    'Uhlabekufeni'
+  ];
+
   static const imiphumelaUhhabiya =
   [
     '######'

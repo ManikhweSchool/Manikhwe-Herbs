@@ -149,6 +149,10 @@ class ProductResultLanguage{
   ['Ikuqoma Ithanda Ingathandi.',
   ];
 
+  static const imiphumelaCuphasdumbu =
+  ['Uyaziphindiselela Obulewe',
+  ];
+
   static const imiphumelaUhlangalwabo =
   ['Uhlanga Lwabesifazane',
   ];
