@@ -5673,3 +5673,22 @@ class Umahlabekufeni  extends Tree{
   }
 
 }
+
+class Umnqandane  extends Tree{
+  
+  Umnqandane({forGoodUse =true,}):
+  super('Umnqandane'){
+    nickname = 'BL';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmnqandane;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmnqandane[languageIndex]];
+  }
+
+}

@@ -145,6 +145,14 @@ class ProductResultLanguage{
   ['Uqeda Icala',
   ];
 
+  static const imiphumelaVulidloziXXX =
+  ['Vula Idlozi Lakho',
+  ];
+
+  static const imiphumelaUyangikweleta =
+  ['Okukweletayo Uyibuyisa Eshesha Imali Yakho. Ungasebenzisa No \'Abakhokhe\' Ukuqinisekisa Ukuthi Uyayithola Imali Yakho.',
+  ];
+
   static const imiphumelaIsikhafuloBMW =
   ['Ikuqoma Ithanda Ingathandi.',
   ];
@@ -236,7 +244,7 @@ class ProductResultLanguage{
 
   static const imiphumelaAbakhokhe =
   [
-    'Okukweletayo Ukhokha Ethanda Engathandi.'
+    'Okukweletayo Ukhokha Ethanda Engathandi. Ungasebenzisa No \'Uyangikweleta\' Ukuqinisekisa Ukuthi Uyayithola Imali Yakho.'
   ];
 
   static const imiphumelaKuthole = 

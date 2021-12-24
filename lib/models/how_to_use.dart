@@ -242,6 +242,10 @@ class HowToUseLanguage{
   ['Phuza Ikota Yenkomishi Kathathu Ngelanga.',
   ];
 
+  static const howToUseUyangikweleta =
+  ['Vala Konke Endlini(Iminyango, Amawindi),  Kushise, thatha Uswazi Shaya Intuthu, Usho Ukuthi Sbanibani Khokha Imali Yami.',
+  ];
+
   static const howToUseCuphasdumbu =
   ['Uyasigeza Isidumbu Ngalomuthi Ube Usitshela Ukuthi Asiziphindiselele.',
   ];

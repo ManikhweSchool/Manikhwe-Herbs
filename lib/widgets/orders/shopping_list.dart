@@ -885,12 +885,14 @@ class Language{
     Abakhokhe abakhokhe = Abakhokhe(languageIndex);
     Donsamali donsamali = Donsamali(languageIndex);
     Malungabaleki malungabaleki = Malungabaleki(languageIndex);
+    Uyangikweleta uyangikweleta = Uyangikweleta(languageIndex);
 
     list.add(qalala); // Required
     list.add(sukakimi); // Required
     list.add(abakhokhe);
     list.add(donsamali);
     list.add(malungabaleki);
+    list.add(uyangikweleta);
 
     list.shuffle();
     return list;
@@ -979,6 +981,7 @@ class Language{
     Maqaqabebophile maqaqabebophile = Maqaqabebophile(languageIndex);
     Weqiziko weqiziko = Weqiziko(languageIndex);
     Khulumisidlozi khulumisidlozi = Khulumisidlozi(languageIndex);
+    VulidloziXXX vulidloziXXX = VulidloziXXX(languageIndex);
     
     list.add(qalala); // Required
     list.add(sukakimi); // Required
@@ -991,6 +994,7 @@ class Language{
     list.add(maqaqabebophile);
     list.add(weqiziko);
     list.add(khulumisidlozi);
+    list.add(vulidloziXXX);
 
     list.shuffle();
     return list;

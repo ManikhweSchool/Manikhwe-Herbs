@@ -1360,6 +1360,42 @@ class Abakhokhe extends Umuthi{
   }
 }
 
+class Uyangikweleta extends Umuthi{
+
+  Uyangikweleta(int languageIndex):super('Uyangikweleta',languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 180;
+
+    amakhubalo.add(Intwalubombo()); 
+    Umnqandane umnqandane = Umnqandane();
+    umnqandane.part = 'Uswazi';
+    amakhubalo.add(umnqandane); 
+
+    izilwane.add('Ibululu Oil');
+
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+
+    return [
+      ProductResultLanguage.imiphumelaUyangikweleta[languageIndex],
+      
+      
+    ];
+  }
+
+  @override
+  String howToUse() {
+    
+    return HowToUseLanguage.howToUseUyangikweleta[languageIndex];
+  }
+}
+
 class Mdayisiwecala extends Umuthi{
 
   Mdayisiwecala(int languageIndex):super('Mdayisiwecala',languageIndex){
@@ -2461,13 +2497,41 @@ class Kufogadlayo extends Umuthi{
   
 }
 
+class VulidloziXXX extends Umuthi{
+  
+  VulidloziXXX(int languageIndex, {forGoodUse =true}):
+  super('VulidloziXXX',
+  languageIndex){
+    iyaphalaza = true;
+    iyagquma = true;
+    price = 150;
+ 
+    amakhubalo.add(Umalibuye());
+    amakhubalo.add(Ubhubhubhu());
+    amakhubalo.add(Umanzamhlophe());
+    amakhubalo.add(Inhlambamanzi());
+    amakhubalo.add(Ihlunguhlungu());
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaVulidloziXXX[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex] + ' 5 days.';
+  }
+  
+}
+
 class Vulidlozi extends Umuthi{
   
   Vulidlozi(int languageIndex, {forGoodUse =true}):
   super('Vulidlozi',
   languageIndex){
     iyaphalaza = true;
-    price = 550;
+    price = 350;
 
     Vuka vuka = Vuka();
     vuka.part = 'Ixolo';
@@ -3209,7 +3273,6 @@ class Cuphathuna extends Umuthi{
   }
   
 }
-
 
 class Cuphasdumbu extends Umuthi{
   
