@@ -149,6 +149,22 @@ class ProductResultLanguage{
   ['Vula Idlozi Lakho',
   ];
 
+  static const imiphumelaNgikufunala =
+  ['Isikhafulo Sokudonsa Lona Omthandayo.',
+  ];
+
+  static const imiphumelaIntandoyasendlini =
+  ['Umangabe Umdlisile Owakwakho Ngalomuthi Uhlangene Nensila Yakho Yonke, Uthanda Wena Kuphela. Akabi Yisicefe.',
+  ];
+
+   static const imiphumelaAngathinyaka =
+  ['Owenze Ucansi Naye, Uvele Athande Wena Kuphela, Angathinyaka.',
+  ];
+
+  static const imiphumelaUzozibonela =
+  ['Uzomangaliseka',
+  ];
+
   static const imiphumelaUyangikweleta =
   ['Okukweletayo Uyibuyisa Eshesha Imali Yakho. Ungasebenzisa No \'Abakhokhe\' Ukuqinisekisa Ukuthi Uyayithola Imali Yakho.',
   ];

@@ -1,6 +1,7 @@
 class HowToUseLanguage{
 
   static const chelaDirections = ['Chela',];
+  static const gezaPhalazaMuthiDirections = ['Geza, Phalaza',];
   static const gqumaGezaPhalazaMuthiDirections = ['Gquma, Geza, Phalaza',];
   static const gqumaGezaPhalazaChelaMuthiDirections = ['Gquma, Geza, Phalaza, Chela',];
   static const gqumaGezaPhalazaChathaMuthiDirections = ['Gquma, Geza, Phalaza, Chatha',];
@@ -25,6 +26,21 @@ class HowToUseLanguage{
   static const howToUseAmafuthengwenya =
   [
     'Khotha, Gcoba Esifubeni',
+  ];
+
+  static const howToUseNgikufunala =
+  [
+    'Ubeka Umuthi Esandleni, Ubize Igama Laloyo Omfunayo, Usho Ukuthi Akayeke Konke Akwenzayo Eze Kuwe.',
+  ];
+
+  static const howToUseIntandoyasendlini =
+  [
+    'Hlanganisa Lomuthi Nensila Yakho, Bese Uyamdlisa Owakwakho.',
+  ];
+
+  static const howToUseAngathinyaka =
+  [
+    'Gcoba Umzimba Wonke Uma Uzolala Naye.',
   ];
 
  

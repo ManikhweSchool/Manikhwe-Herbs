@@ -422,6 +422,40 @@ class Sukadeda extends Isiwasho{
   }
 }
 
+class Uzozibonela extends Isiwasho{
+
+  Uzozibonela(int languageIndex) : super('Uzozibonela',languageIndex, [
+    'Umkhando Yellow 1 Teaspoon', 
+    'Umkhando White 1 Teaspoon', 
+    'Umkhando Purple 1 Teaspoon', 
+    'Umkhando Orange 1 Teaspoon',
+    'Umkhando Green 1 Teaspoon',
+    'Cremora 2 Teaspoon',
+    'White Sugar 2 Teaspoon',
+    'Camphor Block 1',
+    'Umlotha Wamandiya',
+    '1 Pupperment Sweet',
+    ]){
+
+    iyachela = true;
+    Owner ganyile = Owner("Lwandile Ganyile", "Mayville Cato Crest 6257", true);
+    owner = ganyile;
+  }
+
+  @override 
+  List<String> findPurpose(){
+    
+    return [ProductResultLanguage.imiphumelaUzozibonela[languageIndex]];
+    
+  }
+
+  @override 
+  String howToUse(){
+    
+    return HowToUseLanguage.gezaPhalazaMuthiDirections[languageIndex];
+  }
+}
+
 
 class Supplier{
   String name;
@@ -3646,6 +3680,118 @@ class IsikhafuloBMW extends Umuthi{
   @override
   String howToUse() {
     return HowToUseLanguage.howToUseIsikhafuloBMW[languageIndex] ;
+  }
+  
+}
+
+class Angathinyaka extends Umuthi{
+  
+  Angathinyaka(int languageIndex, {forGoodUse =true}):
+  super('Angathinyaka',
+  languageIndex){
+    iyachela = true;
+
+    price = 180;
+
+    amakhubalo.add(Umabopha());
+    amakhubalo.add(Ibheka());
+    amakhubalo.add(Udelunina());
+    amakhubalo.add(Izaza());
+    amakhubalo.add(Intwalubombo());
+    amakhubalo.add(Nginakile());
+    amakhubalo.add(Mlomomnandi());
+    amakhubalo.add(Umnandinoveshe());
+    
+    extras.add('Ziyamlandela');
+
+    izilwane.add('Female Ingwe Oil');
+    izilwane.add('Spantsh Fly Oil');
+
+
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaAngathinyaka[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseAngathinyaka[languageIndex] ;
+  }
+  
+}
+
+class Intandoyasendlini extends Umuthi{
+  
+  Intandoyasendlini(int languageIndex, {forGoodUse =true}):
+  super('Intandoyasendlini',
+  languageIndex){
+    iyachela = true;
+
+    price = 380;
+
+    amakhubalo.add(Incamashela());
+    amakhubalo.add(Ishobalendlela());
+    amakhubalo.add(Isnama());
+    amakhubalo.add(Umabusane());
+    amakhubalo.add(Isphahluka());
+    amakhubalo.add(Umyezane());
+    amakhubalo.add(Mlomomnandi());
+    
+    extras.add('Insila Yakho Yonke');
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaIntandoyasendlini[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseIntandoyasendlini[languageIndex] ;
+  }
+  
+}
+
+class Ngikufunala extends Umuthi{
+  
+  Ngikufunala(int languageIndex, {forGoodUse =true}):
+  super('Ngikufunala',
+  languageIndex){
+    iyachela = true;
+
+    price = 165;
+
+    Indabulaluvalo indabulaluvalo = Indabulaluvalo();
+    indabulaluvalo.description = 'Yonke';
+    amakhubalo.add(indabulaluvalo);
+    amakhubalo.add(Indungulu());
+    amakhubalo.add(Ummemezi(umbala: 'Obovu'));
+    amakhubalo.add(Ummemezi(umbala: 'Omhlophe'));
+    amakhubalo.add(Umondi());
+    amakhubalo.add(Umkhondweni());
+    amakhubalo.add(Umoyawezwe());
+    amakhubalo.add(Ungqangendlela());
+    amakhubalo.add(Unhliziyonkulu());
+    amakhubalo.add(Ugina());
+    
+    izilwane.add('Unyawo Lwempangele');
+    izilwane.add('Mantindane Oil');
+
+    extras.add('Isiphephetho');
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaNgikufunala[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseNgikufunala[languageIndex] ;
   }
   
 }
