@@ -28,6 +28,11 @@ class HowToUseLanguage{
     'Khotha, Gcoba Esifubeni',
   ];
 
+  static const howToUseOwemfuyo =
+  [
+    '#####',
+  ];
+
   static const howToUseNgikufunala =
   [
     'Ubeka Umuthi Esandleni, Ubize Igama Laloyo Omfunayo, Usho Ukuthi Akayeke Konke Akwenzayo Eze Kuwe.',

@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:manikhwe_herbs/widgets/entrance/languages.dart';
 import 'package:manikhwe_herbs/widgets/entrance/otp_screen.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
@@ -48,7 +49,7 @@ class _LoginState extends State<Login> {
                   child:
                     SizedBox(
                     width: MediaQuery.of(context).size.width/2,
-                    height: 140,
+                    height: 150,
                     child: 
                       Column(
                         children: [
@@ -153,11 +154,15 @@ class _LoginState extends State<Login> {
                   
                   onPressed: (){
                       Navigator.of(context).pop();
-                       Navigator.of(context).push(
+                      /*Navigator.of(context).push(
                         CustomPageRoute(
                           child: OTPScreen(phoneNumber: _phoneNumberController.text,countryCode: countryCode,)
                         ),
-                     );
+                     );*/
+                     Navigator.of(context).push(
+                      CustomPageRoute(child: LanguagesPage(phoneNumber: _phoneNumberController.text)
+                    ),
+            );
                     
                   }, 
                   child: const Text('Next'),

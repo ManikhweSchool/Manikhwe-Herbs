@@ -1029,7 +1029,7 @@ class Mitha extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 280;
+    price = 550;
     
     iyachela = true;
     amakhubalo.add(Ithombonkala()); 
@@ -1494,6 +1494,10 @@ class Kuthole extends Umuthi{
   Kuthole (int languageIndex, {forGoodUse =true}):
   super('Kuthole',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     iyagquma = true;
     iyageza = true; 
@@ -1523,6 +1527,10 @@ class Wozanibathengi extends Umuthi{
   Wozanibathengi (int languageIndex, {forGoodUse =true}):
   super('Wozanibathengi',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     iyagquma = true;
     iyageza = true; 
@@ -1556,6 +1564,10 @@ class Bolisa extends Umuthi{
   Bolisa (int languageIndex, {forGoodUse =true}):
   super('Bolisa',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 180;
 
@@ -1583,6 +1595,10 @@ class Zaqaqeka extends Umuthi{
   Zaqaqeka (int languageIndex, {forGoodUse =true}):
   super('Zaqaqeka',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 190;
 
@@ -1609,6 +1625,10 @@ class Akabuye extends Umuthi{
   Akabuye (int languageIndex, {forGoodUse =true}):
   super('Akabuye',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 230;
 
@@ -1660,6 +1680,10 @@ class Isigqabosothando extends Umuthi{
   Isigqabosothando (int languageIndex, {forGoodUse =true}):
   super('Isigqabosothando',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     iyagquma = true;
     iyageza = true; 
@@ -1700,6 +1724,10 @@ class Ngthandeni extends Umuthi{
   Ngthandeni (int languageIndex, {forGoodUse =true}):
   super('Ngthandeni',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     iyagquma = true;
     iyageza = true; 
@@ -1737,6 +1765,9 @@ class Akondle extends Umuthi{
   Akondle (int languageIndex, {forGoodUse =true}):
   super('Akondle',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
      
     price = 285;
 
@@ -1779,6 +1810,10 @@ class Masendamakhulu extends Umuthi{
   Masendamakhulu (int languageIndex, {forGoodUse =true}):
   super('Masendamakhulu',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 280;
 
@@ -1810,6 +1845,10 @@ class Qinanduku extends Umuthi{
   Qinanduku (int languageIndex, {forGoodUse =true}):
   super('Qinanduku',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 180;
 
@@ -1836,8 +1875,12 @@ class Vikasbhamu extends Umuthi{
   Vikasbhamu (int languageIndex, {forGoodUse =true}):
   super('Vikasbhamu',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
-    price = 800;
+    price = 1200;
 
     amakhubalo.add(Mbizakayivuthwa());
     amakhubalo.add(Unkungwini()); 
@@ -1868,6 +1911,10 @@ class Alingathethwa extends Umuthi{
   Alingathethwa (int languageIndex, {forGoodUse =true}):
   super('Alingathethwa',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 1200;
 
@@ -1901,6 +1948,10 @@ class Qedacala extends Umuthi{
   Qedacala (int languageIndex, {forGoodUse =true}):
   super('Qedacala',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 1200;
 
@@ -1929,6 +1980,10 @@ class Nqobacala extends Umuthi{
   Nqobacala (int languageIndex, {forGoodUse =true}):
   super('Nqobacala',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 1200;
 
@@ -1958,6 +2013,10 @@ class Mndenongaxabani extends Umuthi{
   Mndenongaxabani (int languageIndex, {forGoodUse =true}):
   super('Mndenongaxabani',
   languageIndex){
+
+    Owner lwandile = Owner("Lwandile Ganyilse", "Ashwell Road 6257 Mayville CC", true);
+    owner = lwandile;
+
     iyaphalaza = true;
     price = 230;
 
@@ -1993,6 +2052,10 @@ class Mndenozwanayo extends Umuthi{
   Mndenozwanayo (int languageIndex, {forGoodUse =true}):
   super('Mndenozwanayo',
   languageIndex){
+
+    Owner ntshangase = Owner("Lwandile Ganyile", "Ashwell Road 6257 Mayville CC", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 175;
 
@@ -2023,6 +2086,10 @@ class Mpilemnandi extends Umuthi{
   Mpilemnandi (int languageIndex, {forGoodUse =true}):
   super('Mpilemnandi',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 250;
 
@@ -2051,6 +2118,10 @@ class Hambamthakathi extends Umuthi{
   Hambamthakathi (int languageIndex, {forGoodUse =true}):
   super('Hambamthakathi',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 190;
 
@@ -2079,6 +2150,10 @@ class Hambamoyombi extends Umuthi{
   Hambamoyombi (int languageIndex, {forGoodUse =true}):
   super('Hambamoyombi',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 155;
 
@@ -2108,6 +2183,10 @@ class Ubelethiswane extends Umuthi{
   Ubelethiswane (int languageIndex, {forGoodUse =true}):
   super('Ubelethiswane',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 380;
 
@@ -2141,8 +2220,11 @@ class Donsamali extends Umuthi{
   Donsamali(int languageIndex, {forGoodUse =true}):
   super('Donsamali',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
-    price = 345;
+    price = 245;
 
     amakhubalo.add(Iphuphuma()); 
     amakhubalo.add(Sondeza());
@@ -2178,8 +2260,12 @@ class Malungabaleki extends Umuthi{
   Malungabaleki(int languageIndex, {forGoodUse =true}):
   super('Malungabaleki',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
-    price = 175;
+    price = 225;
 
     amakhubalo.add(Isthaphuka()); 
     amakhubalo.add(Iletha());
@@ -2205,6 +2291,10 @@ class SbambeleloXXX extends Umuthi{
   SbambeleloXXX(int languageIndex, {forGoodUse =true}):
   super('SbambeleloXXX',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 195;
 
@@ -2237,8 +2327,12 @@ class SbambeleloXYZ extends Umuthi{
   SbambeleloXYZ(int languageIndex, {forGoodUse =true}):
   super('SbambeleloXYZ',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
-    price = 325;
+    price = 225;
 
     amakhubalo.add(Uvutha()); 
     amakhubalo.add(Usokalakwazulu());
@@ -2300,6 +2394,10 @@ class Qaqabethakathile extends Umuthi{
   Qaqabethakathile(int languageIndex, {forGoodUse =true}):
   super('Qaqabethakathile',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 185;
 
@@ -2330,6 +2428,10 @@ class Gezamabhadi extends Umuthi{
   Gezamabhadi(int languageIndex, {forGoodUse =true}):
   super('Gezamabhadi',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 230;
 
@@ -2378,6 +2480,10 @@ class IsibungeXXX extends Umuthi{
   IsibungeXXX(int languageIndex, {forGoodUse =true}):
   super('IsibungeXXX',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 1230;
 
@@ -2439,6 +2545,10 @@ class Ozalwembethe extends Umuthi{
   Ozalwembethe(int languageIndex, {forGoodUse =true}):
   super('Ozalwembethe',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 375;
 
@@ -2468,6 +2578,10 @@ class NyokaEsiswini extends Umuthi{
   NyokaEsiswini(int languageIndex, {forGoodUse =true}):
   super('NyokaEsiswini',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 195;
 
@@ -2501,6 +2615,10 @@ class Kufogadlayo extends Umuthi{
   Kufogadlayo(int languageIndex, {forGoodUse =true}):
   super('Kufogadlayo',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 395;
 
@@ -2536,6 +2654,10 @@ class VulidloziXXX extends Umuthi{
   VulidloziXXX(int languageIndex, {forGoodUse =true}):
   super('VulidloziXXX',
   languageIndex){
+
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     iyagquma = true;
     price = 150;
@@ -2564,6 +2686,9 @@ class Vulidlozi extends Umuthi{
   Vulidlozi(int languageIndex, {forGoodUse =true}):
   super('Vulidlozi',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 350;
 
@@ -2632,6 +2757,9 @@ class Azwewenefonini extends Umuthi{
   Azwewenefonini(int languageIndex, {forGoodUse =true}):
   super('Azwewenefonini',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 230;
 
@@ -2671,6 +2799,9 @@ class OwenhlanhlaXXX extends Umuthi{
   OwenhlanhlaXXX(int languageIndex, {forGoodUse =true}):
   super('OwenhlanhlaXXX',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 170;
  
@@ -2700,6 +2831,9 @@ class LahlokubiXXX extends Umuthi{
   LahlokubiXXX(int languageIndex, {forGoodUse =true}):
   super('LahlokubiXXX',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
     iyaphalaza = true;
     price = 170;
  
@@ -2724,11 +2858,14 @@ class LahlokubiXXX extends Umuthi{
   
 }
 
+// Lomuthi Uphindekule, Fanele Ngiwushintshe
 class Maqaqabebophile extends Umuthi{
   
   Maqaqabebophile(int languageIndex, {forGoodUse =true}):
   super('Maqaqabebophile',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 185;
  
@@ -2759,6 +2896,8 @@ class Bohlasisu extends Umuthi{
   Bohlasisu(int languageIndex, {forGoodUse =true}):
   super('Bohlasisu',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 585;
  
@@ -2789,6 +2928,8 @@ class Qedanduna extends Umuthi{
   Qedanduna(int languageIndex, {forGoodUse =true}):
   super('Qedanduna',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 185;
 
@@ -2816,6 +2957,8 @@ class Vukanduku extends Umuthi{
   Vukanduku(int languageIndex, {forGoodUse =true}):
   super('Vukanduku',
   languageIndex){
+    Owner ntshangase = Owner("Malume Thofo", "Emancwanini", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 145;
 
@@ -2844,6 +2987,8 @@ class Webeleni extends Umuthi{
   Webeleni(int languageIndex, {forGoodUse =true}):
   super('Webeleni',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 345;
 
@@ -2883,6 +3028,8 @@ class Babambanokwezinja extends Umuthi{
   Babambanokwezinja(int languageIndex, {forGoodUse =true}):
   super('Babambanokwezinja',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 285;
 
@@ -2921,6 +3068,8 @@ class Tholamawele extends Umuthi{
   Tholamawele(int languageIndex, {forGoodUse =true}):
   super('Tholamawele',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 485;
 
@@ -2951,6 +3100,8 @@ class BohlasisuXXX extends Umuthi{
   BohlasisuXXX(int languageIndex, {forGoodUse =true}):
   super('BohlasisuXXX',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 385;
  
@@ -2984,6 +3135,8 @@ class OshimileXXX extends Umuthi{
   OshimileXXX(int languageIndex, {forGoodUse =true}):
   super('OshimileXXX',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 185;
  
@@ -3014,6 +3167,8 @@ class SusaschithoXXX extends Umuthi{
   SusaschithoXXX(int languageIndex, {forGoodUse =true}):
   super('SusaschithoXXX',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 295;
 
@@ -3058,6 +3213,8 @@ class ThandekaABC extends Umuthi{
   ThandekaABC(int languageIndex, {forGoodUse =true}):
   super('ThandekaABC',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 145;
 
@@ -3085,6 +3242,8 @@ class Phindisa extends Umuthi{
   Phindisa(int languageIndex, {forGoodUse =true}):
   super('Phindisa',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 195;
 
@@ -3122,6 +3281,8 @@ class Amafuthebhanoyi extends Umuthi{
   Amafuthebhanoyi(int languageIndex, {forGoodUse =true}):
   super('Amafuthebhanoyi',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     price = 195;
 
@@ -3172,6 +3333,8 @@ class Weqiziko extends Umuthi{
   Weqiziko(int languageIndex, {forGoodUse =true}):
   super('Weqiziko',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     iyagquma = true;
     price = 135;
@@ -3200,6 +3363,8 @@ class Lumbanxeba extends Umuthi{
   Lumbanxeba(int languageIndex, {forGoodUse =true}):
   super('Lumbanxeba',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     iyagquma = true;
     price = 335;
@@ -3235,6 +3400,8 @@ class Shayizitha extends Umuthi{
   Shayizitha(int languageIndex, {forGoodUse =true}):
   super('Shayizitha',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyaphalaza = true;
     iyagquma = true;
     price = 335;
@@ -3273,6 +3440,8 @@ class Cuphathuna extends Umuthi{
   Cuphathuna(int languageIndex, {forGoodUse =true}):
   super('Cuphathuna',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 485;
@@ -3313,6 +3482,8 @@ class Cuphasdumbu extends Umuthi{
   Cuphasdumbu(int languageIndex, {forGoodUse =true}):
   super('Cuphasdumbu',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyageza = true;
 
     price = 385;
@@ -3352,6 +3523,8 @@ class Nqobazitha extends Umuthi{
   Nqobazitha(int languageIndex, {forGoodUse =true}):
   super('Nqobazitha',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 285;
@@ -3401,6 +3574,8 @@ class QinaXXX extends Umuthi{
   QinaXXX(int languageIndex, {forGoodUse =true}):
   super('QinaXXX',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 185;
@@ -3430,6 +3605,8 @@ class Yakhumuzi extends Umuthi{
   Yakhumuzi(int languageIndex, {forGoodUse =true}):
   super('Yakhumuzi',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 185;
@@ -3465,6 +3642,8 @@ class Ngfunumsebenzi extends Umuthi{
   Ngfunumsebenzi(int languageIndex, {forGoodUse =true}):
   super('Ngfunumsebenzi',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 145;
@@ -3531,6 +3710,8 @@ class Hlola extends Umuthi{
   Hlola(int languageIndex, {forGoodUse =true}):
   super('Hlola',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 145;
@@ -3564,6 +3745,8 @@ class Donsabafazi extends Umuthi{
   Donsabafazi(int languageIndex, {forGoodUse =true}):
   super('Donsabafazi',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 160;
@@ -3598,6 +3781,8 @@ class Uhlangalwabo extends Umuthi{
   Uhlangalwabo(int languageIndex, {forGoodUse =true}):
   super('Uhlangalwabo',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 250;
@@ -3640,6 +3825,8 @@ class IsikhafuloBMW extends Umuthi{
   IsikhafuloBMW(int languageIndex, {forGoodUse =true}):
   super('IsikhafuloBMW',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 220;
@@ -3689,6 +3876,8 @@ class Angathinyaka extends Umuthi{
   Angathinyaka(int languageIndex, {forGoodUse =true}):
   super('Angathinyaka',
   languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
     iyachela = true;
 
     price = 180;
@@ -3792,6 +3981,98 @@ class Ngikufunala extends Umuthi{
   @override
   String howToUse() {
     return HowToUseLanguage.howToUseNgikufunala[languageIndex] ;
+  }
+  
+}
+
+// No Recipe, No How To Use Either
+class Owemfuyo extends Umuthi{
+  
+  Owemfuyo(int languageIndex, {forGoodUse =true}):
+  super('Owemfuyo',
+  languageIndex){
+    Owner thofo = Owner("Malume Thofo", "Emancwanini", true);
+    owner = thofo;
+
+    price = 450;
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaOwemfuyo[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseOwemfuyo[languageIndex] ;
+  }
+  
+}
+
+class Ukuzuqashwe extends Umuthi{
+  
+  Ukuzuqashwe(int languageIndex, {forGoodUse =true}):
+  super('Ukuzuqashwe',
+  languageIndex){
+    Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+
+    price = 150;
+
+    extras.add('Step 1 Qguma - Umnyamathi, Umzungulu, Ubhubhubhu, Umganu, Umgwenya, Mavulakuvaliwe, Isiqunga');
+    amakhubalo.add(Umnyamathi());
+    amakhubalo.add(Umzungulu());
+    amakhubalo.add(Ubhubhubhu());
+    amakhubalo.add(Umganu());
+    amakhubalo.add(Umgwenya());
+    amakhubalo.add(Mavulakuvaliwe());
+    amakhubalo.add(Isiqunga());
+    extras.add('Step 2 Phalaza - Nhlanhlemhlophe, Vumomhlophe, Sphahluluka, Mkhanyakude, Velemoyeni, Mavulakuvaliwe, Isiqunga');
+    amakhubalo.add(Inhlanhlemhlophe());
+    amakhubalo.add(UvumaOmhlophe());
+    amakhubalo.add(Isphahluka());
+    amakhubalo.add(Umkhanyakude());
+    amakhubalo.add(Velemoyeni());
+    amakhubalo.add(Mavulakuvaliwe());
+    amakhubalo.add(Isiqunga());
+    
+    extras.add('Step 3 Qguma, Geza, Phalaza - Velabahleke, Mthole, Skhundla, Mlomomnandi, Ngwavuma, Mwelela, Munyu wonke, '
+    'Mavumbuka, Phakama, Mkhondweni, Isehlulamanye, Umavulakuvaliwe, Ovuka bonke, Maguqu, Buyaliphethe, Khombakwenzeke');
+    amakhubalo.add(Velabahleke());
+    amakhubalo.add(Umthole());
+    amakhubalo.add(Uskhundla());
+    amakhubalo.add(Mlomomnandi());
+    amakhubalo.add(Ingwavuma());
+    amakhubalo.add(Umwelela());
+    Umunyu umunyu = Umunyu();
+    umunyu.description = 'Zonke Izinhlobo';
+    amakhubalo.add(umunyu);
+    amakhubalo.add(Umavumbuka());
+    amakhubalo.add(IphakamaLaphezulu());
+    amakhubalo.add(IphakamaLamanzi());
+    amakhubalo.add(IphakamaLentaba());
+    amakhubalo.add(IphakamaLogagane());
+    amakhubalo.add(Umkhondweni());
+    amakhubalo.add(Sehlulamanye());
+    amakhubalo.add(Mavulakuvaliwe());
+    Vuka vuka = Vuka();
+    vuka.description = 'Zonke Izinhlobo';
+    amakhubalo.add(vuka);
+    amakhubalo.add(Maguqu());
+    amakhubalo.add(Ubuyaliphethe());
+    amakhubalo.add(Ukhombakwenzeke());
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaUkuzuqashwe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex] ;
   }
   
 }

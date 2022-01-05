@@ -6,6 +6,18 @@ class TreeResultLanguage{
   static const imiphumelaUsmayedwa = 
   ['########',];
 
+  static const imiphumelaUmgwenya = 
+  ['########',];
+
+  static const imiphumelaUmzungulu = 
+  ['########',];
+
+  static const imiphumelaUbuyaliphethe = 
+  ['Uyayithola Leyonto Oyifunayo',];
+
+  static const imiphumelaUkhombakwenzeke = 
+  ['Leyonto Oyishoyo\Oyifunayo Iyenzeka',];
+
   static const imiphumelaUmthathe = 
   ['Wenza Bathathe',];
 

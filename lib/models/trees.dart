@@ -5787,3 +5787,79 @@ class Umondi  extends Tree{
   }
 
 }
+
+class Ubuyaliphethe  extends Tree{
+  
+  Ubuyaliphethe({forGoodUse =true,}):
+  super('Ubuyaliphethe'){
+    nickname = 'BR';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUbuyaliphethe;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUbuyaliphethe[languageIndex]];
+  }
+
+}
+
+class Ukhombakwenzeke  extends Tree{
+  
+  Ukhombakwenzeke({forGoodUse =true,}):
+  super('Ukhombakwenzeke'){
+    nickname = 'BS';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUkhombakwenzeke;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUkhombakwenzeke[languageIndex]];
+  }
+
+}
+
+class Umgwenya  extends Tree{
+  
+  Umgwenya({forGoodUse =true,}):
+  super('Umgwenya'){
+    nickname = 'BT';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmgwenya;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmgwenya[languageIndex]];
+  }
+
+}
+
+class Umzungulu  extends Tree{
+  
+  Umzungulu({forGoodUse =true,}):
+  super('Umzungulu'){
+    nickname = 'BU';
+  }
+
+  @override
+  List<String> findPurposeInAllLanguages() {
+    return TreeResultLanguage.imiphumelaUmzungulu;
+  }
+
+  @override
+  List<String> findPurpose(int languageIndex) {
+    return [TreeResultLanguage.imiphumelaUmzungulu[languageIndex]];
+  }
+
+}

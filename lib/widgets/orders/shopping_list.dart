@@ -344,6 +344,7 @@ class Language{
     LahlokubiXXX lahlokubiXXX = LahlokubiXXX(languageIndex);
     Ngfunumsebenzi ngfunumsebenzi = Ngfunumsebenzi(languageIndex);
     Khulumisidlozi khulumisidlozi = Khulumisidlozi(languageIndex);
+    Owemfuyo owemfuyo = Owemfuyo(languageIndex);
     
     list.add(qalala); // Required
     list.add(sukakimi); // Required
@@ -367,6 +368,7 @@ class Language{
     list.add(lahlokubiXXX);
     list.add(ngfunumsebenzi);
     list.add(khulumisidlozi);
+    list.add(owemfuyo);
 
     list.shuffle();
     return list;
@@ -603,6 +605,7 @@ class Language{
     OwenhlanhlaXXX owenhlanhlaXXX = OwenhlanhlaXXX(languageIndex);
     Maqaqabebophile maqaqabebophile = Maqaqabebophile(languageIndex);
     Amafuthebhanoyi amafuthebhanoyi = Amafuthebhanoyi(languageIndex);
+    Owemfuyo owemfuyo = Owemfuyo(languageIndex);
     
     list.add(qalala); // Required
     list.add(sukakimi); // Required
@@ -623,6 +626,7 @@ class Language{
     list.add(owenhlanhlaXXX);
     list.add(maqaqabebophile);
     list.add(amafuthebhanoyi);
+    list.add(owemfuyo);
 
     list.shuffle();
     return list;
@@ -750,6 +754,7 @@ class Language{
     Hambamthakathi hambamthakathi = Hambamthakathi(languageIndex);
     Lumbanxeba lumbanxeba = Lumbanxeba(languageIndex);
     Cuphathuna cuphathuna = Cuphathuna(languageIndex);
+    Owemfuyo owemfuyo = Owemfuyo(languageIndex);
 
     
     list.add(qalala); // Required
@@ -759,6 +764,7 @@ class Language{
     list.add(hambamthakathi);
     list.add(lumbanxeba);
     list.add(cuphathuna);
+    list.add(owemfuyo);
 
     list.shuffle();
     return list;
@@ -862,6 +868,7 @@ class Language{
     Tholamawele tholamawele = Tholamawele(languageIndex);
     Cuphathuna cuphathuna = Cuphathuna(languageIndex);
     Khulumisidlozi khulumisidlozi = Khulumisidlozi(languageIndex);
+    Owemfuyo owemfuyo = Owemfuyo(languageIndex);
 
     
     list.add(qalala); // Required
@@ -876,6 +883,7 @@ class Language{
     list.add(tholamawele);
     list.add(cuphathuna);
     list.add(khulumisidlozi);
+    list.add(owemfuyo);
 
     list.shuffle();
     return list;
@@ -1053,4 +1061,4 @@ class Language{
     return list;
   }
 
-}
+} 

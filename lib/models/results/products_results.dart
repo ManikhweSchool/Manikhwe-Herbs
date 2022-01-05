@@ -75,12 +75,19 @@ class ProductResultLanguage{
   static const imiphumelaQinanduku = 
   ['Uqinisa Induku Kowesilisa',];
 
+  static const imiphumelaOwemfuyo = 
+  ['Wenza izimbuzi, nezikabhu zizale amawele.',];
+
   static const imiphumelaMehlothando =
   ['Uma Umbuka Emehlweni Umuntu Kwakheka Uthando Lwakho Kuye. Noma Ngabe Umphathi Wakho, Umuntu Omfunayo, Ngisho Nesitha Sakho.',
   ];
 
   static const imiphumelaNgphuphe =
   ['Susa Isinyama Kucace Amaphupho.',
+  ];
+
+  static const imiphumelaUkuzuqashwe =
+  ['Uwuthola Kumnyama Kubovu Umsebenzi Ngalenduku.',
   ];
 
   static const imiphumelaGezaUmsamo =
