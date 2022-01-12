@@ -257,13 +257,66 @@ class ProductResultLanguage{
 
   static const imiphumelaMhlonipheni = ['Uhlonipheka Okwangampela',];
 
-  static const imiphumelaMitha = ['Khululwa Noma Isinya Sakho Singabambi.',];
+  static const imiphumelaMitha = ['Khulelwa Noma Isinya Sakho Singabambi.',];
+
+  static const imiphumelaOlalwayisilwane = ['Umangabe Uvamise Ukuphupha Ulala '
+  'Nomuntu Ekubeni Usumdala, Usuke Ulalwa Isilwane. Lomuthi Ubalekisa Lesosilwane.',];
+
+  static const imiphumelaOwezilonda = ['Uqeda Izilonda Emzimbeni.',];
+  static const imiphumelaOwezishimane = ['Mawukaqe Ungaqonywa Nhlobo Uqonywa Ngokushesha.',];
+  static const imiphumelaInkingineswane = ['Isilwane Sibaleka Singasabheka Emuva.',];
+
+  static const imiphumelaChathanje = ['Oweqolo Nesinya',];
+
+  static const imiphumelaProfetha = ['Uma Ufuna Ukuprofetha Sebenzisa Lomuthi. Ungakhohlwa Ukuthandaza Ngo 00:00 Ebusuku Izinsuku Ezintathu.',];
+
+  static const imiphumelaAntibiotics = ['Uzifo Zonke',];
+
+  static const imiphumelaYonezizwe = ['Uqeda Izizwe',];
+
+  static const imiphumelaAsizwisane = ['Umuntu Ulala Naye Ningathandani.',];
+
+  static const imiphumelaUmphuphutho = ['',];
+
+  static const imiphumelaGezumndeni = ['Ulwa Nokubi Okuhlasela Umndeni, Ukudala Izinxabano Emndenini.',];
+
+  static const imiphumelaBethela = ['Bethela Umuzi Wakho Ingangeni Into Eyisandla Somthakathi.',];
+
+  static const imiphumelaMlandengesthombesakhe = ['Indoda Noma Intombi Oyifunayo Uzoyithola Uma Ungathola Impahla Noma Isithombe Sayonje.',];
+
+  static const imiphumelaSokalamanyala = ['Igama Lalomuthi Lusho Into Ewentayo.',];
+
+  static const imiphumelaSesheli = ['Uqonywa Ngapha Nangapha',];
+
+  static const imiphumelaGezelesgangeni = ['Umangabe Izinto Zakho Zivalwe Amathunzi Amnyama Ziyavuleka.',];
+
+  static const imiphumelaZiphuzelenje = ['Geza Ingaphakathi Lakho',];
+
+  static const imiphumelaLiyavukala = ['Ipipi Liyavka Lana',];
+
+  static const imiphumelaDonsuthandoXYZ = ['Uma Uyintombi Ushelwa Ngaphanangapha, Uma Uyinsizwa Uqonywa Ngaphanangapha.',];
+
+  static const imiphumelaMkhontowezitha = ['Lomuthi Ugovuzwa Ngomkhonto. Uhlehlisa Izinto Zezitha Zakho Egcekeni.',];
+
+  static const imiphumelaMayibamanzintombi = ['',];
+
+  static const imiphumelaPhumaschitho = ['Siphuma Siphele Nya Isichitho.',];
+
+  static const imiphumelaSkhafulo123 = ['Udonsa Leyontombi Noma Insizwa Oyikhafulile.',];
+
+  static const imiphumelaMfuyeningi = ['Wenza Imfuyo Yakho Yande Ngalendlela. Ikhuluphale, Izale Amawele.',];
+
+  static const imiphumelaSondezidlozi = ['Usondezidlozi Lakho Noma Ngabe Beselikuflatheli.',];
+
+  static const imiphumelaNgiseliwe = ['Umangabe Unenkinga Yokuhlezi Useliwe Lomuthi Uzokuqeda Loko.',];
+
+  static const imiphumelaMubuyise = ['Isithandwa Sakho Sibuya Sigijima, Noma Ngabe Besihlukaniswe Yini.',];
 
   static const imiphumelaMalungabaleki = ['Wenza Ukuthi Ungabalekelwa Imali.',];
 
   static const imiphumelaMdayisiwecala = ['Uphephisa Umdayisa Wecala Kwabomthetho, Nasezitheni.'];
 
-  static const imiphumelaQashwa = ['Uyaqashwa Uma Ufuna Umsebenzi Noma Ufesa Ezindaweni.',];
+  static const imiphumelaLabongidlozi = ['Kujabula Idlozi, Likuphe Loku Elikuphathele Kona. Uyaqashwa Uma Ufuna Umsebenzi Noma Ufesa Ezindaweni.',];
 
   static const imiphumelaAbakhokhe =
   [

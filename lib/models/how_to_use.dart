@@ -1,6 +1,7 @@
 class HowToUseLanguage{
 
   static const chelaDirections = ['Chela',];
+  static const chelaShunqisa = ['Chela, Shunqisa',];
   static const gezaPhalazaMuthiDirections = ['Geza, Phalaza',];
   static const gqumaGezaPhalazaMuthiDirections = ['Gquma, Geza, Phalaza',];
   static const gqumaGezaPhalazaChelaMuthiDirections = ['Gquma, Geza, Phalaza, Chela',];
@@ -9,6 +10,7 @@ class HowToUseLanguage{
   static const gqumaGezaMuthiDirections = ['Gquma, Geza',];
   static const gezaEmfuleniMuthiDirections = ['Geza Emanzini ahambayo',];
   static const phuzaOnlyMuthiDirections = ['Phuza',];
+  static const chathaMuthiDirections = ['Chatha',];
   static const phuzaChathaMuthiDirections = ['Phuza, Chatha',];
   static const chelaPhalazaMuthiDirections = ['Chela, Phalaza',];
   static const chelaMuthiDirections = ['Chela'];
@@ -31,6 +33,43 @@ class HowToUseLanguage{
   static const howToUseOwemfuyo =
   [
     '#####',
+  ];
+
+  static const howToUseYonezizwe =
+  [
+    'Lomuthi Ubike Emsamu Ngenkukhu Emhlophe, Uthele Ngenyongo, Shisa Amanoni Ngempepho, Phalaza, Ugqume, Njengoba Kugayiwe, Khana Okufine Uyephezu Komfula, Ukukhulumise, Ukugcabe 0khakhayini.',
+  ];
+
+  static const howToUseGezumndeni =
+  [
+    'Gezani 3 Days Nichithe Endaweni Eyehlelayo Ngaphandle.',
+  ];
+
+  static const howToUseProfetha = ['Gquma, Geza, Phalaza, Ube Uthandaza Ngo 00:00 Mawusasebenzisa Lamanzi.',];
+
+  static const howToUseAntibiotics =
+  [
+    'Upheke Lomuthi, Uphuze 2 Spoon Njalo Mawuqeda Ukudla.',
+  ];
+
+  static const howToUseBethela =
+  [
+    'Kumbele Emakhoneni Omuzi',
+  ];
+
+  static const howToUsePhumaschitho =
+  [
+    'Gquma 5 Days Kulandela',
+  ];
+
+  static const howToUseSkhafulo123 =
+  [
+    'Ubeka Esandleni, Ummbize Ngegama Loyo Omfunayo, Uphephethe.',
+  ];
+
+  static const howToUseMfuyeningi =
+  [
+    'Imfuyo Uyayikhothisa, Uyishunqisele, Thatha Imigogodla Yezilwane Zenyoka, Zimbele Phansi Esangweni Lapho Zingena Khona.',
   ];
 
   static const howToUseNgikufunala =
@@ -78,7 +117,25 @@ class HowToUseLanguage{
     'Gcaba Onke Amalunga Omzimba',
   ];
 
-  
+  static const howToUseMlandengesthombesakhe = 
+  [
+    'Faka Lamanzi Ku-5L Kanye Nempahla Noma Isithombe Sakhe, Uphehle Njengegobongo Ngo-00:00 nango 04:00 Ekuseni Izinsuku Eziyisikhombisa.',
+  ];
+
+  static const howToUseSokalamanyala = 
+  [
+    'Gquma, Phalaza, Izinsuku Ezintathu Kuphela. Usungabuye Uphindeke Emva Kwezinsukwana. Kodwa Ungawusebenzisi Ngaphezu Kwezinsuku Ezintathu.',
+  ];
+
+  static const howToUseSesheli = 
+  [
+    'Xukuza Lamafutha Bese Ugcoba Amashiya.',
+  ];
+
+  static const howToUseGezelesgangeni = 
+  [
+    'Gqumela Ekhaya Uchithe Ngaphandle Kwegceke Endaweni Eyehlelayo Noma Emanzini Ahambayo. Gezela Esigangeni. Loku Ukwenza Izinsuku Ezinhlanu.',
+  ];
 
   static const  howToUseLahlokubiXXX = 
   [
@@ -338,7 +395,29 @@ class HowToUseLanguage{
   ['Hlanganisa Nesibunge Sakho Ushunqise.',
   ];
 
-  static const howToUseQashwa = [
+  static const howToUseOlalwayisilwane =
+  ['Chela Phezukwendlu Njabo Umusuzolala. Uyagquma Futhi. Lokukokubili Uzokwenza Izinsuku Ezintathu Kulandelana.',
+  ];
+
+  static const howToUseMkhontowezitha =
+  ['Bilisa Lomuthi, Uwufake Ku-25L. Uma Usupholile Uwugovuze Ngomkhonto Njalo Uma Uzochela Ngawo.',
+  ];
+
+
+  static const howToUseOwezilonda =
+  ['Chatha Kabili Ngesonto.',
+  ];
+
+  static const howToUseMayibamanzintombi =
+  ['Kwenzele Ku-5L. Phuza Izinkomishi Ezintathu Ngelanga.',
+  ];
+
+  static const howToUseMubuyise =
+  ['Sebenzisa Amalahle Athengwayo Ushise Lomuthi Ngo 00:00 Phakathi Nobusuku Usho Ukuthi Akabuye Usbanibani. '
+  'Ungawacishi Amalahle, Avuthe Kuze Kuse. Loku Uzokwenza Izinsuku Eziyisithupha',
+  ];
+
+  static const howToUseLabongidlozi = [
     'Uthenga Inkukhu Emhlophe Ulamthuthu Uyihlinze Lapho Ushisela Khona Impepho, Ucele Ukuthola Umsebenzi. Bese '
     'Uwuhlukanisa Kabili Lomuthi, Owokuqala Uwufaka Emanzini Afudumele Ufake Nosu(Inyama Yangaphakathi), '
     'Umlotha Wasekhaya Owezinkuni, Hhhayi Owamaplangwe,'

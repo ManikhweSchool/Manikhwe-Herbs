@@ -6,6 +6,108 @@ class TreeResultLanguage{
   static const imiphumelaUsmayedwa = 
   ['########',];
 
+  static const imiphumelaUmbiji = 
+  ['########',];
+
+  static const imiphumelaUskhanyisele = 
+  ['########',];
+
+  static const imiphumelaUmpholofethi = 
+  ['########',];
+
+  static const imiphumelaUmagedegede = 
+  ['########',];
+
+  static const imiphumelaIsiqungasikatikoloshe = 
+  ['########',];
+
+  static const imiphumelaInjula = 
+  ['########',];
+
+  static const imiphumelaInhlamva = 
+  ['########',];
+
+  static const imiphumelaUmlahlabantu = 
+  ['########',];
+
+  static const imiphumelaUmathanjana = 
+  ['########',];
+
+  static const imiphumelaUmhlatshelo = 
+  ['########',];
+
+  static const imiphumelaUmahlabazihlangane = 
+  ['########',];
+
+  static const imiphumelaUmjuluka = 
+  ['########',];
+
+  static const imiphumelaUdumaphansi = 
+  ['########',];
+
+  static const imiphumelaUvuthamaxhumane = 
+  ['########',];
+
+  static const imiphumelaIsivumelwano = 
+  ['########',];
+
+  static const imiphumelaUvendlakavilaphi = 
+  ['########',];
+
+  static const imiphumelaUmzilanyoni = 
+  ['########',];
+
+  static const imiphumelaUdumbakasbumbu = 
+  ['########',];
+
+  static const imiphumelaIjikantamo = 
+  ['########',];
+
+  static const imiphumelaUmvithi = 
+  ['########',];
+
+  static const imiphumelaUndongana = 
+  ['########',];
+
+  static const imiphumelaUgibizisila = 
+  ['########',];
+
+  static const imiphumelaUmkhwangu = 
+  ['########',];
+
+  static const imiphumelaUmlunge = 
+  ['########',];
+
+  static const imiphumelaIsimengelezo = 
+  ['########',];
+
+  static const imiphumelaUmthombothi = 
+  ['########',];
+
+  static const imiphumelaUbanganise = 
+  ['########',];
+
+  static const imiphumelaIsiqalaba = 
+  ['########',];
+
+  static const imiphumelaUjikanelanga = 
+  ['########',];
+
+  static const imiphumelaIskhahlamezi = 
+  ['########',];
+
+  static const imiphumelaUmavikazaguqe = 
+  ['Eyokuvika',];
+
+  static const imiphumelaUmgadankawu = 
+  ['Ugadizitha',];
+
+  static const imiphumelaUmphenduli = 
+  ['Uyaphendula',];
+
+  static const imiphumelaUnwele = 
+  ['#######',];
+
   static const imiphumelaUmgwenya = 
   ['########',];
 

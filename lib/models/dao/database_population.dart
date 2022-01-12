@@ -102,7 +102,7 @@ class UmuthiDAO{
       Mzimboshisayo mzimboshisayo = Mzimboshisayo(languageIndex);
       Mitha mitha = Mitha(languageIndex);
       Nkomemnandi nkomemnandi = Nkomemnandi(languageIndex);
-      Qashwa qashwa = Qashwa(languageIndex);
+      Labongidlozi labongidlozi = Labongidlozi(languageIndex);
       Skhundla skhundla = Skhundla(languageIndex);
       GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
       Bhemuphuphe bhemuphuphe = Bhemuphuphe(languageIndex);

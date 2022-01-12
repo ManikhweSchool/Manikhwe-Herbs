@@ -50,7 +50,7 @@ class ShoppingListItem extends StatelessWidget {
 
   String _findCorrespondingLetter(){
     String letter;
-    switch(productIndex){
+    switch(productIndex%26 + 1){
       case 1 : letter = 'A';break;
       case 2 : letter = 'B';break;
       case 3 : letter = 'C';break;
