@@ -279,6 +279,11 @@ class HowToUseLanguage{
     'Lomuthi Uyabhenywa.'
   ];
 
+  static const howToUseQedizizwe = [
+    'Ugumba Umgodi Endleleni Evame Ukuhamba Abantu. Uphuze Umuthi Zokuqala, Uhambe Uyophalazela Kulowamgodi. Umangabe Usuqedile Uwugqibe Umgodi Uhambe Ungabheki Emiva. '
+    'Uyagcababa Ngensizi Amalunga Omzimba Onke.'
+  ];
+
   static const howToUseThengani = [
     'Hlanganisa Lomuthi, Namanzi Owakhe Emfuleni Ohambayo, Chele Impahla Oyidayisayo, Usule Nobuso Ngawo Mawuqeda Ukuchela.'
   ];

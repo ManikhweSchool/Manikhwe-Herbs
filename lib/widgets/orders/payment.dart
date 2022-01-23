@@ -4,11 +4,6 @@ import 'package:manikhwe_herbs/models/customer_management.dart';
 import 'package:manikhwe_herbs/models/dao/database_population.dart';
 import 'package:manikhwe_herbs/models/order_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
-import 'package:manikhwe_herbs/widgets/orders/bought_list.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:manikhwe_herbs/widgets/entrance/languages.dart';
-import 'package:manikhwe_herbs/widgets/entrance/login.dart';
-import 'package:manikhwe_herbs/widgets/orders/date_picker.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 import 'package:manikhwe_herbs/widgets/orders/welcome_page.dart';
 

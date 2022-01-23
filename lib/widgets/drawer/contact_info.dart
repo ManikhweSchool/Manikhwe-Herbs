@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
 class ContactInfo extends StatelessWidget{
   @override

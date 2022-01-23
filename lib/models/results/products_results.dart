@@ -278,6 +278,8 @@ class ProductResultLanguage{
 
   static const imiphumelaUmphuphutho = ['',];
 
+  static const imiphumelaQedizizwe = ['Umangabe Umuntu Evele Ahayize Esithubeni Nje, Lomuthi Uziqeda Nya Lezo Zizwe.',];
+
   static const imiphumelaGezumndeni = ['Ulwa Nokubi Okuhlasela Umndeni, Ukudala Izinxabano Emndenini.',];
 
   static const imiphumelaBethela = ['Bethela Umuzi Wakho Ingangeni Into Eyisandla Somthakathi.',];

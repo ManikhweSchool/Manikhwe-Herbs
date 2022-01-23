@@ -12,6 +12,12 @@ class TreeResultLanguage{
   static const imiphumelaUskhanyisele = 
   ['########',];
 
+  static const imiphumelaIsonaEsimhlophe = 
+  ['Singena Kwezokuphindisa Ungangabe Loyo Owoniwe Usaphila',];
+
+  static const imiphumelaIsonaEsibovu = 
+  ['Singena Kwezokuphindisa Ungangabe Loyo Owoniwe Useshonile',];
+
   static const imiphumelaUmpholofethi = 
   ['########',];
 
@@ -1319,12 +1325,28 @@ class TreeResultLanguage{
     '########',
   ];
 
+  static const imiphumelaUmbhangabhanga = 
+  [
+    '########',
+  ];
+  
+
+  static const imiphumelaThangazani = 
+  [
+    'Lungena Esifweni Esiloku Sishintsha Indawo Esihlala Kuyo Emzimbeni. Ungena Kowezizwe',
+  ];
+
   static const imiphumelaUphophoma = 
   [
     '########',
   ];
 
   static const imiphumelaUqhume = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUqhumeUmfazothethayo = 
   [
     '########',
   ];

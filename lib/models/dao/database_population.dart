@@ -59,69 +59,6 @@ class OrderDAO{
   }
 }
 
-class IziwashoDAO{
-
-  // Incomplete
-  static void saveIziwashoProducts(int numberOfLanguages){
-    for(int languageIndex = 0;languageIndex < numberOfLanguages;languageIndex++){
-      Asisinde asisinde = Asisinde(languageIndex);
-      Asiphephe asiphephe = Asiphephe(languageIndex);
-      Mabeze mabeze = Mabeze(languageIndex);
-      Syamthanda syamthanda = Syamthanda(languageIndex);
-      MyNo1 myNo1 = MyNo1(languageIndex);
-      UmakotiLo umakotiLo = UmakotiLo(languageIndex);
-      Mhloniphe mhloniphe = Mhloniphe(languageIndex);
-      Siyakuvumela siyakuvumela = Siyakuvumela(languageIndex);
-      Madida madida = Madida(languageIndex);
-      Sukadeda sukadeda = Sukadeda(languageIndex);
-
-
-
-    }
-  }
-}
-
-class UmuthiDAO{
-
-  // Incomplete
-  static void saveUmuthiProducts(int numberOfLanguages){
-
-    for(int languageIndex = 0;languageIndex<numberOfLanguages;languageIndex++){
-      Thandeka thandeka = Thandeka(languageIndex);
-      Thandekile thandekile = Thandekile(languageIndex);
-      Mehlothando mehlothando = Mehlothando(languageIndex);
-      Thengani thengani = Thengani(languageIndex);
-      Khanyisa khanyisa = Khanyisa(languageIndex);
-      Belungubami belungubami = Belungubami(languageIndex);
-      Usemndenini usemndenini = Usemndenini(languageIndex);
-      Sukakimi sukakimi = Sukakimi(languageIndex);
-      Qalala qalala = Qalala(languageIndex);
-      Safisithosami safisithosami = Safisithosami(languageIndex);
-      Sikimi sikimi = Sikimi(languageIndex);
-      Sisegcekeni sisegcekeni = Sisegcekeni(languageIndex);
-      Mzimboshisayo mzimboshisayo = Mzimboshisayo(languageIndex);
-      Mitha mitha = Mitha(languageIndex);
-      Nkomemnandi nkomemnandi = Nkomemnandi(languageIndex);
-      Labongidlozi labongidlozi = Labongidlozi(languageIndex);
-      Skhundla skhundla = Skhundla(languageIndex);
-      GezaUmsamo gezaUmsamo = GezaUmsamo(languageIndex);
-      Bhemuphuphe bhemuphuphe = Bhemuphuphe(languageIndex);
-      Mhlonipheni mhlonipheni = Mhlonipheni(languageIndex);
-      Sabeka sabeka = Sabeka(languageIndex);
-      Ngphuphe ngphuphe = Ngphuphe(languageIndex);
-      Abakhokhe abakhokhe = Abakhokhe(languageIndex);
-      Mdayisiwecala mdayisiwecala = Mdayisiwecala(languageIndex);
-      Kuthole kuthole = Kuthole(languageIndex);
-      Wozanibathengi wozanibathengi = Wozanibathengi(languageIndex);
-      Bolisa bolisa = Bolisa(languageIndex);
-      Zaqaqeka zaqaqeka = Zaqaqeka(languageIndex);
-      Akabuye akabuye = Akabuye(languageIndex);
-      Isigqabosothando isigqabosothando = Isigqabosothando(languageIndex);
-      Ngthandeni ngthandeni = Ngthandeni(languageIndex);
-    }
-  }
-}
-
 class TreesDAO{
 
   static Future<void>  saveTrees() async{

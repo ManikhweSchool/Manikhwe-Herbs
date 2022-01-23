@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/entrance/languages.dart';
 import 'package:manikhwe_herbs/widgets/entrance/otp_screen.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
@@ -18,7 +17,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     
-    final _formKey = GlobalKey<FormState>();
+    //final _formKey = GlobalKey<FormState>();
     TextEditingController _phoneNumberController = TextEditingController();
 
 
@@ -31,9 +30,7 @@ class _LoginState extends State<Login> {
       Scaffold(
         body: Center(
           child: SingleChildScrollView(
-            child: Form(
-              key:_formKey,
-              child: Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               
               children: <Widget>[
@@ -44,7 +41,7 @@ class _LoginState extends State<Login> {
                     bottom:0,
                     right:50,
                     left: 50,
-                    top: 50,
+                    top: 5, // version 2 changes
                   ),   
                   child:
                     SizedBox(
@@ -52,6 +49,7 @@ class _LoginState extends State<Login> {
                     height: 150,
                     child: 
                       Column(
+                        //mainAxisSize: MainAxisSize.min, version 2 changes
                         children: [
                           const Text(
                             'Manikhwe Herbs',
@@ -107,8 +105,8 @@ class _LoginState extends State<Login> {
                         return ("Please Enter Your Phone Number.");
                       }
 
-                      String pattern = r'^([0][6|7|8][0-9]){10}$';
-                      RegExp regExp = RegExp(pattern);
+                      //String pattern = r'^([0][6|7|8][0-9]){10}$';
+                      //RegExp regExp = RegExp(pattern);
 
                       if(value.length!=10 || (!value.startsWith('06') && !value.startsWith('07') && !value.startsWith('08'))){
                         return ("Invalid Phone Number.");
@@ -154,15 +152,15 @@ class _LoginState extends State<Login> {
                   
                   onPressed: (){
                       Navigator.of(context).pop();
-                      /*Navigator.of(context).push(
+                      Navigator.of(context).push(
                         CustomPageRoute(
                           child: OTPScreen(phoneNumber: _phoneNumberController.text,countryCode: countryCode,)
                         ),
-                     );*/
+                     );/*
                      Navigator.of(context).push(
                       CustomPageRoute(child: LanguagesPage(phoneNumber: _phoneNumberController.text)
-                    ),
-            );
+                      ),
+                    );*/
                     
                   }, 
                   child: const Text('Next'),
@@ -173,10 +171,9 @@ class _LoginState extends State<Login> {
               ],
             ),
           ),
-            
-        )
-      ),    
-    );
+        ),
+      );   
+    
   }
 
   
