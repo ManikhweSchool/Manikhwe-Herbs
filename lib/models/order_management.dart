@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:manikhwe_herbs/models/customer_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
 
@@ -15,7 +17,8 @@ class Order{
   bool isPaid = false;
   final double totalAmount;
 
-  static int orderID = 0; // Suppose to be a generated value.
+  // Version 2
+  //static int orderID = 0; // Suppose to be a generated value.
   
   Order(
   {
@@ -28,28 +31,41 @@ class Order{
     numberOfOrders++;
   }
 
-  Map<String, dynamic> toMap() {
+  /*Order.fromJason(Map<String,dynamic> json){
+
+  }*/
+
+  Map<String, dynamic> toJson() {
     return {
-      'request_date': requestDate,
-      'delivery_date': deliveryDate,
+      'request_date': requestDate.day.toString() + '-' + requestDate.month.toString() + '-' + requestDate.year.toString(),
+      'delivery_date': deliveryDate.day.toString() + '-' + deliveryDate.month.toString() + '-' + deliveryDate.year.toString(),
       'total_amount': totalAmount,
-      'products': _ConvertPrductToMap(products:products),
+      //'products': products[0].toMap(),
       'delivery_address': address,
       'customer': customer.toMap(),
       'is_paid': isPaid,
-      'is_delivered': isDelivered,
-      'order_id': ++orderID
+      'is_delivered': isDelivered
+      //'order_id': ++orderID
     };
   }
 
-  List<Map> _ConvertPrductToMap({required List<Product> products}) {
-    List<Map> productMaps = [];
-    for (var product in products) {
-      Map productMap = product.toMap();
-      productMaps.add(productMap);
-    }
-    return productMaps;
+  @override
+  String toString(){
+    return deliveryDate.toString() + ' ' + products.toString();
   }
+
+  // App version 2
+  Map<String, dynamic> ConvertProductToMap() {
+
+    Map<String, dynamic> map = new Map(); 
+
+    for (var product in products) { 
+      map.addAll(product.toJson());
+    } 
+    return map;
+  }
+
+  
 
   void setIsDelivered(bool isDelivered){
     this.isDelivered = isDelivered;

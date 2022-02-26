@@ -1,18 +1,16 @@
 import 'dart:ui';
-import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:manikhwe_herbs/widgets/entrance/otp_screen.dart';
+import 'package:manikhwe_herbs/widgets/admin/order_view.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 
-import 'languages.dart';
 
-class Login extends StatefulWidget {
+class AdminLogin extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _AdminLoginState createState() => _AdminLoginState();
 }
 
-class _LoginState extends State<Login> {
+class _AdminLoginState extends State<AdminLogin> {
 
   String countryCode = '+27';
 
@@ -20,7 +18,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     
     //final _formKey = GlobalKey<FormState>();
-    TextEditingController _phoneNumberController = TextEditingController();
+    TextEditingController _passwordNumberController = TextEditingController();
 
 
     double buttonWidth = MediaQuery.of(context).size.width/1.2;
@@ -68,24 +66,6 @@ class _LoginState extends State<Login> {
                     ) 
                   ),
                 ),
-                SizedBox( 
-                width:400,
-                height:60,
-                child:
-                CountryCodePicker(
-                  enabled: false,
-                  onChanged: (country){
-                    setState(){
-                      countryCode = country.dialCode!;
-                    }
-                  },
-                  initialSelection: "ZA",
-                  showCountryOnly: false,
-                  showOnlyCountryWhenClosed: false,
-                  favorite:const ["+27","ZA"],
-
-                ),
-              ),
                 
                 Padding(
                   
@@ -96,26 +76,13 @@ class _LoginState extends State<Login> {
                   ),   
                   child: TextFormField(
                     autofocus: true,
-                    maxLength: 10,
-                    keyboardType: TextInputType.phone,
-                    controller: _phoneNumberController,
+                    obscureText: true,
+                    keyboardType: TextInputType.text,
+                    controller: _passwordNumberController,
                     onSaved: (value){
-                      _phoneNumberController.text= value!;
+                      _passwordNumberController.text= value!;
                     },
-                    validator: (value){
-                      if(value!.isEmpty){
-                        return ("Please Enter Your Phone Number.");
-                      }
-
-                      //String pattern = r'^([0][6|7|8][0-9]){10}$';
-                      //RegExp regExp = RegExp(pattern);
-
-                      if(value.length!=10 || (!value.startsWith('06') && !value.startsWith('07') && !value.startsWith('08'))){
-                        return ("Invalid Phone Number.");
-                      }
-                      
-
-                    },
+                    
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -125,8 +92,8 @@ class _LoginState extends State<Login> {
                     textInputAction: TextInputAction.done,
                     cursorColor: Colors.blue,
                     decoration: const InputDecoration(
-                      prefixIcon: Icon(Icons.phone),
-                      hintText: 'Enter Your Cell Number',
+                      prefixIcon: Icon(Icons.vpn_key),
+                      hintText: 'Enter Your Password',
                       border: UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.blue
@@ -153,19 +120,11 @@ class _LoginState extends State<Login> {
                   ),
                   
                   onPressed: (){
-                    if(_phoneNumberController.text.length==10 && 
-                     (_phoneNumberController.text.startsWith('06') ||
-                     _phoneNumberController.text.startsWith('07') ||
-                     _phoneNumberController.text.startsWith('08'))){
+                    if(OrderView.isMember(_passwordNumberController.text)){
                       Navigator.of(context).pop();
-                      /*Navigator.of(context).push(
-                          CustomPageRoute(
-                            child: OTPScreen(phoneNumber: _phoneNumberController.text,countryCode: countryCode,)
-                          ),
-                      );*/
-                      
+                
                       Navigator.of(context).push(
-                        CustomPageRoute(child: LanguagesPage(phoneNumber: _phoneNumberController.text)
+                        CustomPageRoute(child: OrderView(password: _passwordNumberController.text)
                         ),
                       );
                     }

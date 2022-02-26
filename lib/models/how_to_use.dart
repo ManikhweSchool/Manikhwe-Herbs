@@ -279,6 +279,22 @@ class HowToUseLanguage{
     'Lomuthi Uyabhenywa.'
   ];
 
+  static const howToUseMotengantshontshwa = [
+    'Lengisa Lelibhodlela Esibukweni.'
+  ];
+
+  static const howToUseMfonele = [
+    'Khotha Umfonele.'
+  ];
+
+  static const howToUseBuyisokwebiwe = [
+    'Hlanganisa Lemithi, Usho Ukuthi Lo Okwenze Kabi Akabuyise, Ukhuluma Ngehliziyo Awuphimisi Ngomlomo.'
+  ];
+
+  static const howToUseMthondowothando = [
+    'Gquma Ulale Nowakwakho Ungesuli Uyigcabe Induku Yakho.'
+  ];
+
   static const howToUseQedizizwe = [
     'Ugumba Umgodi Endleleni Evame Ukuhamba Abantu. Uphuze Umuthi Zokuqala, Uhambe Uyophalazela Kulowamgodi. Umangabe Usuqedile Uwugqibe Umgodi Uhambe Ungabheki Emiva. '
     'Uyagcababa Ngensizi Amalunga Omzimba Onke.'

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
 import 'package:manikhwe_herbs/widgets/orders/bought_list_item.dart';
 import 'package:manikhwe_herbs/widgets/orders/date_picker.dart';
+import 'package:manikhwe_herbs/widgets/orders/pick_up_location.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 import 'package:manikhwe_herbs/widgets/orders/payment.dart';
 
@@ -109,13 +110,11 @@ class _BoughtListState extends State<BoughtList> {
                 Navigator.of(context).push(
                   
                   CustomPageRoute(
-                    child: PaymentScreen(
-                      totalAmount: _getCost(),
+                    child: PickUpLocation(totalAmount: _getCost(),
                       languageIndex: widget.languageIndex,
                       phoneNumber: widget.phoneNumber,
                       products: widget.orderList,
-                      deliveryDate: widget.datePicker.deliveryDate,
-                    ),
+                      deliveryDate: widget.datePicker.deliveryDate,)
                   )
                 
                 );

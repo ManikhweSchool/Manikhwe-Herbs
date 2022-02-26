@@ -2,7 +2,10 @@ import 'dart:async';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:manikhwe_herbs/widgets/admin/order_view.dart';
 import 'package:manikhwe_herbs/widgets/entrance/login.dart';
+
+import 'models/dao/read_testing.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +38,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         primarySwatch: Colors.blue,
       ),
-      home: Login(), 
+      home: /*AddData()*/Login()/*OrderView(password:'qwerty321')*/, 
         
     ); 
   }

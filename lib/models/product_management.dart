@@ -40,14 +40,28 @@ abstract class Product{
     price = 100;
   }
 
-  Map<String, dynamic> toMap() {
+  Product.fromJson(Map<String, dynamic> json): 
+  name = json['name'], 
+  price = json['price'], 
+  type = json['type'],
+  language = json['language'],
+  iyagquma = json['iyagquma'],
+  iyageza = json['iyageza'],
+  iyaphalaza = json['iyaphalaza'],
+  iyachatha = json['iyachatha'],
+  iyaphuzwa = json['iyaphuzwa'],
+  iyachela = json['iyachela'],
+  languageIndex = json['languageIndex'];
+
+  Map<String, dynamic> toJson() {
     return {
       'name ': name,
       'price ': price,
       'type ': type,
-      'result ': findPurpose(),
+      'result ': findPurpose().toString(),
       'how_to_use ': howToUse()
     };
+  
   }
 
   // What are the consiquences of using this product?
@@ -66,6 +80,8 @@ abstract class Isiwasho extends Product{
 
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 // Bhula Sangoma
 class Asisinde extends Isiwasho{
 
@@ -99,7 +115,7 @@ class Asisinde extends Isiwasho{
     return HowToUseLanguage.isiwashoDirections[0][languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 // Impendulo
 class Asiphephe extends Isiwasho{
 
@@ -135,7 +151,7 @@ class Asiphephe extends Isiwasho{
     return HowToUseLanguage.isiwashoDirections[0][languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 // Umazibuthe
 class Mabeze extends Isiwasho{
 
@@ -171,7 +187,7 @@ class Mabeze extends Isiwasho{
     return HowToUseLanguage.isiwashoDirections[0][languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 // Nobuhle
 class Syamthanda extends Isiwasho{
 
@@ -278,7 +294,7 @@ class UmakotiLo extends Isiwasho{
     return HowToUseLanguage.isiwashoDirections[0][languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 // Yellow Bone
 class Mhloniphe extends Isiwasho{
 
@@ -313,7 +329,7 @@ class Mhloniphe extends Isiwasho{
     return HowToUseLanguage.isiwashoDirections[1][languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 // Fodo Finish
 class Siyakuvumela extends Isiwasho{
 
@@ -349,6 +365,7 @@ class Siyakuvumela extends Isiwasho{
   }
 }
 
+// Advertised By Screen Shot
 // Mpukane
 class Madida extends Isiwasho{
 
@@ -383,7 +400,7 @@ class Madida extends Isiwasho{
     return HowToUseLanguage.isiwashoDirections[0][languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Esogazi extends Isiwasho{
 
   Esogazi(int languageIndex) : super('Esogazi',languageIndex, [
@@ -420,7 +437,7 @@ class Esogazi extends Isiwasho{
 }
 
 
-
+// Advertised By Screen Shot
 class Sukadeda extends Isiwasho{
 
   Sukadeda(int languageIndex) : super('Sukadeda',languageIndex, [
@@ -458,7 +475,7 @@ class Sukadeda extends Isiwasho{
     return HowToUseLanguage.howToUseSukadeda[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Uzozibonela extends Isiwasho{
 
   Uzozibonela(int languageIndex) : super('Uzozibonela',languageIndex, [
@@ -591,14 +608,14 @@ abstract class Umuthi extends Product{
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
-
+// Advertised By Screen Shot
 class Thandeka extends Umuthi{
 
   Thandeka(int languageIndex):super('Thandeka',languageIndex){
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 140;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -623,13 +640,14 @@ class Thandeka extends Umuthi{
   }
 }
 
+// Advertised By Screen Shot
 class Thandekile extends Umuthi{
 
   Thandekile(int languageIndex):super('Thandekile',languageIndex){
 
     Owner ganyile = Owner("Lwandile Ganyile", "Mayville Cato Crest 6257", true);
     owner = ganyile;
-    price = 165;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -661,14 +679,14 @@ class Thandekile extends Umuthi{
     return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Mehlothando extends Umuthi{
 
   Mehlothando(int languageIndex):super('Mehlothando',languageIndex){
 
     Owner makhuzwayo = Owner("Makhuzwayo", "Dalton", false);
     owner = makhuzwayo;
-    price = 145;
+    price = 180;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -698,7 +716,7 @@ class Thengani extends Umuthi{
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 135;
+    price = 200;
 
     iyachela = true;
 
@@ -722,14 +740,14 @@ class Thengani extends Umuthi{
     return 'Hlanganisa Lomuthi, Namanzi Owakhe Emfuleni Ohambayo, Chele Impahla Oyidayisayo, Usule Nobuso Ngawo Mawuqeda Ukuchela.';
   }
 }
-
+// Advertised By Screen Shot
 class Khanyisa extends Umuthi{
 
   Khanyisa(int languageIndex):super('Khanyisa',languageIndex){
 
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 150;
+    price = 200;
 
     iyaphalaza = true;
     amakhubalo.add(IphakamaLamanzi());
@@ -756,7 +774,7 @@ class Khanyisa extends Umuthi{
     return HowToUseLanguage.phalazaUbandaMuthiDirections[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Belungubami extends Umuthi{
 
   Belungubami(int languageIndex):super('Belungubami',languageIndex){
@@ -765,7 +783,7 @@ class Belungubami extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 250;
+    price = 300;
     
     amakhubalo.add(Uskhundla());
     amakhubalo.add(Umyezane());
@@ -792,6 +810,21 @@ class Belungubami extends Umuthi{
     izilwane.add('Imamba Oil');
     izilwane.add('mvubu Oil');
     izilwane.add('Inhlanhla Oil');
+
+    Inhlwathi inhlwathi = Inhlwathi();
+    inhlwathi.part = 'Oil';
+    animals.add(inhlwathi);
+
+    Imamba imamba = Imamba();
+    imamba.part = 'Oil';
+    animals.add(imamba);
+
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+
+    extras.add('Ibheka Oil');
+    extras.add('Inhlanhla Oil');
     
   }
 
@@ -820,7 +853,7 @@ class Usemndenini extends Umuthi{
 
     Owner makhuzwayo = Owner("Makhuzwayo", "Dalton", false);
     owner = makhuzwayo;
-    price = 165;
+    price = 150;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -844,14 +877,14 @@ class Usemndenini extends Umuthi{
     return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Sukakimi extends Umuthi{
 
   Sukakimi(int languageIndex):super('Sukakimi',languageIndex){
 
     Owner magumede = Owner("Magumede", "Dalton", false);
     owner = magumede;
-    price = 140;
+    price = 150;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -882,7 +915,7 @@ class Qalala extends Umuthi{
 
     Owner ganyile = Owner("Ganyile Lwandile", "Mayville Cato Crest 6257", true);
     owner = ganyile;
-    price = 120;
+    price = 150;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -906,14 +939,14 @@ class Qalala extends Umuthi{
     return HowToUseLanguage.howToUseInhlambamanzi[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Safisithosami extends Umuthi{
 
   Safisithosami(int languageIndex):super('Safisithosami',languageIndex){
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 180;
+    price = 260;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1021,7 +1054,7 @@ class Mzimboshisayo extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 220;
+    price = 250;
     
     iyachela = true;
     amakhubalo.add(Ilabatheka(true)); 
@@ -1064,14 +1097,14 @@ class Mzimboshisayo extends Umuthi{
     return HowToUseLanguage.howToUseMzimboshisayo[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Mitha extends Umuthi{
 
   Mitha(int languageIndex):super('Mitha',languageIndex){
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 350;
+    price = 595;
     
     iyachela = true;
     amakhubalo.add(Ithombonkala()); 
@@ -1105,14 +1138,14 @@ class Mitha extends Umuthi{
     return HowToUseLanguage.phuzaChathaMuthiDirections[languageIndex] + '. Uchatha Ngamanzi Afudumele.';
   }
 }
-
+// Advertised By Screen Shot
 class Nkomemnandi extends Umuthi{
 
   Nkomemnandi(int languageIndex):super('Nkomemnandi',languageIndex){
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 150;
+    price = 250;
     
     iyachela = true;
     amakhubalo.add(Ilabatheka( false)); 
@@ -1140,13 +1173,15 @@ class Nkomemnandi extends Umuthi{
   }
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Labongidlozi extends Umuthi{
 
   Labongidlozi(int languageIndex):super('Labongidlozi',languageIndex){
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 220;
+    price = 300;
     
     iyachela = true;
     amakhubalo.add(Umlahleni()); 
@@ -1159,6 +1194,9 @@ class Labongidlozi extends Umuthi{
     extras.add('Umlotha Wasekhaya Owezinkuni, Hhhayi Owamaplangwe.');
     extras.add('Usu Inyama Yangaphakathi');
   
+    Ulamthuthu ulamthuthu = Ulamthuthu();
+    ulamthuthu.part = 'Inyongo, Udoti Wengingila, Isikhumba Sodoti Wengingila.';
+    animals.add(ulamthuthu);
 
   }
 
@@ -1186,7 +1224,7 @@ class Skhundla extends Umuthi{
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
 
-    price = 300;
+    price = 550;
     
     iyachela = true;
     amakhubalo.add(Unongamela()); 
@@ -1194,6 +1232,10 @@ class Skhundla extends Umuthi{
     amakhubalo.add(Umkhanyakude()); 
  
     izilwane.add('Ndlulamithi Oil');
+
+    Ndlulamithi indlulamithi = Ndlulamithi();
+    indlulamithi.part = 'Oil';
+    animals.add(indlulamithi);
 
     extras.add('Ungathola Negobandlovu Uligaye Ulibheme Uma Usuya Kulabo Ofuna Ukubagoba.');
   
@@ -1217,6 +1259,8 @@ class Skhundla extends Umuthi{
   }
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class GezaUmsamo extends Umuthi{
 
   GezaUmsamo(int languageIndex):super('Geza Umsamo',languageIndex){
@@ -1234,6 +1278,14 @@ class GezaUmsamo extends Umuthi{
     extras.add('Izinkukhu Ezimhlophe Ezimbili Olamthuthu.');
     extras.add('Amakhandlela Awu-10 Imibala Eyehlukene.');
     extras.add('Umshanelo Omusha Wokuchela');
+
+    Ulamthuthu ulamthuthu1 = Ulamthuthu();
+    ulamthuthu1.part = 'Igazi Nenyongo';
+    animals.add(ulamthuthu1);
+
+    Ulamthuthu ulamthuthu2 = Ulamthuthu();
+    ulamthuthu2.part = 'Igazi Nenyongo';
+    animals.add(ulamthuthu2);
   
 
   }
@@ -1254,14 +1306,14 @@ class GezaUmsamo extends Umuthi{
     return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Bhemuphuphe extends Umuthi{
 
   Bhemuphuphe(int languageIndex):super('Bhemuphuphe',languageIndex){
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 150;
+    price = 180;
     
     iyachela = true;
     amakhubalo.add(Umkhondweni()); 
@@ -1296,7 +1348,7 @@ class Mhlonipheni extends Umuthi{
 
     Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
-    price = 220;
+    price = 250;
     
     iyachela = true;
     amakhubalo.add(Umnyamathi()); 
@@ -1400,7 +1452,7 @@ class Ngphuphe extends Umuthi{
     return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Abakhokhe extends Umuthi{
 
   Abakhokhe(int languageIndex):super('Abakhokhe',languageIndex){
@@ -1408,7 +1460,7 @@ class Abakhokhe extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
 
-    price = 180;
+    price = 250;
 
     iyagquma = true;
     iyaphalaza = true;
@@ -1444,7 +1496,7 @@ class Uyangikweleta extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
 
-    price = 180;
+    price = 280;
 
     amakhubalo.add(Intwalubombo()); 
     Umnqandane umnqandane = Umnqandane();
@@ -1544,7 +1596,7 @@ class Mdayisiwecala extends Umuthi{
     return HowToUseLanguage.gqumaGezaPhalazaMuthiDirections[languageIndex];
   }
 }
-
+// Advertised By Screen Shot
 class Kuthole extends Umuthi{
   
   Kuthole (int languageIndex, {forGoodUse =true}):
@@ -1558,7 +1610,7 @@ class Kuthole extends Umuthi{
     iyagquma = true;
     iyageza = true; 
 
-    price = 150;
+    price = 180;
 
     amakhubalo.add(Umkhanyakude());
     amakhubalo.add(Iqhume());
@@ -1622,7 +1674,7 @@ class Wozanibathengi extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Bolisa extends Umuthi{
   
   Bolisa (int languageIndex, {forGoodUse =true}):
@@ -1633,7 +1685,7 @@ class Bolisa extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 180;
+    price = 280;
 
     amakhubalo.add(Umbola());
 
@@ -1664,7 +1716,7 @@ class Zaqaqeka extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 190;
+    price = 200;
 
     amakhubalo.add(Ubhubhubhu());
     amakhubalo.add(Umqaqi());
@@ -1684,6 +1736,8 @@ class Zaqaqeka extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Akabuye extends Umuthi{
   
   Akabuye (int languageIndex, {forGoodUse =true}):
@@ -1694,7 +1748,7 @@ class Akabuye extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 230;
+    price = 450;
 
     amakhubalo.add(Umbili());
     amakhubalo.add(Sukasambe());
@@ -1758,7 +1812,7 @@ class Akabuye extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Isigqabosothando extends Umuthi{
   
   Isigqabosothando (int languageIndex, {forGoodUse =true}):
@@ -1788,6 +1842,16 @@ class Isigqabosothando extends Umuthi{
     extras.add('Nkosazane Oil');
     extras.add('Blue Stone');
     extras.add('Mvubu Oil, Eyendoda, Neyesifazane');
+
+    Imvubu femaleMvubu = Imvubu();
+    femaleMvubu.part = 'Oil';
+    femaleMvubu.description = 'Female Mvubu';
+    animals.add(femaleMvubu);
+
+    Imvubu maleMvubu = Imvubu();
+    maleMvubu.part = 'Oil';
+    maleMvubu.description = 'Male Mvubu';
+    animals.add(maleMvubu);
     
   }
 
@@ -1802,7 +1866,7 @@ class Isigqabosothando extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Ngthandeni extends Umuthi{
   
   Ngthandeni (int languageIndex, {forGoodUse =true}):
@@ -1844,6 +1908,7 @@ class Ngthandeni extends Umuthi{
   
 }
 
+// Advertised By Video
 class Akondle extends Umuthi{
   
   Akondle (int languageIndex, {forGoodUse =true}):
@@ -1853,7 +1918,7 @@ class Akondle extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
      
-    price = 285;
+    price = 200;
 
     amakhubalo.add(Umnyamathi());
     amakhubalo.add(Sehlulamanye());
@@ -1874,6 +1939,27 @@ class Akondle extends Umuthi{
     izilwane.add('Ithambo Lengwe');
     izilwane.add('Ndlovu Oil');
     izilwane.add('Mvubu Oil');
+
+    Isphikeleli isphikeleli = Isphikeleli();
+    isphikeleli.part = 'Bones or Body';
+    animals.add(isphikeleli);
+
+    Umantindane umantindane = Umantindane();
+    umantindane.part = 'Oil';
+    animals.add(umantindane);
+
+    Ingwe ingwe = Ingwe();
+    ingwe.part = 'Bone';
+    animals.add(ingwe);
+
+    Indlovu indlovu = Indlovu();
+    indlovu.part = 'Oil';
+    animals.add(indlovu);
+
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+
     
   }
 
@@ -1899,7 +1985,7 @@ class Masendamakhulu extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 280;
+    price = 580;
 
     amakhubalo.add(Inkomfe());
     amakhubalo.add(Umahlokoloza());
@@ -1934,7 +2020,7 @@ class Qinanduku extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 180;
+    price = 200;
 
     amakhubalo.add(Ukhovithi());
     amakhubalo.add(Uqonsi());
@@ -1953,7 +2039,7 @@ class Qinanduku extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Vikasbhamu extends Umuthi{
   
   Vikasbhamu (int languageIndex, {forGoodUse =true}):
@@ -1973,6 +2059,14 @@ class Vikasbhamu extends Umuthi{
 
     izilwane.add('Igobolondo Lofudo');
     izilwane.add('Umkhome Oil');
+
+    Ufudu ufudu = Ufudu();
+    ufudu.part = 'Igobolondo';
+    animals.add(ufudu);
+
+    Umkhoma umkhoma = Umkhoma();
+    umkhoma.part = 'Oil';
+    animals.add(umkhoma);
 
     extras.add('Umsizi Wesibhamu');
     
@@ -2102,7 +2196,7 @@ class Mndenongaxabani extends Umuthi{
     owner = lwandile;
 
     iyaphalaza = true;
-    price = 230;
+    price = 600;
 
     amakhubalo.add(Ibunda()); 
     amakhubalo.add(Mayime());
@@ -2112,6 +2206,12 @@ class Mndenongaxabani extends Umuthi{
     amakhubalo.add(Iwozawoza());
     amakhubalo.add(Ungqangendlela());
     amakhubalo.add(Umayihlanganise());
+
+    izilwane.add('Buffalo/Nyathi Oil');
+
+    Inyathi inyathi = Inyathi();
+    inyathi.part = 'Oil';
+    animals.add(inyathi);
     
     extras.add('Isihlabathi solwandle');
     extras.add('Usawoti Omahhadla');
@@ -2130,7 +2230,7 @@ class Mndenongaxabani extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Mndenozwanayo extends Umuthi{
   
   Mndenozwanayo (int languageIndex, {forGoodUse =true}):
@@ -2141,7 +2241,7 @@ class Mndenozwanayo extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 175;
+    price = 475;
 
     amakhubalo.add(Untulwa()); 
     amakhubalo.add(Umganu());
@@ -2164,7 +2264,7 @@ class Mndenozwanayo extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Mpilemnandi extends Umuthi{
   
   Mpilemnandi (int languageIndex, {forGoodUse =true}):
@@ -2175,7 +2275,7 @@ class Mpilemnandi extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 250;
+    price = 300;
 
     amakhubalo.add(Imfeyenkawu()); 
     amakhubalo.add(IphakamaLogagane());
@@ -2196,7 +2296,7 @@ class Mpilemnandi extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Hambamthakathi extends Umuthi{
   
   Hambamthakathi (int languageIndex, {forGoodUse =true}):
@@ -2207,7 +2307,7 @@ class Hambamthakathi extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 190;
+    price = 350;
 
     amakhubalo.add(Qeduhlobo()); 
     amakhubalo.add(Mpikayihlangulwa());
@@ -2239,7 +2339,7 @@ class Hambamoyombi extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 155;
+    price = 255;
 
     amakhubalo.add(Umagwazucaca()); 
     amakhubalo.add(Impila());
@@ -2247,6 +2347,14 @@ class Hambamoyombi extends Umuthi{
     
     izilwane.add('Mfene Oil');
     izilwane.add('Bhubesi Oil');
+
+    Imfene imfene = Imfene();
+    imfene.part = 'Oil';
+    animals.add(imfene);
+
+    Ibhubesi ibhubesi = Ibhubesi();
+    ibhubesi.part = 'Oil';
+    animals.add(ibhubesi);
 
   }
 
@@ -2272,7 +2380,7 @@ class Ubelethiswane extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 380;
+    price = 385;
 
     amakhubalo.add(Umhlakaza(umbala: 'Omnyama')); 
     amakhubalo.add(Unukani( true));
@@ -2285,6 +2393,13 @@ class Ubelethiswane extends Umuthi{
     izilwane.add('Igobolongo Lomneke');
     izilwane.add('Isikhuma Seselesele');
 
+    Umneke umneke = Umneke();
+    umneke.part = 'Igobolondo';
+    animals.add(umneke);
+
+    Iselesele iselesele = Iselesele();
+    iselesele.part = 'isikhumba';
+    animals.add(iselesele);
   }
 
   @override
@@ -2298,7 +2413,8 @@ class Ubelethiswane extends Umuthi{
   }
   
 }
-
+// Advertised By Video
+// Advertised By Screen Shot
 class Donsamali extends Umuthi{
   
   Donsamali(int languageIndex, {forGoodUse =true}):
@@ -2308,7 +2424,7 @@ class Donsamali extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
     iyaphalaza = true;
-    price = 245;
+    price = 345;
 
     amakhubalo.add(Iphuphuma()); 
     amakhubalo.add(Sondeza());
@@ -2338,7 +2454,8 @@ class Donsamali extends Umuthi{
   }
   
 }
-
+// Advertised By Video
+// Advertised By Screen Shot
 class Malungabaleki extends Umuthi{
   
   Malungabaleki(int languageIndex, {forGoodUse =true}):
@@ -2369,7 +2486,7 @@ class Malungabaleki extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class SbambeleloXXX extends Umuthi{
   
   SbambeleloXXX(int languageIndex, {forGoodUse =true}):
@@ -2380,7 +2497,7 @@ class SbambeleloXXX extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 195;
+    price = 200;
 
     amakhubalo.add(Umathinta()); 
     amakhubalo.add(Umunyu());
@@ -2391,6 +2508,20 @@ class SbambeleloXXX extends Umuthi{
     izilwane.add('Spantsh Fly Oil');
     izilwane.add('Green Mamba Oil');
     izilwane.add('Nkosazane Oil'); 
+
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+
+    Imamba greenMamba = Imamba(umbala:'Green');
+    greenMamba.part = 'Oil';
+    animals.add(greenMamba);
+
+    Inkosazane inkosazane = Inkosazane();
+    animals.add(inkosazane);
+
+    SpantshFly spantshFly = SpantshFly();
+    animals.add(spantshFly);
 
   }
 
@@ -2444,21 +2575,61 @@ class SbambeleloXYZ extends Umuthi{
 
 
     izilwane.add('Mathananazana Pubic Part');
+    Umathananazane umathananazane = Umathananazane();
+    umathananazane.part = 'Pubic Part';
+    animals.add(umathananazane);
+
     izilwane.add('Eyebrow Ubaba?');
+
     izilwane.add('Tikoloshe Bone');
     izilwane.add('Tikoloshe Oil');
+    Tikoloshe tikoloshe = Tikoloshe();
+    tikoloshe.part = 'Bone And Oil';
+    animals.add(tikoloshe);
+
     izilwane.add('Mkhovu Bone');
     izilwane.add('Mkhovu Oil');
+    Umkhovu umkhovu = Umkhovu();
+    umkhovu.part = 'Bone And Oil';
+    animals.add(umkhovu);
+
     izilwane.add('Khozi Nails');
+    Ukhozi ukhozi = Ukhozi();
+    ukhozi.part = 'Nails';
+    animals.add(ukhozi);
+
     izilwane.add('Mvubu Oil');
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+
     izilwane.add('Spantsh Fly Oil');
+    SpantshFly spantshFly = SpantshFly();
+    animals.add(spantshFly);
+
     izilwane.add('Green Mamba Oil');
+    Imamba greenMamba = Imamba(umbala:'Green');
+    greenMamba.part = 'Oil';
+    animals.add(greenMamba);
+
     izilwane.add('Nkosazane Oil'); 
+    Inkosazane inkosazane = Inkosazane();
+    animals.add(inkosazane);
+
     izilwane.add('Mamba Oil');
+    Imamba blackMamba = Imamba(umbala:'Black');
+    blackMamba.part = 'Oil';
+    animals.add(blackMamba);
+
     izilwane.add('Nhlwathi Oil'); 
+    Inhlwathi inhlwathi = Inhlwathi();
+    inhlwathi.part = 'Oil';
+    animals.add(inhlwathi);
+
     
-    izilwane.add('Love Drop');
-    izilwane.add('Pass Man'); 
+    
+    extras.add('Love Drop');
+    extras.add('Pass Man'); 
   }
 
   @override
@@ -2472,7 +2643,7 @@ class SbambeleloXYZ extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Qaqabethakathile extends Umuthi{
   
   Qaqabethakathile(int languageIndex, {forGoodUse =true}):
@@ -2483,7 +2654,7 @@ class Qaqabethakathile extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 185;
+    price = 285;
 
     amakhubalo.add(Mavulakuvaliwe()); 
     amakhubalo.add(Phindemva());
@@ -2506,7 +2677,7 @@ class Qaqabethakathile extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Gezamabhadi extends Umuthi{
   
   Gezamabhadi(int languageIndex, {forGoodUse =true}):
@@ -2517,7 +2688,7 @@ class Gezamabhadi extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 230;
+    price = 330;
 
     // Step 1 - Umuthi Wokuqala
     amakhubalo.add(Umhlakaza()); 
@@ -2558,7 +2729,7 @@ class Gezamabhadi extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class IsibungeXXX extends Umuthi{
   
   IsibungeXXX(int languageIndex, {forGoodUse =true}):
@@ -2593,21 +2764,52 @@ class IsibungeXXX extends Umuthi{
 
     extras.add('Amafutha Ebhanoyi');
     extras.add('Ikhekhe Lezinyosi');
+
     extras.add('Spantsh Fly Oil');
+    animals.add(SpantshFly());
+
     extras.add('Crush Money');
     extras.add('Izibi Zase-Mall, Eskoleni, Erank, Ebank');
     extras.add('Umhlabathi Waku-4 Ways');
     extras.add('Sea Soil');
     
     izilwane.add('Phiyano Oil');
-    izilwane.add('Nkosazane Oil');
-    izilwane.add('Mhlakuva Oil');
-    izilwane.add('Nkwazi Oil');
-    izilwane.add('Inkosi Yezinyosi');
-    izilwane.add('Ukhozi Bone');
-    izilwane.add('Sphikeleli Bone');
-    izilwane.add('Nhloli Bone');
+    Phiyano phiyano = Phiyano();
+    phiyano.part = 'Oil';
+    animals.add(phiyano);
 
+    izilwane.add('Nkosazane Oil');
+    animals.add(Inkosazane());
+
+    izilwane.add('Mhlakuva Oil');
+    Mhlakuva mhlakuva = Mhlakuva();
+    mhlakuva.part = 'Oil';
+    animals.add(mhlakuva);
+
+    izilwane.add('Nkwazi Oil');
+    Nkwazi nkwazi = Nkwazi();
+    nkwazi.part = 'Oil';
+    animals.add(nkwazi);
+
+    izilwane.add('Inkosi Yezinyosi');
+    Nkosiyezinyosi nkosiyezinyosi = Nkosiyezinyosi();
+    animals.add(nkosiyezinyosi);
+
+
+    izilwane.add('Ukhozi Bone');
+    Ukhozi ukhozi = Ukhozi();
+    ukhozi.part = 'Bone';
+
+
+    izilwane.add('Sphikeleli Bone');
+    Isphikeleli isphikeleli = Isphikeleli();
+    isphikeleli.part = 'Bone';
+    animals.add(isphikeleli);
+
+    izilwane.add('Nhloli Bone');
+    Inhloli inhloli = Inhloli();
+    inhloli.part = 'Bone';
+    animals.add(inhloli);
 
     
   }
@@ -2624,6 +2826,8 @@ class IsibungeXXX extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Ozalwembethe extends Umuthi{
   
   Ozalwembethe(int languageIndex, {forGoodUse =true}):
@@ -2642,6 +2846,12 @@ class Ozalwembethe extends Umuthi{
     extras.add('Amakhandlela - White, Yellow, Blue, Red');
     extras.add('Imbasa Yehhashi');
     extras.add('Umhlapho Wehhashi');
+
+    Ihhashi ihhashi = Ihhashi();
+    ihhashi.part = 'Imbasa, Umhlapho';
+    animals.add(ihhashi);
+
+
 
   }
 
@@ -2667,7 +2877,7 @@ class NyokaEsiswini extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 195;
+    price = 395;
 
     Umqoqongo umqoqongo = Umqoqongo();
     umqoqongo.description = 'Impande';
@@ -2704,11 +2914,23 @@ class Kufogadlayo extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 395;
+    price = 595;
 
     izilwane.add('Uphondo Lukabhejane');
     izilwane.add('Uphondo Lwenyathi');
     izilwane.add('Uphondo Lwembabala');
+
+    Ubhejane ubhejane = Ubhejane();
+    ubhejane.part = 'Uphondo';
+    animals.add(ubhejane);
+
+    Inyathi inyathi = Inyathi();
+    inyathi.part = 'Uphondo';
+    animals.add(inyathi);
+
+    Imbabala imbabala = Imbabala();
+    imbabala.part = 'Uphondo';
+    animals.add(imbabala);
  
     amakhubalo.add(Umbulalansingisi());
     amakhubalo.add(Phindemva());
@@ -2718,6 +2940,10 @@ class Kufogadlayo extends Umuthi{
     amakhubalo.add(Solo());
 
     extras.add('Umkhovu Oil And Bone');
+
+    Umkhovu umkhovu = Umkhovu();
+    umkhovu.part = 'Oil And Bone';
+    animals.add(umkhovu);
 
   }
 
@@ -2732,7 +2958,7 @@ class Kufogadlayo extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class VulidloziXXX extends Umuthi{
   
   VulidloziXXX(int languageIndex, {forGoodUse =true}):
@@ -2744,7 +2970,7 @@ class VulidloziXXX extends Umuthi{
 
     iyaphalaza = true;
     iyagquma = true;
-    price = 150;
+    price = 350;
  
     amakhubalo.add(Umalibuye());
     amakhubalo.add(Ubhubhubhu());
@@ -2774,7 +3000,7 @@ class Vulidlozi extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 350;
+    price = 360;
 
     Vuka vuka = Vuka();
     vuka.part = 'Ixolo';
@@ -2835,6 +3061,7 @@ class Vulidlozi extends Umuthi{
   
 }
 
+// Advertised By Screen Shot
 class Azwewenefonini extends Umuthi{
   
   Azwewenefonini(int languageIndex, {forGoodUse =true}):
@@ -2886,7 +3113,7 @@ class OwenhlanhlaXXX extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 170;
+    price = 220;
  
     amakhubalo.add(Uslepe());
     amakhubalo.add(Umayisaka('omhlophe'));
@@ -2908,7 +3135,7 @@ class OwenhlanhlaXXX extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class LahlokubiXXX extends Umuthi{
   
   LahlokubiXXX(int languageIndex, {forGoodUse =true}):
@@ -2918,7 +3145,7 @@ class LahlokubiXXX extends Umuthi{
     owner = ntshangase;
 
     iyaphalaza = true;
-    price = 170;
+    price = 240;
  
     amakhubalo.add(Umganu());
     amakhubalo.add(Umnyamathi());
@@ -2926,6 +3153,10 @@ class LahlokubiXXX extends Umuthi{
     amakhubalo.add(Umlahlankosi());
 
     izilwane.add('Inyongo Yenkukhu Emhlophe');
+
+    Ulamthuthu ulamthuthu = Ulamthuthu();
+    ulamthuthu.part = 'Inyongo';
+    animals.add(ulamthuthu);
     
   }
 
@@ -2940,7 +3171,7 @@ class LahlokubiXXX extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 // Lomuthi Uphindekule, Fanele Ngiwushintshe
 class Maqaqabebophile extends Umuthi{
   
@@ -2991,7 +3222,9 @@ class Bohlasisu extends Umuthi{
     amakhubalo.add(umbunga);
     
     izilwane.add('Umswane Wengulube');
-    
+    Ingulube ingulube = Ingulube();
+    ingulube.part = 'Umswane';
+    animals.add(ingulube);
   }
 
   @override
@@ -3006,6 +3239,8 @@ class Bohlasisu extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Qedanduna extends Umuthi{
   
   Qedanduna(int languageIndex, {forGoodUse =true}):
@@ -3014,7 +3249,7 @@ class Qedanduna extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
     iyaphalaza = true;
-    price = 185;
+    price = 200;
 
     amakhubalo.add(Umgxamu());
     amakhubalo.add(Ihluze());
@@ -3043,7 +3278,7 @@ class Vukanduku extends Umuthi{
     Owner ntshangase = Owner("Malume Thofo", "Emancwanini", true);
     owner = ntshangase;
     iyaphalaza = true;
-    price = 145;
+    price = 245;
 
     amakhubalo.add(Ihlunguhlungu());
     amakhubalo.add(Iqhobolozela());
@@ -3105,7 +3340,7 @@ class Webeleni extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Babambanokwezinja extends Umuthi{
   
   Babambanokwezinja(int languageIndex, {forGoodUse =true}):
@@ -3127,6 +3362,14 @@ class Babambanokwezinja extends Umuthi{
     izilwane.add('Insila Yepipi Lenja Nomchamo Wayo.');
     izilwane.add('Insila Yengquza Yenja Nomchamo Wayo.');
 
+    Inja  femaleDog = Inja();
+    femaleDog.part = 'Insila Yengquza Yenja Nomchamo Wayo.';
+    animals.add(femaleDog);
+
+    Inja maleDog = Inja();
+    maleDog.part = 'Insila Yepipi Lenja Nomchamo Wayo.';
+    animals.add(maleDog);
+
     extras.add('Ithawula Enisula Ngalo Uma Nenza Ucansi.');
     extras.add('I-Okapi Entsha');
     extras.add('Magnet Omnyama'); // Uzibuthe Omnyama
@@ -3146,6 +3389,8 @@ class Babambanokwezinja extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Tholamawele extends Umuthi{
   
   Tholamawele(int languageIndex, {forGoodUse =true}):
@@ -3154,7 +3399,7 @@ class Tholamawele extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
     iyaphalaza = true;
-    price = 485;
+    price = 700;
 
 
     amakhubalo.add(Udlutshani());
@@ -3198,6 +3443,18 @@ class BohlasisuXXX extends Umuthi{
     izilwane.add('Isele Skin');
     izilwane.add('Ingungumbane Skin');
     izilwane.add('Ingwenya Oil');
+
+    Iselesele iselesele = Iselesele();
+    iselesele.part = 'Skin';
+    animals.add(iselesele);
+
+    Ingungumbane ingungumbane = Ingungumbane();
+    ingungumbane.part = 'Skin';
+    animals.add(ingungumbane);
+
+    Ingwenya ingwenya = Ingwenya();
+    ingwenya.part = 'Skin';
+    animals.add(ingwenya);
     
   }
 
@@ -3213,6 +3470,7 @@ class BohlasisuXXX extends Umuthi{
   
 }
 
+// Advertised By Screen Shot
 class OshimileXXX extends Umuthi{
   
   OshimileXXX(int languageIndex, {forGoodUse =true}):
@@ -3221,7 +3479,7 @@ class OshimileXXX extends Umuthi{
     Owner ntshangase = Owner("Mdu Ntshangase", "Mlazi DX1", true);
     owner = ntshangase;
     iyaphalaza = true;
-    price = 185;
+    price = 285;
  
     amakhubalo.add(Usmayedwa());
     amakhubalo.add(Ismemo());
@@ -3290,7 +3548,7 @@ class SusaschithoXXX extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class ThandekaABC extends Umuthi{
   
   ThandekaABC(int languageIndex, {forGoodUse =true}):
@@ -3358,7 +3616,7 @@ class Phindisa extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Amafuthebhanoyi extends Umuthi{
   
   Amafuthebhanoyi(int languageIndex, {forGoodUse =true}):
@@ -3393,6 +3651,30 @@ class Amafuthebhanoyi extends Umuthi{
     izilwane.add('Mkhovu Oil');
     izilwane.add('Mantindane Oil');
     izilwane.add('Ndlulamithi Oil');
+
+    Inhlwathi inhlwathi = Inhlwathi();
+    inhlwathi.part = 'Oil';
+    animals.add(inhlwathi);
+
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+
+    Phiyano phiyano = Phiyano();
+    phiyano.part = 'Oil';
+    animals.add(phiyano);
+
+    Umkhovu umkhovu = Umkhovu();
+    umkhovu.part = 'Oil';
+    animals.add(umkhovu);
+
+    Umantindane umantindane = Umantindane();
+    umantindane.part = 'Oil';
+    animals.add(umantindane);
+
+    Ndlulamithi ndlulamithi = Ndlulamithi();
+    ndlulamithi.part = 'Oil';
+    animals.add(ndlulamithi);
 
     extras.add('Zamlandela');
     extras.add('Imikhando');
@@ -3460,9 +3742,24 @@ class Lumbanxeba extends Umuthi{
     amakhubalo.add(Ukhathibesonga());
     
     izilwane.add('Mthini Oil');
+    Mthini mthini = Mthini();
+    mthini.part = 'Oil';
+    animals.add(mthini);
+
     izilwane.add('Lion Oil');
+    Ibhubesi ibhubesi = Ibhubesi();
+    ibhubesi.part = 'Oil';
+    animals.add(ibhubesi);
+
     izilwane.add('Tikoloshe Oil');
+    Tikoloshe tikoloshe = Tikoloshe();
+    tikoloshe.part = 'Oil';
+    animals.add(tikoloshe);
+
     izilwane.add('Mkhovu Oil');
+    Umkhovu umkhovu = Umkhovu();
+    umkhovu.part = 'Oil';
+    animals.add(umkhovu);
     
   }
 
@@ -3587,6 +3884,9 @@ class Cuphasdumbu extends Umuthi{
 
     
     izilwane.add('Mamba Oil');
+    Imamba imamba = Imamba();
+    imamba.part = 'Oil';
+    animals.add(imamba);
   }
 
   @override
@@ -3637,7 +3937,16 @@ class Nqobazitha extends Umuthi{
 
     
     izilwane.add('Uthuvi Wenja Omhlophe.');
+    Inja inja = Inja();
+    inja.part = 'Uthuvi Osumhlophe';
+    animals.add(inja); 
+
     izilwane.add('Uthuvi Wehhashi.');
+    Ihhashi ihhashi = Ihhashi();
+    ihhashi.part = 'Uthivi';
+    animals.add(ihhashi);
+    
+
   }
 
   @override
@@ -3683,6 +3992,8 @@ class QinaXXX extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Yakhumuzi extends Umuthi{
   
   Yakhumuzi(int languageIndex, {forGoodUse =true}):
@@ -3702,7 +4013,20 @@ class Yakhumuzi extends Umuthi{
     Imbabazane imbabazane = Imbabazane();
     imbabazane.description = 'Angazi Noma Umuthi Noma Isilwane Lesi.';
     amakhubalo.add(imbabazane);
+
     izilwane.add('Ufudu Neck Oil');
+    Ufudu ufudu = Ufudu();
+    ufudu.part = 'Neck Oil';
+    animals.add(ufudu);
+
+    UmbuneAnimal umbuneAsAnimal = UmbuneAnimal();
+    umbuneAsAnimal.description = 'Angazi Noma Umuthi Noma Isilwane Lesi.';
+    animals.add(umbuneAsAnimal);
+
+    ImbabazaneAnimal imbabazaneAsAnimal = ImbabazaneAnimal();
+    imbabazaneAsAnimal.description = 'Angazi Noma Umuthi Noma Isilwane Lesi.';
+    animals.add(imbabazaneAsAnimal);
+
     
     extras.add('Milk Long Life');
     
@@ -3719,7 +4043,7 @@ class Yakhumuzi extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Ngfunumsebenzi extends Umuthi{
   
   Ngfunumsebenzi(int languageIndex, {forGoodUse =true}):
@@ -3756,6 +4080,8 @@ class Ngfunumsebenzi extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Khulumisidlozi extends Umuthi{
   
   Khulumisidlozi(int languageIndex, {forGoodUse =true}):
@@ -3771,7 +4097,9 @@ class Khulumisidlozi extends Umuthi{
     amakhubalo.add(Umadlozane());
     
     izilwane.add('Ishoba Lenyathi');
-    
+    Inyathi inyathi = Inyathi();
+    inyathi.part = 'Ishoba';
+    animals.add(inyathi);
     
   }
 
@@ -3807,6 +4135,9 @@ class Hlola extends Umuthi{
     amakhubalo.add(Imamatheka());
     
     izilwane.add('Ikhala Lenja');
+    Inja inja = Inja();
+    inja.part = 'Ikhala';
+    animals.add(inja);
     
     
   }
@@ -3823,6 +4154,7 @@ class Hlola extends Umuthi{
   
 }
 
+// Advertised By Video
 class Donsabafazi extends Umuthi{
   
   Donsabafazi(int languageIndex, {forGoodUse =true}):
@@ -3841,10 +4173,21 @@ class Donsabafazi extends Umuthi{
     amakhubalo.add(Umunyu());
     
     izilwane.add('Mvubu Oil');
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+
     izilwane.add('Mpukane Oil');
+    animals.add(SpantshFly());
+
+
     izilwane.add('Green Mamba Oil');
+    Imamba imamba = Imamba();
+    imamba.part = 'Oil';
+    animals.add(imamba);
+
     izilwane.add('Nkosazane Oil');
-    
+    animals.add(Inkosazane());
   }
 
   @override
@@ -3888,6 +4231,7 @@ class Uhlangalwabo extends Umuthi{
     amakhubalo.add(Isiqomiso());
     
     izilwane.add('Mpukane Oil');
+    animals.add(SpantshFly());
     
   }
 
@@ -3912,7 +4256,7 @@ class IsikhafuloBMW extends Umuthi{
     owner = ntshangase;
     iyachela = true;
 
-    price = 180;
+    price = 230;
 
     Uzililo uzililo = Uzililo();
     uzililo.description = 'Umkhulu';
@@ -3953,7 +4297,7 @@ class IsikhafuloBMW extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Angathinyaka extends Umuthi{
   
   Angathinyaka(int languageIndex, {forGoodUse =true}):
@@ -3963,7 +4307,7 @@ class Angathinyaka extends Umuthi{
     owner = ntshangase;
     iyachela = true;
 
-    price = 180;
+    price = 295;
 
     amakhubalo.add(Umabopha());
     amakhubalo.add(Ibheka());
@@ -3977,8 +4321,12 @@ class Angathinyaka extends Umuthi{
     extras.add('Ziyamlandela');
 
     izilwane.add('Female Ingwe Oil');
-    izilwane.add('Spantsh Fly Oil');
+    Ingwe ingwe = Ingwe();
+    ingwe.part = 'Female Oil';
+    animals.add(ingwe);
 
+    izilwane.add('Spantsh Fly Oil');
+    animals.add(SpantshFly());
 
 
   }
@@ -3995,6 +4343,7 @@ class Angathinyaka extends Umuthi{
   
 }
 
+// Advertised By Video
 class Intandoyasendlini extends Umuthi{
   
   Intandoyasendlini(int languageIndex, {forGoodUse =true}):
@@ -4028,7 +4377,7 @@ class Intandoyasendlini extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Ngikufunala extends Umuthi{
   
   Ngikufunala(int languageIndex, {forGoodUse =true}):
@@ -4038,7 +4387,7 @@ class Ngikufunala extends Umuthi{
     owner = ntshangase;
     iyachela = true;
 
-    price = 165;
+    price = 235;
 
     Indabulaluvalo indabulaluvalo = Indabulaluvalo();
     indabulaluvalo.description = 'Yonke';
@@ -4054,7 +4403,14 @@ class Ngikufunala extends Umuthi{
     amakhubalo.add(Ugina());
     
     izilwane.add('Unyawo Lwempangele');
+    Impangele impangele = Impangele();
+    impangele.part = 'Unyawo';
+    animals.add(impangele);
+
     izilwane.add('Mantindane Oil');
+    Umantindane mantindane = Umantindane();
+    mantindane.part = 'Oil';
+    animals.add(mantindane);
 
     extras.add('Isiphephetho');
 
@@ -4071,6 +4427,7 @@ class Ngikufunala extends Umuthi{
   }
   
 }
+// Advertised By Screen Shot
 
 // No Recipe, No How To Use Either
 class Owemfuyo extends Umuthi{
@@ -4164,6 +4521,8 @@ class Ukuzuqashwe extends Umuthi{
   
 }
 
+// Advertised By Video
+// Advertised By Screen Shot
 class Mubuyise extends Umuthi{
   
   Mubuyise(int languageIndex, {forGoodUse =true}):
@@ -4198,10 +4557,29 @@ class Mubuyise extends Umuthi{
     amakhubalo.add(Abangqongqozi());
     
     izilwane.add('Umkhovu Oil');
+    Umkhovu umkhovu = Umkhovu();
+    umkhovu.part = 'Oil';
+    animals.add(umkhovu);
+
     izilwane.add('Tikoloshe Bone');
+    Tikoloshe tikoloshe = Tikoloshe();
+    tikoloshe.part = 'Bone';
+    animals.add(tikoloshe);
+
     izilwane.add('Skhova Oil');
+    Iskhova iskhova = Iskhova();
+    iskhova.part = 'Oil';
+    animals.add(iskhova);
+
     izilwane.add('Ingwe Oil');
+    Ingwe ingwe = Ingwe();
+    ingwe.part = 'Oil';
+    animals.add(ingwe);
+
     izilwane.add('Ihhashi Oil');
+    Ihhashi ihhashi = Ihhashi();
+    ihhashi.part = 'Oil';
+    animals.add(ihhashi);
 
   }
 
@@ -4226,7 +4604,7 @@ class Owezilonda extends Umuthi{
     owner = ntshangase;
     iyachatha = true;
 
-    price = 145;
+    price = 225;
     
     amakhubalo.add(Umvuthuza());
     Unukani unukani = Unukani(true);
@@ -4254,6 +4632,9 @@ class Owezilonda extends Umuthi{
   }
   
 }
+
+// *******************************Animals Are Well Saved**************************************************
+
 
 // Not Registered, No Results Either
 class Mayibamanzintombi extends Umuthi{
@@ -4283,7 +4664,7 @@ class Mayibamanzintombi extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Ngiseliwe extends Umuthi{
   
   Ngiseliwe(int languageIndex, {forGoodUse =true}):
@@ -4348,7 +4729,7 @@ class Mkhontowezitha extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Sondezidlozi extends Umuthi{
   
   Sondezidlozi(int languageIndex, {forGoodUse =true}):
@@ -4492,7 +4873,7 @@ class Mfuyeningi extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Skhafulo123 extends Umuthi{
   
   Skhafulo123(int languageIndex, {forGoodUse =true}):
@@ -4627,7 +5008,7 @@ class Umphuphutho extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class DonsuthandoXYZ extends Umuthi{
   
   DonsuthandoXYZ(int languageIndex, {forGoodUse =true}):
@@ -4695,7 +5076,7 @@ class Chathanje extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Liyavukala extends Umuthi{
   
   Liyavukala(int languageIndex, {forGoodUse =true}):
@@ -4760,7 +5141,7 @@ class Ziphuzelenje extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Gezelesgangeni extends Umuthi{
   
   Gezelesgangeni(int languageIndex, {forGoodUse =true}):
@@ -4770,7 +5151,7 @@ class Gezelesgangeni extends Umuthi{
     owner = ntshangase;
     
 
-    price = 140;
+    price = 195;
 
     
     amakhubalo.add(Umzilanyoni());
@@ -4803,7 +5184,7 @@ class Gezelesgangeni extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Sesheli extends Umuthi{
   
   Sesheli(int languageIndex, {forGoodUse =true}):
@@ -4843,7 +5224,7 @@ class Sesheli extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Sokalamanyala extends Umuthi{
   
   Sokalamanyala(int languageIndex, {forGoodUse =true}):
@@ -4880,7 +5261,7 @@ class Sokalamanyala extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Mlandengesthombesakhe extends Umuthi{
   
   Mlandengesthombesakhe(int languageIndex, {forGoodUse =true}):
@@ -4910,7 +5291,7 @@ class Mlandengesthombesakhe extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Asizwisane extends Umuthi{
   
   Asizwisane(int languageIndex, {forGoodUse =true}):
@@ -4957,7 +5338,7 @@ class Asizwisane extends Umuthi{
   }
   
 }
-
+// Advertised By Screen Shot
 class Owezishimane extends Umuthi{
   
   Owezishimane(int languageIndex, {forGoodUse =true}):
@@ -5161,7 +5542,6 @@ class Qedizizwe extends Umuthi{
   
 }
 
-
 class Yonezizwe extends Umuthi{
   
   Yonezizwe(int languageIndex, {forGoodUse =true}):
@@ -5218,6 +5598,254 @@ class Yonezizwe extends Umuthi{
   @override
   String howToUse() {
     return HowToUseLanguage.howToUseYonezizwe[languageIndex];
+  }
+  
+}
+
+// ****************The variable 'izilwane' is no longer in use all products that are below****************
+
+class Mthondowothando extends Umuthi{
+  
+  Mthondowothando(int languageIndex, {forGoodUse =true}):
+  super('Mthondowothando',
+  languageIndex){
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    
+    price = 300;
+    
+    amakhubalo.add(Umahogwe());
+    amakhubalo.add(Unukani(false));
+    amakhubalo.add(Ibheka());
+    amakhubalo.add(Nginakile());
+    amakhubalo.add(Umkhalelwa());
+    amakhubalo.add(Sehlulamanye());
+    Usimanaye simanaye = Usimanaye();
+    simanaye.description = 'Ebhukwini Kubhalwe Umanaye Female';
+    amakhubalo.add(simanaye);
+    Umanaye umanaye = Umanaye(true);
+    umanaye.description = 'Angazi Noma Into Eyodwa NoSimanaye';
+    amakhubalo.add(umanaye);
+
+    Cobra cobra = Cobra();
+    cobra.part = 'Oil';
+    cobra.description = 'Just A Drop';
+    animals.add(cobra);
+
+    Imvubu imvubu = Imvubu();
+    imvubu.part = 'Oil';
+    animals.add(imvubu);
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaMthondowothando[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseMthondowothando[languageIndex];
+  }
+  
+}
+
+class Buyisokwebiwe extends Umuthi{
+  
+  Buyisokwebiwe(int languageIndex, {forGoodUse =true}):
+  super('Buyisokwebiwe',
+  languageIndex){
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    
+    price = 200;
+    
+    amakhubalo.add(Umakhukhumesane());
+    amakhubalo.add(Umathinta());
+    Ivezinhlanhla ivezinhlanhla = Ivezinhlanhla();
+    ivezinhlanhla.description = 'Amavezinhlanhla Zonke';
+    amakhubalo.add(ivezinhlanhla);
+    Uvutha uvutha = Uvutha();
+    uvutha.description = 'Stone';
+    amakhubalo.add(uvutha);
+    amakhubalo.add(Uvutha());
+
+    extras.add('Umazibuthe');
+    
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaBuyisokwebiwe[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseBuyisokwebiwe[languageIndex];
+  }
+  
+}
+
+class Motengantshontshwa extends Umuthi{
+  
+  Motengantshontshwa(int languageIndex, {forGoodUse =true}):
+  super('Motengantshontshwa',
+  languageIndex){
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    
+    price = 600;
+    
+    amakhubalo.add(Umavumbuka());
+    amakhubalo.add(Umvithi());
+    amakhubalo.add(Uvendle());
+    amakhubalo.add(Umazwahlabayo());
+    amakhubalo.add(Impindekhaligazi());
+    amakhubalo.add(Umkhondweni());
+    Uvukamalibeni uvukamalibeni = Uvukamalibeni();
+    uvukamalibeni.description = 'Wonke';
+    amakhubalo.add(uvukamalibeni);
+    amakhubalo.add(Indabulaluvalo());
+    amakhubalo.add(Usgidi());
+
+    Izibonkolo izibonkolo = Izibonkolo();
+    izibonkolo.description = 'Izintuthwane Ezincinzayo';
+    animals.add(izibonkolo);
+
+    Izinyosi izinyosi = Izinyosi();
+    izinyosi.description = 'Ezincinzayo';
+    animals.add(izinyosi);
+
+    Ikati ikati = Ikati();
+    ikati.part = 'Left Hand';
+    animals.add(ikati);
+
+    IqhudeElibovu iqhudeElibovu1 = IqhudeElibovu();
+    iqhudeElibovu1.part = 'Heart';
+    animals.add(iqhudeElibovu1);
+
+    IqhudeElibovu iqhudeElibovu2 = IqhudeElibovu();
+    iqhudeElibovu2.part = 'Heart';
+    animals.add(iqhudeElibovu2);
+
+    IqhudeElibovu iqhudeElibovu3 = IqhudeElibovu();
+    iqhudeElibovu3.part = 'Heart';
+    animals.add(iqhudeElibovu3);
+
+    Iskhova iskhova = Iskhova();
+    iskhova.part = 'Oil';
+    animals.add(iskhova);
+
+    Ingungumbane ingungumbane = Ingungumbane();
+    ingungumbane.part = 'Oil';
+    animals.add(ingungumbane);
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaMotengantshontshwa[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseMotengantshontshwa[languageIndex];
+  }
+  
+}
+
+class Mfonele extends Umuthi{
+  
+  Mfonele(int languageIndex, {forGoodUse =true}):
+  super('Motengantshontshwa',
+  languageIndex){
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    
+    price = 150;
+    
+    amakhubalo.add(Isphahluka());
+    amakhubalo.add(Umayisaka('red'));
+    amakhubalo.add(Mlomomnandi());
+    Indungulu indungulu = Indungulu();
+    indungulu.description = 'Kancane';
+    amakhubalo.add(indungulu);
+
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaMfonele[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.howToUseMfonele[languageIndex];
+  }
+  
+}
+
+class Osheshachame extends Umuthi{
+  
+  Osheshachame(int languageIndex, {forGoodUse =true}):
+  super('Osheshachame',
+  languageIndex){
+    Owner ntshangase = Owner("Ntshangase", "Mlazi DX1", true);
+    owner = ntshangase;
+    
+    price = 220;
+    
+    amakhubalo.add(Uqonsi());
+    amakhubalo.add(Bangalala());
+    amakhubalo.add(Umathunga());
+    amakhubalo.add(Inkomfe());
+    amakhubalo.add(Umdubu());
+    Solo solo = Solo();
+    solo.description = 'Kancane';
+    amakhubalo.add(solo);
+    Maguqu umaguqu = Maguqu();
+    umaguqu.description = 'Kancane';
+    amakhubalo.add(umaguqu);
+    Intuma intuma = Intuma();
+    intuma.description = 'Igaqa Nezinhlamvu';
+    amakhubalo.add(intuma);
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaOsheshachame[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.chathaMuthiDirections[languageIndex];
+  }
+  
+}
+
+class Hlanzisinya extends Umuthi{
+  
+  Hlanzisinya(int languageIndex, {forGoodUse =true}):
+  super('Hlanzisinya',
+  languageIndex){
+    Owner mkhuluZikhali = Owner("Lwandile Ganyile", "Mlazi H Ko3", true);
+    owner = mkhuluZikhali;
+    
+    price = 350;
+
+    izilwane.add('Umchamo Wemfene');
+
+  }
+
+  @override
+  List<String> findPurpose() {
+    return [ProductResultLanguage.imiphumelaHlanzisinya[languageIndex]];
+  }
+
+  @override
+  String howToUse() {
+    return HowToUseLanguage.phuzaChathaMuthiDirections[languageIndex];
   }
   
 }

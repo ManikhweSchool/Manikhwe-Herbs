@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:manikhwe_herbs/widgets/admin/admin_login.dart';
+import 'package:manikhwe_herbs/widgets/admin/order_view.dart';
 import 'package:manikhwe_herbs/widgets/drawer/contact_info.dart';
 import 'package:manikhwe_herbs/widgets/entrance/login.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
@@ -29,9 +31,14 @@ class NavigationDrawerWidger extends StatelessWidget{
             ),
             const SizedBox(height: 8),
             buildMenuItem(
-              text: 'Order Status',
+              text: 'Pending Orders',
               icon: Icons.pending,
               onClick: ()=>selectedItem(context, 2),
+            ),
+            buildMenuItem(
+              text: 'Admin',
+              icon: Icons.admin_panel_settings,
+              onClick: ()=>selectedItem(context, 3),
             ),
 
             const SizedBox(height: 8),
@@ -71,7 +78,8 @@ class NavigationDrawerWidger extends StatelessWidget{
       case 0: Navigator.of(context).push(CustomPageRoute(child: ContactInfo()),);break; 
       case 1: break; // Go To The Appropriate Page.
       case 2: break; // Go To The Appropriate Page.
-      case 3: Navigator.of(context).push(CustomPageRoute(child: Login()),);break; 
+      case 3: Navigator.of(context).push(CustomPageRoute(child: AdminLogin()),);break; 
+      case 4: Navigator.of(context).push(CustomPageRoute(child: Login()),);break; 
     }
   }
   

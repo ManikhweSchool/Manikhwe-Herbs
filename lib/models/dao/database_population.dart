@@ -1,4 +1,8 @@
+import 'dart:developer';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/order_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
 import 'package:manikhwe_herbs/models/service_management.dart';
@@ -38,26 +42,7 @@ class SpecialistDAO{
 
 }
 
-class OrderDAO{
 
-  Future<void> saveOrder(Order order) async{
-
-    CollectionReference orders = FirebaseFirestore.instance.collection('/orders');
-    //FirebaseAuth auth = FirebaseAuth.instance;
-    //String orderId = auth.currentUser!.uid.toString();
-
-    orders.add({
-      'order': order.toMap()
-    });
-
-    return;
-  }
-  
-
-  static void deleteFailedOrder(int orderID){
-    
-  }
-}
 
 class TreesDAO{
 
@@ -152,7 +137,7 @@ class TreesDAO{
     Uskhundla uskhundla = Uskhundla();
     trees.add({'tree ':  uskhundla.toMap()});
 
-      Umyezane umyezane = Umyezane();
+    Umyezane umyezane = Umyezane();
     trees.add({'tree ':  umyezane.toMap()});
       
     Umabusane umabusane = Umabusane();
@@ -181,6 +166,9 @@ class TreesDAO{
       
     Ibheka ibheka = Ibheka();
     trees.add({'tree ':  ibheka.toMap()});
+
+    Unkungwini unkungwini = Unkungwini();
+    trees.add({'tree ':  unkungwini.toMap()});
       
     Imfingo imfingo = Imfingo();
     trees.add({'tree ':  imfingo.toMap()});
@@ -289,6 +277,9 @@ class TreesDAO{
 
     Umayisaka umayisakaRed = Umayisaka( 'red');
     trees.add({'tree ':  umayisakaRed.toMap()});
+
+    Umayisaka umayisakaWhite = Umayisaka( 'white');
+    trees.add({'tree ':  umayisakaWhite.toMap()});
       
     Umadlozane umadlozane = Umadlozane();
     trees.add({'tree ':  umadlozane.toMap()});
@@ -445,6 +436,186 @@ class TreesDAO{
     
     Donsuthando donsuthando = Donsuthando();
     trees.add({'tree ':  donsuthando.toMap()});
+
+    IphakamaLaphezulu iphakamaLaphezulu = IphakamaLaphezulu();
+    trees.add({'tree ':  iphakamaLaphezulu.toMap()});
+
+    Dumaphansi dumaphansi = Dumaphansi();
+    trees.add({'tree ':  dumaphansi.toMap()});
+
+    Sehlulamanye sehlulamanye = Sehlulamanye();
+    trees.add({'tree ':  sehlulamanye.toMap()});
+
+    Inkomfe inkomfe = Inkomfe();
+    trees.add({'tree ':  inkomfe.toMap()});
+
+    Umahlokoloza umahlokoloza = Umahlokoloza();
+    trees.add({'tree ':  umahlokoloza.toMap()});
+
+    Ubhoqo ubhoqo = Ubhoqo();
+    trees.add({'tree ':  ubhoqo.toMap()});
+
+    Ukhovithi ukhovithi = Ukhovithi();
+    trees.add({'tree ':  ukhovithi.toMap()});
+
+    Uqonsi uqonsi = Uqonsi();
+    trees.add({'tree ':  uqonsi.toMap()});
+
+    Bangalala bangalala = Bangalala();
+    trees.add({'tree ':  bangalala.toMap()});
+
+    Mbizakayivuthwa mbizakayivuthwa = Mbizakayivuthwa();
+    trees.add({'tree ':  mbizakayivuthwa.toMap()});
+
+    Ishaqa ishaqa = Ishaqa();
+    trees.add({'tree ':  ishaqa.toMap()});
+
+    Ucalakalithethwa ucalakalithethwa = Ucalakalithethwa();
+    trees.add({'tree ':  ucalakalithethwa.toMap()});
+
+    Unyathelo unyathelo = Unyathelo();
+    trees.add({'tree ':  unyathelo.toMap()});
+
+    Mthunyelelwa mthunyelelwa = Mthunyelelwa();
+    trees.add({'tree ':  mthunyelelwa.toMap()});
+
+    Mayime mayime = Mayime();
+    trees.add({'tree ':  mayime.toMap()});
+
+    Umacashosizini umacashosizini = Umacashosizini();
+    trees.add({'tree ':  umacashosizini.toMap()});
+
+    Iphendulula iphendulula = Iphendulula();
+    trees.add({'tree ':  iphendulula.toMap()});
+
+    Isithuladu isithuladu = Isithuladu();
+    trees.add({'tree ':  isithuladu.toMap()});
+
+    Isdikili isdikili = Isdikili();
+    trees.add({'tree ':  isdikili.toMap()});
+
+    Ndlelazimhlophe ndlelazimhlophe = Ndlelazimhlophe();
+    trees.add({'tree ':  ndlelazimhlophe.toMap()});
+
+    Fikabuse fikabuse = Fikabuse();
+    trees.add({'tree ': fikabuse.toMap()});
+
+    Malibuye malibuye = Malibuye();
+    trees.add({'tree ':  malibuye.toMap()});
+
+    Ibunda ibunda = Ibunda();
+    trees.add({'tree ':  ibunda.toMap()});
+
+    Sondeza sondeza = Sondeza();
+    trees.add({'tree ':  sondeza.toMap()});
+
+    Umpikayiboni umpikayiboni = Umpikayiboni();
+    trees.add({'tree ':  umpikayiboni.toMap()});
+
+    Umayihlanganise umayihlanganise = Umayihlanganise();
+    trees.add({'tree ':  umayihlanganise.toMap()});
+
+    Untulwa untulwa = Untulwa();
+    trees.add({'tree ':  untulwa.toMap()});
+
+    Umganu umganu = Umganu();
+    trees.add({'tree ':  umganu.toMap()});
+
+    Imfeyenkawu imfeyenkawu = Imfeyenkawu();
+    trees.add({'tree ':  imfeyenkawu.toMap()});
+
+    Inqaqifindo inqaqifindo = Inqaqifindo();
+    trees.add({'tree ':  inqaqifindo.toMap()});
+
+    IphakamaLogagane iphakamaLogagane = IphakamaLogagane();
+    trees.add({'tree ':  iphakamaLogagane.toMap()});
+
+    Ivulandlela ivulandlela = Ivulandlela();
+    trees.add({'tree ':  ivulandlela.toMap()});
+
+    Inhlanhlemhlophe inhlanhlemhlophe = Inhlanhlemhlophe();
+    trees.add({'tree ':  inhlanhlemhlophe.toMap()});
+
+    Hlabazihlangane hlabazihlangane = Hlabazihlangane();
+    trees.add({'tree ':  hlabazihlangane.toMap()});
+
+    Umpikayihlangulwa umpikayihlangulwa = Umpikayihlangulwa();
+    trees.add({'tree ':  umpikayihlangulwa.toMap()});
+
+    Dukanezwe dukanezwe = Dukanezwe();
+    trees.add({'tree ':  dukanezwe.toMap()});
+
+    Qeduhlobo qeduhlobo = Qeduhlobo();
+    trees.add({'tree ':  qeduhlobo.toMap()});
+
+    Isnama isnama = Isnama();
+    trees.add({'tree ':  isnama.toMap()});
+
+    Mdlandlovu mdlandlovu = Mdlandlovu();
+    trees.add({'tree ':  mdlandlovu.toMap()});
+
+    Intwalubombo intwalubombo = Intwalubombo();
+    trees.add({'tree ':  intwalubombo.toMap()});
+
+    Insonga insonga = Insonga();
+    trees.add({'tree ':  insonga.toMap()});
+
+    Isiwisa isiwisa = Isiwisa();
+    trees.add({'tree ':  isiwisa.toMap()});
+
+    Usukasambe usukasambe = Usukasambe();
+    trees.add({'tree ':  usukasambe.toMap()});
+
+    Iphuphuma iphuphuma = Iphuphuma();
+    trees.add({'tree ':  iphuphuma.toMap()});
+
+    Ungelengele ungelengele = Ungelengele();
+    trees.add({'tree ':  ungelengele.toMap()});
+
+    Uzifunele uzifunele = Uzifunele();
+    trees.add({'tree ':  uzifunele.toMap()});
+
+    Umhululuka umhululuka = Umhululuka();
+    trees.add({'tree ':  umhululuka.toMap()});
+
+    Undwendweni undwendweni = Undwendweni();
+    trees.add({'tree ':  undwendweni.toMap()});
+    
+    Ibutha ibutha = Ibutha();
+    trees.add({'tree ':  ibutha.toMap()});
+
+    Iletha iletha = Iletha();
+    trees.add({'tree ':  iletha.toMap()});
+
+    Umhlalanyosi umhlalanyosi = Umhlalanyosi();
+    trees.add({'tree ':  umhlalanyosi.toMap()});
+
+    Umbhamabhama umbhamabhama = Umbhamabhama();
+    trees.add({'tree ':  umbhamabhama.toMap()});
+    
+    Isthaphuka isthaphuka = Isthaphuka();
+    trees.add({'tree ':  isthaphuka.toMap()});
+
+    Umathinta umathinta = Umathinta();
+    trees.add({'tree ':  umathinta.toMap()});
+
+    Umababaza umababaza = Umababaza();
+    trees.add({'tree ':  umababaza.toMap()});
+
+    Uvutha uvutha = Uvutha();
+    trees.add({'tree ':  uvutha.toMap()});
+
+    Usokalakwazulu usokalakwazulu = Usokalakwazulu();
+    trees.add({'tree ':  usokalakwazulu.toMap()});
+
+    Umgxhume umgxhume = Umgxhume();
+    trees.add({'tree ':  umgxhume.toMap()});
+    
+    Untombikayibhinci untombikayibhinci = Untombikayibhinci();
+    trees.add({'tree ':  untombikayibhinci.toMap()});
+
+    Umalinga umalinga = Umalinga();
+    trees.add({'tree ':  umalinga.toMap()});
     
     return;
     

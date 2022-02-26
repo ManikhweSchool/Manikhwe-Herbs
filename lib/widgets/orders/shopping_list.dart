@@ -142,7 +142,7 @@ class _ShoppingListState extends State<ShoppingList> {
             color:Colors.white
           ),
         ],
-        centerTitle: true,
+        /*centerTitle: true,
         title: Text('${widget.numberOfCustomersInStore} Online Customers',
           style: const TextStyle(
             
@@ -150,7 +150,7 @@ class _ShoppingListState extends State<ShoppingList> {
             fontSize: 16,
 
           ),
-        ),       
+        ), */      
       ),
       body: 
         Column(
@@ -176,6 +176,7 @@ class _ShoppingListState extends State<ShoppingList> {
 }
 
 class Language{
+  
   
   static List<Product> ezobusoka(int languageIndex){
     List<Product> list = [];

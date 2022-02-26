@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:manikhwe_herbs/models/customer_management.dart';
@@ -6,6 +9,7 @@ import 'package:manikhwe_herbs/models/order_management.dart';
 import 'package:manikhwe_herbs/models/product_management.dart';
 import 'package:manikhwe_herbs/widgets/page_navigation.dart';
 import 'package:manikhwe_herbs/widgets/orders/welcome_page.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 
 
@@ -16,6 +20,7 @@ class PaymentScreen extends StatefulWidget {
   final int languageIndex;
   final double totalAmount;
   final DateTime deliveryDate;
+  final String address;
 
   const PaymentScreen(
     {
@@ -25,6 +30,7 @@ class PaymentScreen extends StatefulWidget {
       required this.products,
       required this.totalAmount,
       required this.deliveryDate,
+      required this.address,
     }
   ) : super(key: key);
 
@@ -34,16 +40,17 @@ class PaymentScreen extends StatefulWidget {
 
 class _PaymentScreenState extends State<PaymentScreen> {
 
-  
+  final database = FirebaseDatabase.instance.ref();
 
   @override
   Widget build(BuildContext context) {
-    
-    TextEditingController _addressController = TextEditingController();
+
     double buttonWidth = MediaQuery.of(context).size.width/1.2;
     double buttonBorderRadius = 30;
 
-    final OrderDAO orderDAO = OrderDAO(); 
+    final ordersReference = database.child('/orders');
+    final productsReference = database.child('/products');
+
     GlobalKey<FormState> formKey = GlobalKey<FormState>();
     
     
@@ -83,6 +90,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
 
     return 
       Scaffold(
+        appBar:AppBar(
+          title: Text('Collection Address'),
+        ),
         body: Center(
           child: 
           SingleChildScrollView(
@@ -96,45 +106,33 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   Padding(
                     
                     padding: const EdgeInsets.only(
-                      top:20,
                       bottom:20,
                       right:50,
                       left: 50,
                     ),   
-                    child: TextFormField(
-                      autofocus: true,
-                      
-                      keyboardType: TextInputType.text,
-                      controller: _addressController,
-                      onSaved: (value){
-                        _addressController.text= value!;
-                      },
-                      
-                      style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                      ),
-                      
-                      
-                      textInputAction: TextInputAction.done,
-                      cursorColor: Colors.blue,
-                      decoration: const InputDecoration(
-                        prefixIcon: Icon(Icons.location_city_sharp),
-                        
-                        hintText: 'Delivery Address',
-                        border: UnderlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.blue
-                          ),
-                        ),
-                        focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.blue
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),   
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width/2,
+                      height: 150,
+                      child: 
+                        Column(
+                          //mainAxisSize: MainAxisSize.min, version 2 changes
+                          children: [
+                            Text(
+                              widget.address,
+                              style: 
+                                TextStyle(
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16.0,
+                                ),
+                              textAlign: TextAlign.end,
+                            ),
+                            Image.asset('assets/pep2.jpg'),
+                        ],
+                      )
+                    ) 
+                  ),
+      
                   Container(
                     width:buttonWidth,
                     decoration: BoxDecoration(
@@ -146,31 +144,43 @@ class _PaymentScreenState extends State<PaymentScreen> {
                         backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                       ),
                       
-                      onPressed: (){
+                      onPressed: () async{
 
                         Customer customer = Customer(widget.phoneNumber,widget.languageIndex);
                         Order order = Order(
                           totalAmount: widget.totalAmount,
-                          address: _addressController.text,
+                          address: widget.address,
                           customer: customer,
                           products: widget.products,
                           deliveryDate: widget.deliveryDate, 
                         );
 
                         customer.addOrder(order);
-                        orderDAO.saveOrder(order);
 
+                        
+                          try{
+                            DatabaseReference orderReference = ordersReference.push();
+                            String? productsId = orderReference.key;
 
-                        if(_addressController.text.isNotEmpty){
+                            // If the app is offline this await call won't finish until the right is confirmed by the server.
+                            await  orderReference.set(order.toJson());
+                              //.then((_)=>log('Real Time 1 ' + order.orderTotalPrice().toString() + ' ' + order.products.toString()));
+                            
+                            await productsReference.child(productsId.toString())
+                              .push()
+                              .set(jsonEncode(order.products));
+                              //.then((_)=>log('Real Time 2' + order.products.asMap().toString()));
+                          }catch(error){
+                            log('Order Couldn\'t Be Saved. $error');
+                          }
+                          
                           Navigator.of(context).pop();
                           Navigator.of(context).push(
                             CustomPageRoute(
                               child: WelcomeScreen(phoneNumber: widget.phoneNumber,languageIndex: widget.languageIndex,),
                             ),
                           );
-                        }else{
-                          _displayDialog(context);
-                        }
+                        
                         
                       }, 
                       child: const Text('Request Delivery'),

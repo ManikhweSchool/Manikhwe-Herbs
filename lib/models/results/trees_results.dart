@@ -1329,6 +1329,46 @@ class TreeResultLanguage{
   [
     '########',
   ];
+
+  static const imiphumelaUmdubu = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUsgidi = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaImpindekhaligazi = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaIvezinhlanhla = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUmakhukhumesane = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUmanaye = 
+  [
+    '########',
+  ];
+
+  static const imiphumelaUmkhalelwa = 
+  [
+    'Uyakhalelwa',
+  ];
+
+  static const imiphumelaUmahogwe = 
+  [
+    '########',
+  ];
   
 
   static const imiphumelaThangazani = 

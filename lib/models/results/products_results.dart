@@ -109,6 +109,9 @@ class ProductResultLanguage{
   static const imiphumelaDonsamali = 
   ['Ulanda Imali, Ubamba Imali Ingabaleki.',
   ];
+  static const imiphumelaHlanzisinya = 
+  ['Ugeza Isinya Sakho, Uvule Nama Payipi Esinya Avalekile.',
+  ];
 
   static const imiphumelaNyokaEsiswini = 
   ['Uqenda Ilumbo Lenyoka Ehamba Esiswini.',
@@ -273,6 +276,16 @@ class ProductResultLanguage{
   static const imiphumelaAntibiotics = ['Uzifo Zonke',];
 
   static const imiphumelaYonezizwe = ['Uqeda Izizwe',];
+
+  static const imiphumelaOsheshachame = ['Wenza Uchame Emva Kwesikhathi Eside Ocansini',];
+
+  static const imiphumelaMfonele = ['Mengabe Umfonela Ukhothe Lomuthi Uzokuthanda, Uzochazeka, Uzokufuna.',];
+
+  static const imiphumelaMotengantshontshwa = ['Imoto Yakho Ayintshontshwa',];
+
+  static const imiphumelaBuyisokwebiwe = ['Kuyabuya Okwebiwe',];
+
+  static const imiphumelaMthondowothando = ['Intando Esetshenziswa Abesilisa Engena Ngocansi.',];
 
   static const imiphumelaAsizwisane = ['Umuntu Ulala Naye Ningathandani.',];
 
